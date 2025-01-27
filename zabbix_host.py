@@ -86,32 +86,45 @@ class ZabbixHost:
         res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
 
         if res.ok:
-            content = res.json()["result"]
+            content = res.json()
+
+            if "error" in content:
+                raise Exception(content["error"]["message"] + " " + content["error"]["data"])
+
+            content = content["result"]
+
             self.__host_data.extend(content)
         else:
-            assert False,f"failed to execute host.get function"
+            raise Exception("failed to send execute host.get function")
 
 
     def get_templates(self):
         for host in self.__host_data:
+
             data =json.dumps({
                 "jsonrpc": self.rpc_info["jsonrpc"],
                 "method": "template.get",
-
                 "params": {
                     "output":"templateid",
                     "hostids": host["hostid"],
                 },
                 "id": self.rpc_info["id"]
             })
+
             res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
+
             host["templateid"] = list(dict())
+
             if res.ok:
-                content = res.json()["result"]
+                content = res.json()
+                if "error" in content:
+                    raise Exception(content["error"]["message"] + " " + content["error"]["data"])
+
+                content = content["result"]
                 for i in content:
                     host["templateid"].append(i)
-
-
+            else:
+                raise Exception("failed to send execute template.get function")
 
     def get_items(self):
 
@@ -126,12 +139,31 @@ class ZabbixHost:
                 },
                 "id": self.rpc_info["id"]
             })
+
             res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
+
             if res.ok:
-                content = res.json()["result"]
+                content = res.json()
+                if "error" in content:
+                    raise Exception(content["error"]["message"] + " " + content["error"]["data"])
+
+                content = content["result"]
+
                 for i in content:
                     i["value_type"] = self.zabbix_value_types[int(i["value_type"])]
                     i["type"] =  self.zabbix_item_types[int(i["type"])]
-
                 host["itemlist"]=content
-        pprint.pp(self.__host_data[1])
+
+            else:
+                raise Exception("failed to send execute item.get function")
+
+        for i in self.__host_data[:1]:
+            print(i["host"],"***************************\n")
+
+            for j in i["itemlist"]:
+                print(j["name_resolved"],j["units"],j["value_type"])
+
+
+    def write(self):
+        with open("data.json", "w") as file:
+            json.dump(self.__host_data, file,indent=4)
