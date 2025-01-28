@@ -16,6 +16,8 @@ class GrafanaHost:
             "data_sources":"/datasources",
 
         }
+
+        self.__zabbix_data_source_info = dict()
         self.default_authorized_request_header= {'Content-Type': 'application/json-rpc',"Authorization":f"Bearer {self.__bearer_token}"}
 
 
@@ -34,9 +36,10 @@ class GrafanaHost:
 
         for datasource in res.json():
             if datasource["name"] == "Zabbix" or datasource["type"] == "alexanderzobnin-zabbix-datasource":
+                self.__zabbix_data_source_info = {"uid":datasource["uid"],"name":datasource["name"],"type":datasource["type"],"id":datasource["id"]}
                 return
         else:
-            raise  Exception("Zabbix data source doesnt exists\n No datasource name \"Zabbix\" or datasource type \"alexanderzobnin-zabbix-datasource\" found")
+            raise  Exception(f"Zabbix data source doesnt exists\n No datasource name \"{self.__zabbix_data_source_info['name']}\" or datasource type \"{self.__zabbix_data_source_info['type']}\" found")
 
 
 

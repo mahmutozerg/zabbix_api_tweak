@@ -5,6 +5,14 @@ import utils
 
 class ZabbixHost:
     def __init__(self,ip,port,auth):
+        """
+
+
+            :param ip: zabbix server ip  http://192.168.0.1
+            :param port: zabbix server port 80, 8080 etc
+            :param auth: zabbix admin authentication token
+        """
+
         self.__json_rpc_paths = ["/zabbix/api_jsonrpc.php","/api_jsonrpc.php"]
         self.valid_json_rpc_path = ""
 
@@ -57,9 +65,13 @@ class ZabbixHost:
         self.get_groups()
         self.get_items()
 
-        utils.write_to_file(self.host_data)
+        utils.write_to_file(self.__host_data)
 
     def __test_connection(self):
+        """
+        Checks for json rpc information
+        :return:
+        """
         status_codes = list()
         for path in self.__json_rpc_paths:
             res = requests.post(self.__host_addr+path,headers=self.default_unauthorized_request_header,data=json.dumps(self.default_request_body))
@@ -79,6 +91,21 @@ class ZabbixHost:
             assert False,f"{list(zip(self.__json_rpc_paths,status_codes))} Failed to find rpc path, path/statuscode"
 
     def get_hosts(self):
+        """
+        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/host/get?hl=host.get
+
+        Gets all hosts, includes ip of them
+        output consist of host,hostid and interface ip
+         example:
+
+            "hostid": "10655",
+            "host": "WordpressKali",
+            "interfaces": [
+                {
+                    "ip": "192.168.0.20"
+                }
+        :return:
+        """
         data =json.dumps({
             "jsonrpc": self.rpc_info["jsonrpc"],
             "method": "host.get",
@@ -104,7 +131,27 @@ class ZabbixHost:
 
 
     def get_groups(self):
+        """
+        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/hostgroup/get?hl=hostgroup.get
 
+        gets all groups that host's belong to
+        output consist of only name of the group
+        example :
+        "groups": [
+            {
+                "name": "Zabbix servers"
+            },
+            {
+                "name": "Applications"
+            },
+            {
+                "name": "Linux servers"
+            },
+            {
+                "name": "Databases"
+            }
+        :return:
+        """
         for host in self.__host_data:
             data =json.dumps({
                 "jsonrpc": self.rpc_info["jsonrpc"],
@@ -123,6 +170,20 @@ class ZabbixHost:
 
 
     def get_templates(self):
+        """
+        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/template/get?hl=template.get
+
+        gets all templates that host's belong to
+        output consist of only templateid and name parameters
+        example :
+            templateIds:
+                [
+                    {"templateid": "x", name": "Docker by Zabbix agent 2"  },
+                    {"templateid": "yy","name": "Zabbix server health" }
+                ]
+
+        :return:
+        """
         for host in self.__host_data:
 
             data =json.dumps({
@@ -149,6 +210,19 @@ class ZabbixHost:
 
 
     def get_items(self):
+        """
+        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
+        gets all items from templates that host's belong to and adds it into template information under the key of itemlist
+        output consist of itemid,name,name_resolved,parameters,key_,delay,units,formula,type,value_type
+        example :
+            templateIds:
+                [
+                    {"templateid": "x", name": "Docker by Zabbix agent 2" ,itemlist: [{},{}] },
+                    {"templateid": "yy","name": "Zabbix server health",itemlist: [{},{}] }
+                ]
+
+        :return:
+        """
         for host in self.__host_data:
             for templateId in host["templateIds"]:
                 data =json.dumps({
@@ -177,10 +251,6 @@ class ZabbixHost:
                 templateId["itemlist"] = content
 
 
-
-    @property
-    def host_data(self):
-        return self.__host_data
 
 
 
