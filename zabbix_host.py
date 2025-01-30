@@ -212,8 +212,11 @@ class ZabbixHost:
     def get_items(self):
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
+
         gets all items from templates that host's belong to and adds it into template information under the key of itemlist
+
         output consist of itemid,name,name_resolved,parameters,key_,delay,units,formula,type,value_type
+
         example :
             templateIds:
                 [
