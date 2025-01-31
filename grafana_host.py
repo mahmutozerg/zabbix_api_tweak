@@ -27,9 +27,8 @@ class GrafanaHost:
 
         self.__test_connection()
         self.__check_if_zabbix_datasource_exists()
-
         self.__zabbix_data = utils.read_from_zabbix_json_data()
-        self.parse_item_keys()
+        self.__create_dashboard()
 
     def __test_connection(self):
 
@@ -48,60 +47,51 @@ class GrafanaHost:
         else:
             raise  Exception(f"Zabbix data source doesnt exists\n No datasource name \"{self.__zabbix_data_source_info['name']}\" or datasource type \"{self.__zabbix_data_source_info['type']}\" found")
 
-    def parse_item_keys(self):
+
+
+    def __create_dashboard(self):
+        for host in self.__zabbix_data:
+            for template in host["templateIds"]:
+
+                item_key_dict =self.__parse_item_keys(template["itemlist"])
+                print(item_key_dict)
+
+            break
+
+
+
+
+    def __parse_item_keys(self,items):
 
         """
         https://www.zabbix.com/documentation/current/en/manual/config/items/item/key#key-parameters
 
         :return:
         """
-
-        temp_list = list()
         final_dict = dict()
-        for host in self.__zabbix_data:
-            for template in host["templateIds"]:
-                for item in template["itemlist"]:
-                    key = item["key_"]
-                    b_bracket_index = utils.safe_list_index(key,"[")
-                    e_bracket_index = utils.safe_list_index(key,"]")
-
-                    bracket_splitted_values = ""
-                    if e_bracket_index != -1 and b_bracket_index != -1:
-
-                        dot_splitted_values= key[:b_bracket_index].split(".")
-                        bracket_splitted_values = key[b_bracket_index:e_bracket_index+1]
-
-                    else:
-                        dot_splitted_values= key.split(".")
 
 
-                    dot_splitted_values.append(bracket_splitted_values)
+        for item in items:
+            key = item["key_"]
 
-                    temp_list.append(dot_splitted_values)
+            b_bracket_index = utils.safe_list_index(key,"[")
+            e_bracket_index = utils.safe_list_index(key,"]")
 
-
-            """
-                    FUNCTION OF SHAME --> CREATED BY GPT
-                    it converts list to a dict with removing the duplicate values
-            """
-            for entry in temp_list:
-                # Start with the outermost key ('docker' in this case)
-                current_dict = final_dict
-
-                # Iterate over the elements in each sublist, except the last one
-                for part in entry[:-1]:
-                    # If the current part doesn't exist in the dictionary, create a new sub-dictionary
-                    if part not in current_dict:
-                        current_dict[part] = {}
-
-                    # Move the reference to the next level in the dictionary
-                    current_dict = current_dict[part]
-
-                # The last element in the list is used as a key, with the corresponding value
-                if entry[-1] != "":
-                    current_dict[entry[-1]] = entry[-1]  # Store the value in the last element itself
+            b_dot_index = utils.safe_list_index(key,".")
 
 
-            break
+            if (b_dot_index < b_bracket_index) or (b_dot_index !=-1 and b_bracket_index == -1):
+                if key[:b_dot_index] not in final_dict.keys():
+                    final_dict.setdefault(key[:b_dot_index],[])
 
-        utils.write_to_file(final_dict,"test2.json")
+                else:
+                    final_dict[key[:b_dot_index]].append(key[b_dot_index+1:])
+            else:
+                if key[:b_bracket_index] not in final_dict.keys():
+                    final_dict.setdefault(key[:b_bracket_index+1],[])
+
+                else:
+                    final_dict[key[:b_bracket_index]].append(key[b_dot_index+1:])
+
+
+        return final_dict

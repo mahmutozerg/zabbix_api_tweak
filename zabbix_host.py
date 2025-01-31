@@ -232,10 +232,10 @@ class ZabbixHost:
                     "jsonrpc": self.rpc_info["jsonrpc"],
                     "method": "item.get",
                     "params": {
-                        "output": ["itemid","name","name_resolved","parameters","key_","delay","units","formula","type","value_type"],
+                        "output": ["itemid","name","name_resolved","lastvalue","key_","delay","units","formula","type","value_type"],
                         "templateid": templateId,
                         "hostids": host["hostid"],
-                        "sortfield": "name"
+                        "sortfield": "key_"
                     },
                     "id": self.rpc_info["id"]
                 })
