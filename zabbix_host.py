@@ -2,7 +2,7 @@ import json
 import requests
 import utils
 
-
+import time
 class ZabbixHost:
     def __init__(self,ip,port,auth):
         """
@@ -68,10 +68,12 @@ class ZabbixHost:
         utils.write_to_file(self.__host_data)
 
     def __test_connection(self):
+
         """
         Checks for json rpc information
         :return:
         """
+
         status_codes = list()
         for path in self.__json_rpc_paths:
             res = requests.post(self.__host_addr+path,headers=self.default_unauthorized_request_header,data=json.dumps(self.default_request_body))
@@ -84,7 +86,7 @@ class ZabbixHost:
 
                 self.rpc_info = res
                 self.valid_json_rpc_path = path
-                
+
                 return
 
         else:
@@ -106,6 +108,9 @@ class ZabbixHost:
                 }
         :return:
         """
+
+
+
         data =json.dumps({
             "jsonrpc": self.rpc_info["jsonrpc"],
             "method": "host.get",
@@ -120,7 +125,11 @@ class ZabbixHost:
             },
             "id": self.rpc_info["id"]
         })
+
+
         res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
+
+
 
         utils.raise_if_zabbix_response_error(res,"host.get")
 
@@ -164,7 +173,7 @@ class ZabbixHost:
             })
             res = requests.post(self.__host_addr + self.valid_json_rpc_path, headers=self.default_authorized_request_header,data=data)
 
-            utils.raise_if_zabbix_response_error(res, "template.get")
+            utils.raise_if_zabbix_response_error(res, "hostgroup.get")
             host["groups"] = res.json()["result"]
 
 
@@ -214,6 +223,7 @@ class ZabbixHost:
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
 
         gets all items from templates that host's belong to and adds it into template information under the key of itemlist
+        skips items that has no lastvalue
 
         output consist of itemid,name,name_resolved,parameters,key_,delay,units,formula,type,value_type
 
@@ -246,10 +256,14 @@ class ZabbixHost:
 
                 content = res.json()
 
-                content = content["result"]
+                ##removing the empty last values
+                content = [i for i in content["result"] if i["lastvalue"] is not None and i["lastvalue"].strip() != ""]
+
                 for i in content:
                     i["value_type"] = self.zabbix_value_types[int(i["value_type"])]
-                    i["type"] =  self.zabbix_item_types[int(i["type"])]
+                    i["type"] = self.zabbix_item_types[int(i["type"])]
+
+
 
                 templateId["itemlist"] = content
 
