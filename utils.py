@@ -25,6 +25,19 @@ def write_to_file(data,file_name="data.json"):
     with open(file_name, "w") as file:
         json.dump(data, file,indent=4)
 
+def write_to_file_custom_string(data,file_name="./tempdatas/data.txt"):
+    with open(file_name, "w") as file:
+        for i in data:
+            file.write(i)
+            file.write("\n")
+
+def read_from_file_custom_string(file_name="./tempdatas/data.txt"):
+    data = []
+    with open(file_name, "r",encoding="utf-8") as file:
+        for line in file:
+            data.append(line.strip())
+
+    return  data
 
 def read_from_zabbix_json_data(file_name="data.json"):
     with open(file_name, "r", encoding="utf-8") as file:

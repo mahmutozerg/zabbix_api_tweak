@@ -1,4 +1,6 @@
 import json
+from pprint import pp
+
 import requests
 import utils
 
@@ -60,12 +62,8 @@ class ZabbixHost:
 
         self.__test_connection()
 
-        self.get_hosts()
-        self.get_templates()
-        self.get_groups()
-        self.get_items()
+        self.start()
 
-        utils.write_to_file(self.__host_data)
 
     def __test_connection(self):
 
@@ -130,16 +128,12 @@ class ZabbixHost:
         res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
 
 
-
         utils.raise_if_zabbix_response_error(res,"host.get")
 
-        content = res.json()
-        content = content["result"]
-
-        self.__host_data.extend(content)
+        return res.json()["result"]
 
 
-    def get_groups(self):
+    def get_groups(self,host_id):
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/hostgroup/get?hl=hostgroup.get
 
@@ -161,24 +155,23 @@ class ZabbixHost:
             }
         :return:
         """
-        for host in self.__host_data:
-            data =json.dumps({
-                "jsonrpc": self.rpc_info["jsonrpc"],
-                "method": "hostgroup.get",
-                "params": {
-                    "output": ["name"],
-                    "hostids": host["hostid"],
-                },
-                "id": self.rpc_info["id"]
-            })
-            res = requests.post(self.__host_addr + self.valid_json_rpc_path, headers=self.default_authorized_request_header,data=data)
+        data =json.dumps({
+            "jsonrpc": self.rpc_info["jsonrpc"],
+            "method": "hostgroup.get",
+            "params": {
+                "output": ["name"],
+                "hostids": host_id,
+            },
+            "id": self.rpc_info["id"]
+        })
+        res = requests.post(self.__host_addr + self.valid_json_rpc_path, headers=self.default_authorized_request_header,data=data)
 
-            utils.raise_if_zabbix_response_error(res, "hostgroup.get")
-            host["groups"] = res.json()["result"]
-
+        utils.raise_if_zabbix_response_error(res, "hostgroup.get")
+        return  ("|".join(group["name"] for group in res.json()["result"]))
 
 
-    def get_templates(self):
+
+    def get_templates(self,host):
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/template/get?hl=template.get
 
@@ -193,32 +186,29 @@ class ZabbixHost:
 
         :return:
         """
-        for host in self.__host_data:
 
-            data =json.dumps({
-                "jsonrpc": self.rpc_info["jsonrpc"],
-                "method": "template.get",
-                "params": {
-                    "output": ["templateid", "name"],
-                    "hostids": host["hostid"],
-                },
-                "id": self.rpc_info["id"]
-            })
+        data =json.dumps({
+            "jsonrpc": self.rpc_info["jsonrpc"],
+            "method": "template.get",
+            "params": {
+                "output": ["templateid", "name"],
+                "hostids": host["hostid"],
+            },
+            "id": self.rpc_info["id"]
+        })
 
-            res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
+        res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
 
-            utils.raise_if_zabbix_response_error(res, "template.get")
-
-            host["templateIds"] = list(dict())
-
-            content = res.json()
-            content = content["result"]
-
-            for i in content:
-                host["templateIds"].append(i)
+        utils.raise_if_zabbix_response_error(res, "template.get")
 
 
-    def get_items(self):
+        return  res.json()["result"]
+
+
+
+
+
+    def get_items(self,host_id,template_id):
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
 
@@ -236,38 +226,49 @@ class ZabbixHost:
 
         :return:
         """
-        for host in self.__host_data:
-            for templateId in host["templateIds"]:
-                data =json.dumps({
-                    "jsonrpc": self.rpc_info["jsonrpc"],
-                    "method": "item.get",
-                    "params": {
-                        "output": ["itemid","name","name_resolved","lastvalue","key_","delay","units","formula","type","value_type"],
-                        "templateid": templateId,
-                        "hostids": host["hostid"],
-                        "sortfield": "key_"
-                    },
-                    "id": self.rpc_info["id"]
-                })
 
-                res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
+        data =json.dumps({
+            "jsonrpc": self.rpc_info["jsonrpc"],
+            "method": "item.get",
+            "params": {
+                "output": ["itemid","name","name_resolved","lastvalue","key_","units","formula","type","value_type"],
+                "templateid": template_id,
+                "hostids": host_id,
+                "sortfield": "key_"
+            },
+            "id": self.rpc_info["id"]
+        })
 
-                utils.raise_if_zabbix_response_error(res,"item.get")
+        res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
 
-                content = res.json()
+        utils.raise_if_zabbix_response_error(res,"item.get")
 
-                ##removing the empty last values
-                content = [i for i in content["result"] if i["lastvalue"] is not None and i["lastvalue"].strip() != ""]
+        content = res.json()
 
-                for i in content:
-                    i["value_type"] = self.zabbix_value_types[int(i["value_type"])]
-                    i["type"] = self.zabbix_item_types[int(i["type"])]
+        filtered_content = []
+        for i in content["result"]:
+            if i["lastvalue"] and i["lastvalue"].strip():
+                i["value_type"] = self.zabbix_value_types[int(i["value_type"])]
+                i["type"] = self.zabbix_item_types[int(i["type"])]
+                filtered_content.append(i)
 
-
-
-                templateId["itemlist"] = content
+        return filtered_content
 
 
 
+    def start(self):
+        all_values = []
+        for host in self.get_hosts():
+            host_groups = self.get_groups(host["hostid"])
+            for template in self.get_templates(host):
+                info = f"{host_groups}.,.{template['name']}.,.{host['host']}.,."
+                for item in self.get_items(host["hostid"],template["templateid"]):
+                    info += f".,.{item['key_']}"
+
+
+                all_values.append(info)
+
+
+        utils.write_to_file_custom_string(all_values)
 
 

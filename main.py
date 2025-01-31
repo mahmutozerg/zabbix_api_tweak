@@ -21,7 +21,8 @@ def main():
     args = parser.parse_args()
 
 
-    #zabbix_host.ZabbixHost(args.zip,args.zport,args.zauth)
+    zabbix_host.ZabbixHost(args.zip,args.zport,args.zauth)
+
     grafana_host.GrafanaHost(args.gip,args.gport,args.gauth)
 
 
