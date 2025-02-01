@@ -4,7 +4,10 @@ from pprint import pp
 import requests
 import utils
 
-import time
+
+from utils import write_to_file
+
+
 class ZabbixHost:
     def __init__(self,ip,port,auth):
         """
@@ -90,47 +93,46 @@ class ZabbixHost:
         else:
             assert False,f"{list(zip(self.__json_rpc_paths,status_codes))} Failed to find rpc path, path/statuscode"
 
-    def get_hosts(self):
-        """
-        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/host/get?hl=host.get
 
-        Gets all hosts, includes ip of them
-        output consist of host,hostid and interface ip
-         example:
-
-            "hostid": "10655",
-            "host": "WordpressKali",
-            "interfaces": [
-                {
-                    "ip": "192.168.0.20"
-                }
-        :return:
-        """
-
+    def __do_request(self ,method,params=None):
 
 
         data =json.dumps({
             "jsonrpc": self.rpc_info["jsonrpc"],
-            "method": "host.get",
-            "params": {
+            "method": method,
+            "params":  params or {},
+            "id": self.rpc_info["id"]
+        })
+
+        res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
+
+        utils.raise_if_zabbix_response_error(res,method)
+        return res.json()["result"]
+
+    def get_hosts(self):
+
+         return self.__do_request(
+             method="host.get",
+             params={
                 "output": [
                     "hostid",
                     "host",
                 ],
                 "selectInterfaces": [
                     "ip"
-                ]
-            },
-            "id": self.rpc_info["id"]
-        })
+                ],
+                 "selectParentTemplates": [
+                     "templateid",
+                     "name"
+                 ],
 
 
-        res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
+            })
 
 
-        utils.raise_if_zabbix_response_error(res,"host.get")
 
-        return res.json()["result"]
+
+
 
 
     def get_groups(self,host_id):
@@ -155,120 +157,60 @@ class ZabbixHost:
             }
         :return:
         """
-        data =json.dumps({
-            "jsonrpc": self.rpc_info["jsonrpc"],
-            "method": "hostgroup.get",
-            "params": {
+        res =self.__do_request(
+            method="hostgroup.get"
+            ,params={
                 "output": ["name"],
                 "hostids": host_id,
-            },
-            "id": self.rpc_info["id"]
-        })
-        res = requests.post(self.__host_addr + self.valid_json_rpc_path, headers=self.default_authorized_request_header,data=data)
+            })
 
-        utils.raise_if_zabbix_response_error(res, "hostgroup.get")
-        return  ("|".join(group["name"] for group in res.json()["result"]))
+        return "|".join(group["name"] for group in res)
 
 
-
-    def get_templates(self,host):
-        """
-        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/template/get?hl=template.get
-
-        gets all templates that host's belong to
-        output consist of only templateid and name parameters
-        example :
-            templateIds:
-                [
-                    {"templateid": "x", name": "Docker by Zabbix agent 2"  },
-                    {"templateid": "yy","name": "Zabbix server health" }
-                ]
-
-        :return:
-        """
-
-        data =json.dumps({
-            "jsonrpc": self.rpc_info["jsonrpc"],
-            "method": "template.get",
-            "params": {
-                "output": ["templateid", "name"],
-                "hostids": host["hostid"],
-            },
-            "id": self.rpc_info["id"]
-        })
-
-        res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
-
-        utils.raise_if_zabbix_response_error(res, "template.get")
-
-
-        return  res.json()["result"]
-
-
-
-
-
-    def get_items(self,host_id,template_id):
+    def get_items(self,template_ids):
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
 
-        gets all items from templates that host's belong to and adds it into template information under the key of itemlist
-        skips items that has no lastvalue
-
-        output consist of itemid,name,name_resolved,parameters,key_,delay,units,formula,type,value_type
-
-        example :
-            templateIds:
-                [
-                    {"templateid": "x", name": "Docker by Zabbix agent 2" ,itemlist: [{},{}] },
-                    {"templateid": "yy","name": "Zabbix server health",itemlist: [{},{}] }
-                ]
-
-        :return:
         """
-
-        data =json.dumps({
-            "jsonrpc": self.rpc_info["jsonrpc"],
-            "method": "item.get",
-            "params": {
+        content =self.__do_request(
+            method="item.get",
+            params={
                 "output": ["itemid","name","name_resolved","lastvalue","key_","units","formula","type","value_type"],
-                "templateid": template_id,
-                "hostids": host_id,
-                "sortfield": "key_"
-            },
-            "id": self.rpc_info["id"]
-        })
+                "templateids":template_ids,
+                "sortfield": "key_",
+                "selectTags": "extend",
+            }
+        )
 
-        res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
-
-        utils.raise_if_zabbix_response_error(res,"item.get")
-
-        content = res.json()
-
-        filtered_content = []
-        for i in content["result"]:
-            if i["lastvalue"] and i["lastvalue"].strip():
+        for i in content:
                 i["value_type"] = self.zabbix_value_types[int(i["value_type"])]
                 i["type"] = self.zabbix_item_types[int(i["type"])]
-                filtered_content.append(i)
 
-        return filtered_content
 
+        return  content
 
 
     def start(self):
-        all_values = []
-        for host in self.get_hosts():
+
+        hosts = self.get_hosts()
+
+        for host in hosts:
             host_groups = self.get_groups(host["hostid"])
-            for template in self.get_templates(host):
-                info = f"{host_groups}.,.{template['name']}.,.{host['host']}.,."
-                for item in self.get_items(host["hostid"],template["templateid"]):
-                    info += f".,.{item['key_']}"
 
 
-                all_values.append(info)
+            all_items = dict()
+            for template in host["parentTemplates"]:
+                items = self.get_items(template["templateid"])
+                all_items.setdefault(template["name"],[])
+                all_items[template["name"]].append(items)
 
 
-        utils.write_to_file_custom_string(all_values)
+
+            data = {"host":host,"host_groups":host_groups,"items":all_items}
+            write_to_file(data,"./hostdatas/"+host["host"]+".json")
+
+
+
+
 
 

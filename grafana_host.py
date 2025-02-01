@@ -1,3 +1,5 @@
+import json
+import os
 from pprint import pp, pprint
 import requests
 import utils
@@ -32,8 +34,8 @@ class GrafanaHost:
         self.json_templates = GrafanaDicts()
         self.__set_datasource_to_json_templates()
 
-        self.__zabbix_data = utils.read_from_file_custom_string()
-
+        self.__zabbix_host_data = list(dict())
+        self.__get_zabbix_hosts()
         self.__create_dashboard()
 
 
@@ -62,14 +64,22 @@ class GrafanaHost:
             raise  Exception(f"Zabbix data source doesnt exists\n No datasource name \"{self.__zabbix_data_source_info['name']}\" or datasource type \"{self.__zabbix_data_source_info['type']}\" found")
 
 
+    def __get_zabbix_hosts(self):
+        for host in os.listdir("./hostdatas"):
+            if host.endswith(".json"):
+                 self.__zabbix_host_data.append(utils.read_from_zabbix_json_data("./hostdatas/"+host))
 
     def __create_dashboard(self):
-        """
-            creates dashboard with unserialized tree
-            see comments
-        :return:
 
-        """
+        for host in [self.__zabbix_host_data[-2]]:
+            for item_group in host["items"]:
+                template_id,template_name = item_group["template"].split("**")
+                items = item_group["items"]
+                for item in items:
+                    print(f"Grup {host['host_groups']}\t{host['host']['host']}/{template_name}/{item['key_'].split('.')[:2]} TAGS {item['tags']}, Name {item['key_']}")
+
+
+            break
         return
 
 

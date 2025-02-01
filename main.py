@@ -23,7 +23,7 @@ def main():
 
     zabbix_host.ZabbixHost(args.zip,args.zport,args.zauth)
 
-    grafana_host.GrafanaHost(args.gip,args.gport,args.gauth)
+    #grafana_host.GrafanaHost(args.gip,args.gport,args.gauth)
 
 
 
