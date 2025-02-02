@@ -33,7 +33,6 @@ class ZabbixHost:
         self.default_unauthorized_request_header= {'Content-Type': 'application/json-rpc'}
         self.default_request_body= {"jsonrpc":"2.0","method":"apiinfo.version","params":{},"id":1}
 
-
         self.zabbix_item_types = {
             0: "Zabbix agent",
             2: "Zabbix trapper",
@@ -178,8 +177,6 @@ class ZabbixHost:
         so we are combining them, The reason why you can't batch request the tids request is, zabbix api always returns templateid = '0' since you just asked for them
         zabbix assumes that you know that which item comes from which template
 
-        finally we remove templateids that are 0. I am not 100% sure but those values are almost always "full"
-        by crowded i mean that they get values like pused,pfree,xused,xfree... and share their values to the related items ?
 
         """
 
@@ -190,12 +187,25 @@ class ZabbixHost:
                 "hostids":hostids,
                 "sortfield": "itemid",
                 "selectTags": "extend",
-                "selectTemplates": ["templateid", "name"]
-
 
             }
         )
+        """
+            removing the raw data type since it is not processed
+        """
+        filtered_items = []
+        for item in items_with_missing_tids:
+            keep_item = True
 
+            for item_tag in item["tags"]:
+                if item_tag["value"] == "raw":
+                    keep_item = False
+                    break
+
+            if keep_item:
+                filtered_items.append(item)
+
+        items_with_missing_tids = filtered_items
         for tid in tids:
 
             items_with_missing_higs =self.__do_request(
@@ -205,8 +215,6 @@ class ZabbixHost:
                     "templateids":tid,
                     "sortfield": "itemid",
                     "selectTags": "extend",
-                    "selectTemplates": ["templateid", "name"]
-
 
                 }
             )
@@ -219,7 +227,8 @@ class ZabbixHost:
 
 
 
-        return  list(i for i in items_with_missing_tids if i["templateid"]!="0")
+
+        return  items_with_missing_tids
 
 
     def start(self):
