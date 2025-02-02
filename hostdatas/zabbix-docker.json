@@ -1,0 +1,823 @@
+{
+    "host": {
+        "hostid": "10671",
+        "host": "zabbix-docker",
+        "parentTemplates": [
+            {
+                "templateid": "10318",
+                "name": "Docker by Zabbix agent 2"
+            }
+        ]
+    },
+    "host_groups": "Applications",
+    "items": [
+        {
+            "itemid": "50261",
+            "name": "Get containers",
+            "key_": "docker.containers",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "10318",
+            "name_resolved": "Get containers",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "50262",
+            "name": "Get data_usage",
+            "key_": "docker.data_usage",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "10318",
+            "name_resolved": "Get data_usage",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "50263",
+            "name": "Get images",
+            "key_": "docker.images",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "10318",
+            "name_resolved": "Get images",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "50264",
+            "name": "Get info",
+            "key_": "docker.info",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "10318",
+            "name_resolved": "Get info",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "50265",
+            "name": "Ping",
+            "key_": "docker.ping",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10318",
+            "name_resolved": "Ping",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                },
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
+            "itemid": "50266",
+            "name": "Architecture",
+            "key_": "docker.architecture",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Architecture",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "50267",
+            "name": "Cgroup driver",
+            "key_": "docker.cgroup_driver",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Cgroup driver",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "50268",
+            "name": "Containers paused",
+            "key_": "docker.containers.paused",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Containers paused",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "containers"
+                }
+            ]
+        },
+        {
+            "itemid": "50269",
+            "name": "Containers running",
+            "key_": "docker.containers.running",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Containers running",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "containers"
+                }
+            ]
+        },
+        {
+            "itemid": "50270",
+            "name": "Containers stopped",
+            "key_": "docker.containers.stopped",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Containers stopped",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "containers"
+                }
+            ]
+        },
+        {
+            "itemid": "50271",
+            "name": "Containers total",
+            "key_": "docker.containers.total",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Containers total",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "containers"
+                }
+            ]
+        },
+        {
+            "itemid": "50272",
+            "name": "CPU CFS Period enabled",
+            "key_": "docker.cpu_cfs_period.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "CPU CFS Period enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "50273",
+            "name": "CPU CFS Quota enabled",
+            "key_": "docker.cpu_cfs_quota.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "CPU CFS Quota enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "50274",
+            "name": "CPU Set enabled",
+            "key_": "docker.cpu_set.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "CPU Set enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "50275",
+            "name": "CPU Shares enabled",
+            "key_": "docker.cpu_shares.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "CPU Shares enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "50276",
+            "name": "Debug enabled",
+            "key_": "docker.debug.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Debug enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "50277",
+            "name": "Default runtime",
+            "key_": "docker.default_runtime",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Default runtime",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "50278",
+            "name": "Storage driver",
+            "key_": "docker.driver",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Storage driver",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "50279",
+            "name": "Goroutines",
+            "key_": "docker.goroutines",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Goroutines",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "50280",
+            "name": "Images total",
+            "key_": "docker.images.total",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Images total",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "images"
+                }
+            ]
+        },
+        {
+            "itemid": "50281",
+            "name": "IPv4 Forwarding enabled",
+            "key_": "docker.ipv4_forwarding.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "IPv4 Forwarding enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                }
+            ]
+        },
+        {
+            "itemid": "50282",
+            "name": "Kernel memory enabled",
+            "key_": "docker.kernel_mem.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Kernel memory enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "50283",
+            "name": "Kernel memory TCP enabled",
+            "key_": "docker.kernel_mem_tcp.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Kernel memory TCP enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "50284",
+            "name": "Kernel version",
+            "key_": "docker.kernel_version",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Kernel version",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "50285",
+            "name": "Live restore enabled",
+            "key_": "docker.live_restore.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Live restore enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "50286",
+            "name": "Logging driver",
+            "key_": "docker.logging_driver",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Logging driver",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "50287",
+            "name": "Memory limit enabled",
+            "key_": "docker.mem_limit.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Memory limit enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "50288",
+            "name": "Memory total",
+            "key_": "docker.mem.total",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Memory total",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "50289",
+            "name": "Name",
+            "key_": "docker.name",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Name",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "50290",
+            "name": "NCPU",
+            "key_": "docker.ncpu",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "NCPU",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "50291",
+            "name": "NEvents listener",
+            "key_": "docker.nevents_listener",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "NEvents listener",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "50292",
+            "name": "Nfd",
+            "key_": "docker.nfd",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Nfd",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "50293",
+            "name": "OomKill disabled",
+            "key_": "docker.oomkill.disabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "OomKill disabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "50294",
+            "name": "Operating system",
+            "key_": "docker.operating_system",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Operating system",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "50295",
+            "name": "OS type",
+            "key_": "docker.os_type",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "OS type",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "50296",
+            "name": "Pids limit enabled",
+            "key_": "docker.pids_limit.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Pids limit enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "50297",
+            "name": "Docker root dir",
+            "key_": "docker.root_dir",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Docker root dir",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "50298",
+            "name": "Server version",
+            "key_": "docker.server_version",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Server version",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "50299",
+            "name": "Swap limit enabled",
+            "key_": "docker.swap_limit.enabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Swap limit enabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "50300",
+            "name": "Containers size",
+            "key_": "docker.containers_size",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Containers size",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "containers"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "50301",
+            "name": "Images size",
+            "key_": "docker.images_size",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Images size",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "images"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "50302",
+            "name": "Layers size",
+            "key_": "docker.layers_size",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Layers size",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "50303",
+            "name": "Volumes size",
+            "key_": "docker.volumes_size",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Volumes size",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "50304",
+            "name": "Images available",
+            "key_": "docker.images.top_level",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "10318",
+            "name_resolved": "Images available",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "images"
+                }
+            ]
+        }
+    ]
+}

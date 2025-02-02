@@ -1,0 +1,805 @@
+{
+    "host": {
+        "hostid": "10655",
+        "host": "WordpressKali",
+        "parentTemplates": [
+            {
+                "templateid": "10001",
+                "name": "Linux by Zabbix agent"
+            },
+            {
+                "templateid": "10658",
+                "name": "Template Wordpress"
+            }
+        ]
+    },
+    "host_groups": "WordpressHosts",
+    "items": [
+        {
+            "itemid": "49057",
+            "name": "Host name of Zabbix agent running",
+            "key_": "agent.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Host name of Zabbix agent running",
+            "lastvalue": "WordpressKali",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49058",
+            "name": "Zabbix agent ping",
+            "key_": "agent.ping",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Zabbix agent ping",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49059",
+            "name": "Version of Zabbix agent running",
+            "key_": "agent.version",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Version of Zabbix agent running",
+            "lastvalue": "7.0.8",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "49060",
+            "name": "Maximum number of open file descriptors",
+            "key_": "kernel.maxfiles",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Maximum number of open file descriptors",
+            "lastvalue": "9223372036854775807",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49061",
+            "name": "Maximum number of processes",
+            "key_": "kernel.maxproc",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Maximum number of processes",
+            "lastvalue": "4194304",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49062",
+            "name": "Number of processes",
+            "key_": "proc.num",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Number of processes",
+            "lastvalue": "159",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49063",
+            "name": "Number of running processes",
+            "key_": "proc.num[,,run]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Number of running processes",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49064",
+            "name": "System boot time",
+            "key_": "system.boottime",
+            "units": "unixtime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "System boot time",
+            "lastvalue": "1738523261",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49065",
+            "name": "Interrupts per second",
+            "key_": "system.cpu.intr",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Interrupts per second",
+            "lastvalue": "460.18630523951117",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49066",
+            "name": "Load average (1m avg)",
+            "key_": "system.cpu.load[all,avg1]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Load average (1m avg)",
+            "lastvalue": "0.216309",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49067",
+            "name": "Load average (15m avg)",
+            "key_": "system.cpu.load[all,avg15]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Load average (15m avg)",
+            "lastvalue": "0.081055",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49068",
+            "name": "Load average (5m avg)",
+            "key_": "system.cpu.load[all,avg5]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Load average (5m avg)",
+            "lastvalue": "0.191895",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49069",
+            "name": "Number of CPUs",
+            "key_": "system.cpu.num",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Number of CPUs",
+            "lastvalue": "5",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49070",
+            "name": "Context switches per second",
+            "key_": "system.cpu.switches",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Context switches per second",
+            "lastvalue": "107.3628444111373",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49071",
+            "name": "CPU guest time",
+            "key_": "system.cpu.util[,guest]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU guest time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49072",
+            "name": "CPU guest nice time",
+            "key_": "system.cpu.util[,guest_nice]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU guest nice time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49073",
+            "name": "CPU idle time",
+            "key_": "system.cpu.util[,idle]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU idle time",
+            "lastvalue": "99.7576",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49074",
+            "name": "CPU interrupt time",
+            "key_": "system.cpu.util[,interrupt]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU interrupt time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49075",
+            "name": "CPU iowait time",
+            "key_": "system.cpu.util[,iowait]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU iowait time",
+            "lastvalue": "0.016835",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49076",
+            "name": "CPU nice time",
+            "key_": "system.cpu.util[,nice]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU nice time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49077",
+            "name": "CPU softirq time",
+            "key_": "system.cpu.util[,softirq]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU softirq time",
+            "lastvalue": "0.026933",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49078",
+            "name": "CPU steal time",
+            "key_": "system.cpu.util[,steal]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU steal time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49079",
+            "name": "CPU system time",
+            "key_": "system.cpu.util[,system]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU system time",
+            "lastvalue": "0.148143",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49080",
+            "name": "CPU user time",
+            "key_": "system.cpu.util[,user]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "CPU user time",
+            "lastvalue": "0.043773",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49081",
+            "name": "System name",
+            "key_": "system.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "System name",
+            "lastvalue": "kali",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49082",
+            "name": "System local time",
+            "key_": "system.localtime",
+            "units": "unixtime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "System local time",
+            "lastvalue": "1738523340",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49083",
+            "name": "Free swap space",
+            "key_": "system.swap.size[,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Free swap space",
+            "lastvalue": "499118080",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "49084",
+            "name": "Free swap space in %",
+            "key_": "system.swap.size[,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Free swap space in %",
+            "lastvalue": "100",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "49085",
+            "name": "Total swap space",
+            "key_": "system.swap.size[,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Total swap space",
+            "lastvalue": "499118080",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "49086",
+            "name": "Operating system architecture",
+            "key_": "system.sw.arch",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Operating system architecture",
+            "lastvalue": "x86_64",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "49087",
+            "name": "Operating system",
+            "key_": "system.sw.os",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Operating system",
+            "lastvalue": "Linux version 6.11.2-amd64 (devel@kali.org) (x86_64-linux-gnu-gcc-14 (Debian 14.2.0-6) 14.2.0, GNU ld (GNU Binutils for Debian) 2.43.1) #1 SMP PREEMPT_DYNAMIC Kali 6.11.2-1kali1 (2024-10-15)",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "49088",
+            "name": "Number of installed packages",
+            "key_": "system.sw.packages.get",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Number of installed packages",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "49089",
+            "name": "System description",
+            "key_": "system.uname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "System description",
+            "lastvalue": "Linux kali 6.11.2-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.11.2-1kali1 (2024-10-15) x86_64",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49090",
+            "name": "System uptime",
+            "key_": "system.uptime",
+            "units": "uptime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "System uptime",
+            "lastvalue": "117",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49091",
+            "name": "Number of logged in users",
+            "key_": "system.users.num",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Number of logged in users",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "environment"
+                }
+            ]
+        },
+        {
+            "itemid": "49092",
+            "name": "Checksum of /etc/passwd",
+            "key_": "vfs.file.cksum[/etc/passwd,sha256]",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Checksum of /etc/passwd",
+            "lastvalue": "0a6cf07bbec99bfb0d01d99ef84c9debbf42ae40e6f0a927f4afdc2cdea703b3",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "security"
+                }
+            ]
+        },
+        {
+            "itemid": "49093",
+            "name": "Get filesystems",
+            "key_": "vfs.fs.get",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Get filesystems",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "49094",
+            "name": "Available memory",
+            "key_": "vm.memory.size[available]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Available memory",
+            "lastvalue": "25811451904",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "49095",
+            "name": "Available memory in %",
+            "key_": "vm.memory.size[pavailable]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Available memory in %",
+            "lastvalue": "96.76204",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "49096",
+            "name": "Total memory",
+            "key_": "vm.memory.size[total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10001",
+            "name_resolved": "Total memory",
+            "lastvalue": "26675183616",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "49097",
+            "name": "Zabbix agent availability",
+            "key_": "zabbix[host,agent,available]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "10001",
+            "name_resolved": "Zabbix agent availability",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "49098",
+            "name": "CPU utilization",
+            "key_": "system.cpu.util",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "10001",
+            "name_resolved": "CPU utilization",
+            "lastvalue": "0.2424000000000035",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "49099",
+            "name": "Memory utilization",
+            "key_": "vm.memory.utilization",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "10001",
+            "name_resolved": "Memory utilization",
+            "lastvalue": "3.237960000000001",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,643 @@
+{
+    "host": {
+        "hostid": "10651",
+        "host": "MOG",
+        "parentTemplates": [
+            {
+                "templateid": "10081",
+                "name": "Windows by Zabbix agent"
+            }
+        ]
+    },
+    "host_groups": "Windows",
+    "items": [
+        {
+            "itemid": "48400",
+            "name": "Host name of Zabbix agent running",
+            "key_": "agent.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Host name of Zabbix agent running",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48401",
+            "name": "Zabbix agent ping",
+            "key_": "agent.ping",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Zabbix agent ping",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48402",
+            "name": "Version of Zabbix agent running",
+            "key_": "agent.version",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Version of Zabbix agent running",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48403",
+            "name": "Cache bytes",
+            "key_": "perf_counter_en[\"\\Memory\\Cache Bytes\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Cache bytes",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48404",
+            "name": "Free system page table entries",
+            "key_": "perf_counter_en[\"\\Memory\\Free System Page Table Entries\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Free system page table entries",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48405",
+            "name": "Memory page faults per second",
+            "key_": "perf_counter_en[\"\\Memory\\Page Faults/sec\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Memory page faults per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48406",
+            "name": "Memory pages per second",
+            "key_": "perf_counter_en[\"\\Memory\\Pages/sec\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Memory pages per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48407",
+            "name": "Memory pool non-paged",
+            "key_": "perf_counter_en[\"\\Memory\\Pool Nonpaged Bytes\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Memory pool non-paged",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48408",
+            "name": "Used swap space in %",
+            "key_": "perf_counter_en[\"\\Paging file(_Total)\\% Usage\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Used swap space in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48409",
+            "name": "CPU DPC time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% DPC Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU DPC time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48410",
+            "name": "CPU interrupt time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% Interrupt Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU interrupt time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48411",
+            "name": "CPU privileged time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% Privileged Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU privileged time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48412",
+            "name": "CPU user time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% User Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU user time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48413",
+            "name": "Context switches per second",
+            "key_": "perf_counter_en[\"\\System\\Context Switches/sec\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Context switches per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48414",
+            "name": "CPU queue length",
+            "key_": "perf_counter_en[\"\\System\\Processor Queue Length\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU queue length",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48415",
+            "name": "Number of threads",
+            "key_": "perf_counter_en[\"\\System\\Threads\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Number of threads",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48416",
+            "name": "Number of processes",
+            "key_": "proc.num[]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Number of processes",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48417",
+            "name": "CPU utilization",
+            "key_": "system.cpu.util",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU utilization",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48418",
+            "name": "System name",
+            "key_": "system.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "System name",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48419",
+            "name": "System local time",
+            "key_": "system.localtime",
+            "units": "unixtime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "System local time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48420",
+            "name": "Free swap space",
+            "key_": "system.swap.free",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "15",
+            "templateid": "10081",
+            "name_resolved": "Free swap space",
+            "lastvalue": "4294967296",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48421",
+            "name": "Total swap space",
+            "key_": "system.swap.size[,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Total swap space",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48422",
+            "name": "Operating system architecture",
+            "key_": "system.sw.arch",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Operating system architecture",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48423",
+            "name": "Operating system",
+            "key_": "system.sw.os",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Operating system",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48424",
+            "name": "System description",
+            "key_": "system.uname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "System description",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48425",
+            "name": "Uptime",
+            "key_": "system.uptime",
+            "units": "uptime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Uptime",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48426",
+            "name": "Get filesystems",
+            "key_": "vfs.fs.get",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Get filesystems",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48427",
+            "name": "Total memory",
+            "key_": "vm.memory.size[total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Total memory",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48428",
+            "name": "Used memory",
+            "key_": "vm.memory.size[used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Used memory",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48429",
+            "name": "Memory utilization",
+            "key_": "vm.memory.util",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "15",
+            "templateid": "10081",
+            "name_resolved": "Memory utilization",
+            "lastvalue": "32.83977757935202",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48430",
+            "name": "Windows: Network interfaces WMI get",
+            "key_": "wmi.getall[root\\cimv2,\"select Name,Description,NetConnectionID,Speed,AdapterTypeId,NetConnectionStatus,GUID from win32_networkadapter where PhysicalAdapter=True and NetConnectionStatus>0\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Windows: Network interfaces WMI get",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48431",
+            "name": "Number of cores",
+            "key_": "wmi.get[root/cimv2,\"Select NumberOfLogicalProcessors from Win32_ComputerSystem\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Number of cores",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48432",
+            "name": "Zabbix agent availability",
+            "key_": "zabbix[host,agent,available]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "10081",
+            "name_resolved": "Zabbix agent availability",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48433",
+            "name": "Free swap space in %",
+            "key_": "system.swap.pfree",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "10081",
+            "name_resolved": "Free swap space in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        }
+    ]
+}

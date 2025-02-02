@@ -168,60 +168,65 @@ class ZabbixHost:
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
 
-        hostid in here means template's id
-        "Zabbix server health" etc
+        will look into template ids that are 0 (they are prototypes?)
+
+        What we are doing here is simple...
+
+        when you got items with hostids you can't control templateid, they don't actually represent the template's id that item is inherited
+        when you get items with templateids you can't control hostid's, they don't actually represent the host's id that item is owned by
+
+        so we are combining them, The reason why you can't batch request the tids request is, zabbix api always returns templateid = '0' since you just asked for them
+        zabbix assumes that you know that which item comes from which template
+
+        finally we remove templateids that are 0. I am not 100% sure but those values are almost always "full"
+        by crowded i mean that they get values like pused,pfree,xused,xfree... and share their values to the related items ?
+
         """
 
-        from_template_ids_content =self.__do_request(
-            method="item.get",
-            params={
-                "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","templateid","lastvalue"],
-                "templateids":hostids,
-                "sortfield": "itemid",
-                "selectTags": "extend",
-                "inherited":True
-
-
-            }
-        )
-
-        from_template_ids_content_ =self.__do_request(
+        items_with_missing_tids =self.__do_request(
             method="item.get",
             params={
                 "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","templateid","lastvalue","hostids"],
                 "hostids":hostids,
                 "sortfield": "itemid",
                 "selectTags": "extend",
-                "inherited":True
+                "selectTemplates": ["templateid", "name"]
 
 
             }
         )
 
-        utils.write_to_file(from_template_ids_content_,"test.json")
-        #from_host_ids_content = self.get_item_s_real_templateid(from_template_ids_content,hostids)
+        for tid in tids:
 
-        """
-        host_dict = {hid["key_"]: hid for hid in from_host_ids_content}
-
-        for tid in from_template_ids_content:
-            hid = host_dict.get(tid["key_"])
-            if hid:
-                tid["name_resolved"] = hid["name_resolved"]
-                tid["lastvalue"] = hid["lastvalue"]
-                tid["value_type"] = self.zabbix_value_types[int(tid["value_type"])]
-                tid["itemDiscovery"] = hid["itemDiscovery"]
-                """
+            items_with_missing_higs =self.__do_request(
+                method="item.get",
+                params={
+                    "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","templateid","lastvalue"],
+                    "templateids":tid,
+                    "sortfield": "itemid",
+                    "selectTags": "extend",
+                    "selectTemplates": ["templateid", "name"]
 
 
-        return  from_template_ids_content
+                }
+            )
+
+            ornek_key = {item["key_"] for item in items_with_missing_higs}
+
+            for degistirelecek_item in items_with_missing_tids:
+                if degistirelecek_item["key_"] in ornek_key:
+                    degistirelecek_item["templateid"] = tid
+
+
+
+        return  list(i for i in items_with_missing_tids if i["templateid"]!="0")
 
 
     def start(self):
 
         hosts = self.get_hosts()
 
-        for host in [hosts[2]]:
+        for host in hosts:
             host_groups = self.get_groups(host["hostid"])
 
 
