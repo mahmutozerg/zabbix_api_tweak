@@ -11,7 +11,7 @@ def raise_if_zabbix_response_error(res,func):
     else:
         raise Exception(f"failed to send execute {func} function")
 
-
+    return  content
 
 def safe_list_index(l, value, default=-1):
   try:

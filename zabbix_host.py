@@ -1,6 +1,7 @@
 import json
+import time
 from pprint import pp
-
+import pandas as pd
 import requests
 import utils
 
@@ -106,8 +107,8 @@ class ZabbixHost:
 
         res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
 
-        utils.raise_if_zabbix_response_error(res,method)
-        return res.json()["result"]
+        content =utils.raise_if_zabbix_response_error(res,method)
+        return content["result"]
 
     def get_hosts(self):
 
@@ -166,48 +167,88 @@ class ZabbixHost:
 
         return "|".join(group["name"] for group in res)
 
+    def __host_items_for_future(self,host_ids,exluded_ids):
+        """
 
-    def get_items(self,template_ids):
+
+            templateid  in here means  itemid in template
+
+        """
+        self.from_host_ids_content =self.__do_request(
+            method="item.get",
+            params={
+                "output": ["itemid","name","lastvalue","key_","units","formula","value_type","type","name_resolved","templateid"],
+                "hostids":host_ids,
+                "sortfield": "itemid",
+                "selectTags": "extend",
+                "selectItemDiscovery": ["extend"],
+
+
+            })
+
+        _copy = self.from_host_ids_content.copy()
+
+        for i in self.from_host_ids_content:  # Create a copy of the list
+            if i["templateid"] in exluded_ids:
+                _copy.remove(i)
+
+        write_to_file(_copy,"cok_kritik.json")
+
+    def get_items(self,hid,template_ids):
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
 
+        hostid in here means template's id
+        "Zabbix server health" etc
         """
-        content =self.__do_request(
+        from_template_ids_content =self.__do_request(
             method="item.get",
             params={
-                "output": ["itemid","name","name_resolved","lastvalue","key_","units","formula","type","value_type"],
+                "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","hostid","templateid"],
                 "templateids":template_ids,
-                "sortfield": "key_",
+                "sortfield": "itemid",
                 "selectTags": "extend",
+
+
             }
         )
 
-        for i in content:
-                i["value_type"] = self.zabbix_value_types[int(i["value_type"])]
-                i["type"] = self.zabbix_item_types[int(i["type"])]
 
 
-        return  content
+        """
+        host_dict = {hid["key_"]: hid for hid in from_host_ids_content}
+
+        for tid in from_template_ids_content:
+            hid = host_dict.get(tid["key_"])
+            if hid:
+                tid["name_resolved"] = hid["name_resolved"]
+                tid["lastvalue"] = hid["lastvalue"]
+                tid["value_type"] = self.zabbix_value_types[int(tid["value_type"])]
+                tid["itemDiscovery"] = hid["itemDiscovery"]
+                """
+
+        self.__host_items_for_future(hid, list(i["itemid"] for i in from_template_ids_content))
+
+        return  from_template_ids_content
 
 
     def start(self):
 
         hosts = self.get_hosts()
 
-        for host in hosts:
+        for host in [hosts[2]]:
             host_groups = self.get_groups(host["hostid"])
 
 
-            all_items = dict()
-            for template in host["parentTemplates"]:
-                items = self.get_items(template["templateid"])
-                all_items.setdefault(template["name"],[])
-                all_items[template["name"]].append(items)
+            items= self.get_items(host["hostid"],            list(i["templateid"] for i in host["parentTemplates"]))
 
 
 
-            data = {"host":host,"host_groups":host_groups,"items":all_items}
+
+
+            data = {"host":host,"host_groups":host_groups,"items":items}
             write_to_file(data,"./hostdatas/"+host["host"]+".json")
+
 
 
 
