@@ -167,32 +167,6 @@ class ZabbixHost:
 
         return "|".join(group["name"] for group in res)
 
-    def __host_items_for_future(self,host_ids,exluded_ids):
-        """
-
-
-            templateid  in here means  itemid in template
-
-        """
-        self.from_host_ids_content =self.__do_request(
-            method="item.get",
-            params={
-                "output": ["itemid","name","lastvalue","key_","units","formula","value_type","type","name_resolved","templateid"],
-                "hostids":host_ids,
-                "sortfield": "itemid",
-                "selectTags": "extend",
-                "selectItemDiscovery": ["extend"],
-
-
-            })
-
-        _copy = self.from_host_ids_content.copy()
-
-        for i in self.from_host_ids_content:  # Create a copy of the list
-            if i["templateid"] in exluded_ids:
-                _copy.remove(i)
-
-        write_to_file(_copy,"cok_kritik.json")
 
     def get_items(self,hid,template_ids):
         """
@@ -205,9 +179,13 @@ class ZabbixHost:
             method="item.get",
             params={
                 "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","hostid","templateid"],
-                "templateids":template_ids,
+                "hostids":hid,
                 "sortfield": "itemid",
                 "selectTags": "extend",
+                "filter":
+                    {
+                        "templateids":template_ids
+                    },
 
 
             }
@@ -227,7 +205,6 @@ class ZabbixHost:
                 tid["itemDiscovery"] = hid["itemDiscovery"]
                 """
 
-        self.__host_items_for_future(hid, list(i["itemid"] for i in from_template_ids_content))
 
         return  from_template_ids_content
 
@@ -240,7 +217,7 @@ class ZabbixHost:
             host_groups = self.get_groups(host["hostid"])
 
 
-            items= self.get_items(host["hostid"],            list(i["templateid"] for i in host["parentTemplates"]))
+            items= self.get_items(host["hostid"], list(i["templateid"] for i in host["parentTemplates"]))
 
 
 
