@@ -1,0 +1,3943 @@
+{
+    "host": {
+        "hostid": "10084",
+        "host": "Zabbix server",
+        "parentTemplates": [
+            {
+                "templateid": "10001",
+                "name": "Linux by Zabbix agent"
+            },
+            {
+                "templateid": "10047",
+                "name": "Zabbix server health"
+            },
+            {
+                "templateid": "10266",
+                "name": "Nginx by Zabbix agent"
+            },
+            {
+                "templateid": "10329",
+                "name": "PostgreSQL by Zabbix agent 2"
+            },
+            {
+                "templateid": "10330",
+                "name": "PHP-FPM by Zabbix agent"
+            }
+        ]
+    },
+    "host_groups": "Zabbix servers|Applications|Linux servers|Databases",
+    "items": [
+        {
+            "itemid": "10073",
+            "name": "Number of processed numeric (float) values per second",
+            "key_": "zabbix[wcache,values,float]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "10061",
+            "name_resolved": "Number of processed numeric (float) values per second",
+            "lastvalue": "2.6253241572519976",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "10074",
+            "name": "Number of processed character values per second",
+            "key_": "zabbix[wcache,values,str]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "10062",
+            "name_resolved": "Number of processed character values per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "10075",
+            "name": "Number of processed log values per second",
+            "key_": "zabbix[wcache,values,log]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "10063",
+            "name_resolved": "Number of processed log values per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "10076",
+            "name": "Number of processed numeric (unsigned) values per second",
+            "key_": "zabbix[wcache,values,uint]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "10064",
+            "name_resolved": "Number of processed numeric (unsigned) values per second",
+            "lastvalue": "1.844669746984123",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "10077",
+            "name": "Number of processed text values per second",
+            "key_": "zabbix[wcache,values,text]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "10065",
+            "name_resolved": "Number of processed text values per second",
+            "lastvalue": "0.4653482667448761",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "10078",
+            "name": "Number of processed not supported values per second",
+            "key_": "zabbix[wcache,values,not supported]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "10066",
+            "name_resolved": "Number of processed not supported values per second",
+            "lastvalue": "0.21605514928543437",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "23252",
+            "name": "Utilization of alerter internal processes, in %",
+            "key_": "zabbix[process,alerter,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22424",
+            "name_resolved": "Utilization of alerter internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23253",
+            "name": "Utilization of configuration syncer internal processes, in %",
+            "key_": "zabbix[process,configuration syncer,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22412",
+            "name_resolved": "Utilization of configuration syncer internal processes, in %",
+            "lastvalue": "0.3036949552893538",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23256",
+            "name": "Utilization of escalator internal processes, in %",
+            "key_": "zabbix[process,escalator,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22422",
+            "name_resolved": "Utilization of escalator internal processes, in %",
+            "lastvalue": "0.06763611768684477",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23257",
+            "name": "Utilization of history syncer internal processes, in %",
+            "key_": "zabbix[process,history syncer,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22406",
+            "name_resolved": "Utilization of history syncer internal processes, in %",
+            "lastvalue": "0.5452470518618707",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23258",
+            "name": "Utilization of housekeeper internal processes, in %",
+            "key_": "zabbix[process,housekeeper,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22408",
+            "name_resolved": "Utilization of housekeeper internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23259",
+            "name": "Utilization of http poller data collector processes, in %",
+            "key_": "zabbix[process,http poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22402",
+            "name_resolved": "Utilization of http poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23260",
+            "name": "Utilization of icmp pinger data collector processes, in %",
+            "key_": "zabbix[process,icmp pinger,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22418",
+            "name_resolved": "Utilization of icmp pinger data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23261",
+            "name": "Utilization of ipmi poller data collector processes, in %",
+            "key_": "zabbix[process,ipmi poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22416",
+            "name_resolved": "Utilization of ipmi poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23262",
+            "name": "Utilization of java poller data collector processes, in %",
+            "key_": "zabbix[process,java poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22689",
+            "name_resolved": "Utilization of java poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23264",
+            "name": "Utilization of poller data collector processes, in %",
+            "key_": "zabbix[process,poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22399",
+            "name_resolved": "Utilization of poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23265",
+            "name": "Utilization of proxy poller data collector processes, in %",
+            "key_": "zabbix[process,proxy poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22420",
+            "name_resolved": "Utilization of proxy poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23266",
+            "name": "Utilization of self-monitoring internal processes, in %",
+            "key_": "zabbix[process,self-monitoring,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22414",
+            "name_resolved": "Utilization of self-monitoring internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23267",
+            "name": "Utilization of snmp trapper data collector processes, in %",
+            "key_": "zabbix[process,snmp trapper,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "23171",
+            "name_resolved": "Utilization of snmp trapper data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23268",
+            "name": "Utilization of timer internal processes, in %",
+            "key_": "zabbix[process,timer,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22426",
+            "name_resolved": "Utilization of timer internal processes, in %",
+            "lastvalue": "0.01691188905800778",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23269",
+            "name": "Utilization of trapper data collector processes, in %",
+            "key_": "zabbix[process,trapper,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22404",
+            "name_resolved": "Utilization of trapper data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23270",
+            "name": "Utilization of unreachable poller data collector processes, in %",
+            "key_": "zabbix[process,unreachable poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22400",
+            "name_resolved": "Utilization of unreachable poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23271",
+            "name": "Queue over 10 minutes",
+            "key_": "zabbix[queue,10m]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "22219",
+            "name_resolved": "Queue over 10 minutes",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23272",
+            "name": "Queue",
+            "key_": "zabbix[queue]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "23251",
+            "name_resolved": "Queue",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23273",
+            "name": "Configuration cache, % used",
+            "key_": "zabbix[rcache,buffer,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22189",
+            "name_resolved": "Configuration cache, % used",
+            "lastvalue": "26.493191719055176",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23274",
+            "name": "History write cache, % used",
+            "key_": "zabbix[wcache,history,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22183",
+            "name_resolved": "History write cache, % used",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23275",
+            "name": "History index cache, % used",
+            "key_": "zabbix[wcache,index,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22396",
+            "name_resolved": "History index cache, % used",
+            "lastvalue": "0.43758750796394",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23276",
+            "name": "Trend write cache, % used",
+            "key_": "zabbix[wcache,trend,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22185",
+            "name_resolved": "Trend write cache, % used",
+            "lastvalue": "0.7150650024414062",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23277",
+            "name": "Number of processed values per second",
+            "key_": "zabbix[wcache,values]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22187",
+            "name_resolved": "Number of processed values per second",
+            "lastvalue": "4.936006674049412",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "23328",
+            "name": "Utilization of vmware collector data collector processes, in %",
+            "key_": "zabbix[process,vmware collector,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22401",
+            "name_resolved": "Utilization of vmware collector data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "23620",
+            "name": "Value cache, % used",
+            "key_": "zabbix[vcache,buffer,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22191",
+            "name_resolved": "Value cache, % used",
+            "lastvalue": "0.9124219858697146",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23625",
+            "name": "Value cache hits",
+            "key_": "zabbix[vcache,cache,hits]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22196",
+            "name_resolved": "Value cache hits",
+            "lastvalue": "12.762362617440278",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23628",
+            "name": "Value cache misses",
+            "key_": "zabbix[vcache,cache,misses]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "22199",
+            "name_resolved": "Value cache misses",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23635",
+            "name": "VMware cache, % used",
+            "key_": "zabbix[vmware,buffer,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "23634",
+            "name_resolved": "VMware cache, % used",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23662",
+            "name": "Value cache operating mode",
+            "key_": "zabbix[vcache,cache,mode]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "23661",
+            "name_resolved": "Value cache operating mode",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "23664",
+            "name": "Utilization of task manager internal processes, in %",
+            "key_": "zabbix[process,task manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "23663",
+            "name_resolved": "Utilization of task manager internal processes, in %",
+            "lastvalue": "0.016926201760324982",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "25367",
+            "name": "Utilization of ipmi manager internal processes, in %",
+            "key_": "zabbix[process,ipmi manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "25366",
+            "name_resolved": "Utilization of ipmi manager internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "25371",
+            "name": "Utilization of alert manager internal processes, in %",
+            "key_": "zabbix[process,alert manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "25370",
+            "name_resolved": "Utilization of alert manager internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "25667",
+            "name": "Utilization of preprocessing manager internal processes, in %",
+            "key_": "zabbix[process,preprocessing manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "25665",
+            "name_resolved": "Utilization of preprocessing manager internal processes, in %",
+            "lastvalue": "0.03380662609871535",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "25668",
+            "name": "Utilization of preprocessing worker internal processes, in %",
+            "key_": "zabbix[process,preprocessing worker,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "25666",
+            "name_resolved": "Utilization of preprocessing worker internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "28249",
+            "name": "Preprocessing queue",
+            "key_": "zabbix[preprocessing_queue]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "28248",
+            "name_resolved": "Preprocessing queue",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "28534",
+            "name": "LLD queue",
+            "key_": "zabbix[lld_queue]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "28533",
+            "name_resolved": "LLD queue",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "28536",
+            "name": "Utilization of LLD manager internal processes, in %",
+            "key_": "zabbix[process,lld manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "28535",
+            "name_resolved": "Utilization of LLD manager internal processes, in %",
+            "lastvalue": "0.016914749661705007",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "28538",
+            "name": "Utilization of LLD worker internal processes, in %",
+            "key_": "zabbix[process,lld worker,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "28537",
+            "name_resolved": "Utilization of LLD worker internal processes, in %",
+            "lastvalue": "0.09319664492078285",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "29823",
+            "name": "Utilization of alert syncer internal processes, in %",
+            "key_": "zabbix[process,alert syncer,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "29822",
+            "name_resolved": "Utilization of alert syncer internal processes, in %",
+            "lastvalue": "0.016891891891891893",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "33024",
+            "name": "Trend function cache, % of unique requests",
+            "key_": "zabbix[tcache,cache,pitems]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "33020",
+            "name_resolved": "Trend function cache, % of unique requests",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "33025",
+            "name": "Trend function cache, % of misses",
+            "key_": "zabbix[tcache,cache,pmisses]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "33021",
+            "name_resolved": "Trend function cache, % of misses",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "33026",
+            "name": "Utilization of availability manager internal processes, in %",
+            "key_": "zabbix[process,availability manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "33022",
+            "name_resolved": "Utilization of availability manager internal processes, in %",
+            "lastvalue": "0.0169548999660902",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "33027",
+            "name": "Utilization of history poller internal processes, in %",
+            "key_": "zabbix[process,history poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "33023",
+            "name_resolved": "Utilization of history poller internal processes, in %",
+            "lastvalue": "0.0033846674564224064",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "34318",
+            "name": "Utilization of report writer internal processes, in %",
+            "key_": "zabbix[process,report writer,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "34316",
+            "name_resolved": "Utilization of report writer internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "34319",
+            "name": "Utilization of report manager internal processes, in %",
+            "key_": "zabbix[process,report manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "34317",
+            "name_resolved": "Utilization of report manager internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "35275",
+            "name": "Utilization of trigger housekeeper internal processes, in %",
+            "key_": "zabbix[process,trigger housekeeper,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "35272",
+            "name_resolved": "Utilization of trigger housekeeper internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "35276",
+            "name": "Version",
+            "key_": "zabbix[version]",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "5",
+            "templateid": "35273",
+            "name_resolved": "Version",
+            "lastvalue": "7.0.8",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "35277",
+            "name": "Utilization of service manager internal processes, in %",
+            "key_": "zabbix[process,service manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "35274",
+            "name_resolved": "Utilization of service manager internal processes, in %",
+            "lastvalue": "0.01691188905800778",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "39805",
+            "name": "Zabbix stats cluster",
+            "key_": "zabbix[cluster,discovery,nodes]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "5",
+            "templateid": "39804",
+            "name_resolved": "Zabbix stats cluster",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "39823",
+            "name": "Utilization of ODBC poller data collector processes, in %",
+            "key_": "zabbix[process,odbc poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "39822",
+            "name_resolved": "Utilization of ODBC poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "42227",
+            "name": "Host name of Zabbix agent running",
+            "key_": "agent.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "42187",
+            "name_resolved": "Host name of Zabbix agent running",
+            "lastvalue": "Zabbix server",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42228",
+            "name": "Free swap space",
+            "key_": "system.swap.size[,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42188",
+            "name_resolved": "Free swap space",
+            "lastvalue": "2147479552",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "42229",
+            "name": "CPU system time",
+            "key_": "system.cpu.util[,system]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42189",
+            "name_resolved": "CPU system time",
+            "lastvalue": "0.491076",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42230",
+            "name": "CPU user time",
+            "key_": "system.cpu.util[,user]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42190",
+            "name_resolved": "CPU user time",
+            "lastvalue": "0.24045",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42231",
+            "name": "System name",
+            "key_": "system.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "42191",
+            "name_resolved": "System name",
+            "lastvalue": "mog-ubuntu-server",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42232",
+            "name": "System local time",
+            "key_": "system.localtime",
+            "units": "unixtime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42192",
+            "name_resolved": "System local time",
+            "lastvalue": "1738510132",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42233",
+            "name": "Operating system architecture",
+            "key_": "system.sw.arch",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "42193",
+            "name_resolved": "Operating system architecture",
+            "lastvalue": "x86_64",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "42234",
+            "name": "Operating system",
+            "key_": "system.sw.os",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "42194",
+            "name_resolved": "Operating system",
+            "lastvalue": "Linux version 6.8.0-52-generic (buildd@lcy02-amd64-046) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #53-Ubuntu SMP PREEMPT_DYNAMIC Sat Jan 11 00:06:25 UTC 2025",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "42235",
+            "name": "Number of installed packages",
+            "key_": "system.sw.packages.get",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42195",
+            "name_resolved": "Number of installed packages",
+            "lastvalue": "815",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "42236",
+            "name": "Free swap space in %",
+            "key_": "system.swap.size[,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42196",
+            "name_resolved": "Free swap space in %",
+            "lastvalue": "100",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "42237",
+            "name": "Zabbix agent ping",
+            "key_": "agent.ping",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42197",
+            "name_resolved": "Zabbix agent ping",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42238",
+            "name": "Total swap space",
+            "key_": "system.swap.size[,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42198",
+            "name_resolved": "Total swap space",
+            "lastvalue": "2147479552",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "42239",
+            "name": "System description",
+            "key_": "system.uname",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "42199",
+            "name_resolved": "System description",
+            "lastvalue": "Linux mog-ubuntu-server 6.8.0-52-generic #53-Ubuntu SMP PREEMPT_DYNAMIC Sat Jan 11 00:06:25 UTC 2025 x86_64",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42240",
+            "name": "System uptime",
+            "key_": "system.uptime",
+            "units": "uptime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42200",
+            "name_resolved": "System uptime",
+            "lastvalue": "21148",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42241",
+            "name": "Number of logged in users",
+            "key_": "system.users.num",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42201",
+            "name_resolved": "Number of logged in users",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "environment"
+                }
+            ]
+        },
+        {
+            "itemid": "42242",
+            "name": "Checksum of /etc/passwd",
+            "key_": "vfs.file.cksum[/etc/passwd,sha256]",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "42202",
+            "name_resolved": "Checksum of /etc/passwd",
+            "lastvalue": "e285d48ffee236e54591132434ae3d5b12e81e8ad1341a34d05bafc1dff307db",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "security"
+                }
+            ]
+        },
+        {
+            "itemid": "42243",
+            "name": "Available memory",
+            "key_": "vm.memory.size[available]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42203",
+            "name_resolved": "Available memory",
+            "lastvalue": "9197228032",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "42244",
+            "name": "Available memory in %",
+            "key_": "vm.memory.size[pavailable]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42204",
+            "name_resolved": "Available memory in %",
+            "lastvalue": "89.891298",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "42245",
+            "name": "Total memory",
+            "key_": "vm.memory.size[total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42205",
+            "name_resolved": "Total memory",
+            "lastvalue": "10228916224",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "42246",
+            "name": "CPU steal time",
+            "key_": "system.cpu.util[,steal]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42206",
+            "name_resolved": "CPU steal time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42247",
+            "name": "CPU softirq time",
+            "key_": "system.cpu.util[,softirq]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42207",
+            "name_resolved": "CPU softirq time",
+            "lastvalue": "0.202874",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42248",
+            "name": "CPU nice time",
+            "key_": "system.cpu.util[,nice]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42208",
+            "name_resolved": "CPU nice time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42249",
+            "name": "Load average (1m avg)",
+            "key_": "system.cpu.load[all,avg1]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42209",
+            "name_resolved": "Load average (1m avg)",
+            "lastvalue": "0.008789",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42250",
+            "name": "Version of Zabbix agent running",
+            "key_": "agent.version",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "42210",
+            "name_resolved": "Version of Zabbix agent running",
+            "lastvalue": "7.0.8",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "42251",
+            "name": "Maximum number of open file descriptors",
+            "key_": "kernel.maxfiles",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42211",
+            "name_resolved": "Maximum number of open file descriptors",
+            "lastvalue": "9223372036854775807",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42252",
+            "name": "Maximum number of processes",
+            "key_": "kernel.maxproc",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42212",
+            "name_resolved": "Maximum number of processes",
+            "lastvalue": "4194304",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42253",
+            "name": "Number of processes",
+            "key_": "proc.num",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42213",
+            "name_resolved": "Number of processes",
+            "lastvalue": "241",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42254",
+            "name": "Number of running processes",
+            "key_": "proc.num[,,run]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42214",
+            "name_resolved": "Number of running processes",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42255",
+            "name": "System boot time",
+            "key_": "system.boottime",
+            "units": "unixtime",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42215",
+            "name_resolved": "System boot time",
+            "lastvalue": "1738488992",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42256",
+            "name": "Interrupts per second",
+            "key_": "system.cpu.intr",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42216",
+            "name_resolved": "Interrupts per second",
+            "lastvalue": "480.37945908900844",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42257",
+            "name": "Load average (5m avg)",
+            "key_": "system.cpu.load[all,avg5]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42217",
+            "name_resolved": "Load average (5m avg)",
+            "lastvalue": "0.027344",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42258",
+            "name": "CPU iowait time",
+            "key_": "system.cpu.util[,iowait]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42218",
+            "name_resolved": "CPU iowait time",
+            "lastvalue": "0.344513",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42259",
+            "name": "Load average (15m avg)",
+            "key_": "system.cpu.load[all,avg15]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42219",
+            "name_resolved": "Load average (15m avg)",
+            "lastvalue": "0.034668",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42260",
+            "name": "Number of CPUs",
+            "key_": "system.cpu.num",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "42220",
+            "name_resolved": "Number of CPUs",
+            "lastvalue": "5",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42261",
+            "name": "Context switches per second",
+            "key_": "system.cpu.switches",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42221",
+            "name_resolved": "Context switches per second",
+            "lastvalue": "522.1712594022792",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42262",
+            "name": "CPU guest time",
+            "key_": "system.cpu.util[,guest]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42222",
+            "name_resolved": "CPU guest time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42263",
+            "name": "CPU guest nice time",
+            "key_": "system.cpu.util[,guest_nice]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42223",
+            "name_resolved": "CPU guest nice time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42264",
+            "name": "CPU idle time",
+            "key_": "system.cpu.util[,idle]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42224",
+            "name_resolved": "CPU idle time",
+            "lastvalue": "98.813508",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42265",
+            "name": "CPU interrupt time",
+            "key_": "system.cpu.util[,interrupt]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "42225",
+            "name_resolved": "CPU interrupt time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42266",
+            "name": "Zabbix agent availability",
+            "key_": "zabbix[host,agent,available]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "42226",
+            "name_resolved": "Zabbix agent availability",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "42269",
+            "name": "CPU utilization",
+            "key_": "system.cpu.util",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "42267",
+            "name_resolved": "CPU utilization",
+            "lastvalue": "1.1864920000000012",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "42270",
+            "name": "Memory utilization",
+            "key_": "vm.memory.utilization",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "42268",
+            "name_resolved": "Memory utilization",
+            "lastvalue": "10.108701999999994",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "44056",
+            "name": "Zabbix proxies stats",
+            "key_": "zabbix[proxy,discovery]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "5",
+            "templateid": "44055",
+            "name_resolved": "Zabbix proxies stats",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "44437",
+            "name": "Get filesystems",
+            "key_": "vfs.fs.get",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "44436",
+            "name_resolved": "Get filesystems",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "44788",
+            "name": "Connector queue",
+            "key_": "zabbix[connector_queue]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "44785",
+            "name_resolved": "Connector queue",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "44789",
+            "name": "Utilization of connector manager internal processes, in %",
+            "key_": "zabbix[process,connector manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "44786",
+            "name_resolved": "Utilization of connector manager internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "44790",
+            "name": "Utilization of connector worker internal processes, in %",
+            "key_": "zabbix[process,connector worker,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "44787",
+            "name_resolved": "Utilization of connector worker internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "45497",
+            "name": "Discovery queue",
+            "key_": "zabbix[discovery_queue]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "5",
+            "templateid": "45494",
+            "name_resolved": "Discovery queue",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "45498",
+            "name": "Utilization of discovery manager internal processes, in %",
+            "key_": "zabbix[process,discovery manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "45495",
+            "name_resolved": "Utilization of discovery manager internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "45499",
+            "name": "Utilization of discovery worker internal processes, in %",
+            "key_": "zabbix[process,discovery worker,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "45496",
+            "name_resolved": "Utilization of discovery worker internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "45517",
+            "name": "Utilization of agent poller data collector processes, in %",
+            "key_": "zabbix[process,agent poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "45515",
+            "name_resolved": "Utilization of agent poller data collector processes, in %",
+            "lastvalue": "0.05083884087442806",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "45518",
+            "name": "Utilization of http agent poller data collector processes, in %",
+            "key_": "zabbix[process,http agent poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "45516",
+            "name_resolved": "Utilization of http agent poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "46048",
+            "name": "Utilization of snmp poller data collector processes, in %",
+            "key_": "zabbix[process,snmp poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "46047",
+            "name_resolved": "Utilization of snmp poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "46315",
+            "name": "Number of values synchronized with the database per second",
+            "key_": "zabbix[vps,written]",
+            "units": "!vps",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "46314",
+            "name_resolved": "Number of values synchronized with the database per second",
+            "lastvalue": "4.519306299293962",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "component",
+                    "value": "nvps"
+                }
+            ]
+        },
+        {
+            "itemid": "47207",
+            "name": "Utilization of browser poller data collector processes, in %",
+            "key_": "zabbix[process,browser poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "47203",
+            "name_resolved": "Utilization of browser poller data collector processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "47208",
+            "name": "Utilization of configuration syncer worker internal processes, in %",
+            "key_": "zabbix[process,configuration syncer worker,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "47204",
+            "name_resolved": "Utilization of configuration syncer worker internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "47209",
+            "name": "Utilization of internal poller data collector processes, in %",
+            "key_": "zabbix[process,internal poller,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "47205",
+            "name_resolved": "Utilization of internal poller data collector processes, in %",
+            "lastvalue": "0.01689760054072322",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "gathering-process"
+                }
+            ]
+        },
+        {
+            "itemid": "47210",
+            "name": "Utilization of proxy group manager internal processes, in %",
+            "key_": "zabbix[process,proxy group manager,avg,busy]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "5",
+            "templateid": "47206",
+            "name_resolved": "Utilization of proxy group manager internal processes, in %",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "internal-process"
+                }
+            ]
+        },
+        {
+            "itemid": "47552",
+            "name": "Zabbix proxy groups stats",
+            "key_": "zabbix[proxy group,discovery]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "5",
+            "templateid": "47551",
+            "name_resolved": "Zabbix proxy groups stats",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48584",
+            "name": "Get archive",
+            "key_": "pgsql.archive[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31289",
+            "name_resolved": "Get archive",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48585",
+            "name": "Count of autovacuum workers",
+            "key_": "pgsql.autovacuum.count[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "31288",
+            "name_resolved": "Count of autovacuum workers",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48586",
+            "name": "Get bgwriter",
+            "key_": "pgsql.bgwriter[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31274",
+            "name_resolved": "Get bgwriter",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48587",
+            "name": "Cache hit ratio, %",
+            "key_": "pgsql.cache.hit",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "15",
+            "templateid": "33173",
+            "name_resolved": "Cache hit ratio, %",
+            "lastvalue": "100",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cache"
+                }
+            ]
+        },
+        {
+            "itemid": "48588",
+            "name": "Get connections sum",
+            "key_": "pgsql.connections[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31276",
+            "name_resolved": "Get connections sum",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48589",
+            "name": "Custom queries",
+            "key_": "pgsql.custom.query[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\",\"\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "33172",
+            "name_resolved": "Custom queries",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48590",
+            "name": "Get dbstat",
+            "key_": "pgsql.dbstat[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31279",
+            "name_resolved": "Get dbstat",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48591",
+            "name": "Get dbstat sum",
+            "key_": "pgsql.dbstat.sum[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31277",
+            "name_resolved": "Get dbstat sum",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48592",
+            "name": "Get locks",
+            "key_": "pgsql.locks[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31280",
+            "name_resolved": "Get locks",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48593",
+            "name": "Age of oldest xid",
+            "key_": "pgsql.oldest.xid[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "33174",
+            "name_resolved": "Age of oldest xid",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "transactions"
+                }
+            ]
+        },
+        {
+            "itemid": "48594",
+            "name": "Ping",
+            "key_": "pgsql.ping[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "31282",
+            "name_resolved": "Ping",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                },
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
+            "itemid": "48595",
+            "name": "Get queries",
+            "key_": "pgsql.queries[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\",\"{$PG.QUERY_ETIME.MAX.WARN}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "42880",
+            "name_resolved": "Get queries",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48596",
+            "name": "Replication: Standby count",
+            "key_": "pgsql.replication.count[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "31283",
+            "name_resolved": "Replication: Standby count",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "replication"
+                }
+            ]
+        },
+        {
+            "itemid": "48597",
+            "name": "Replication: Lag in bytes",
+            "key_": "pgsql.replication.lag.b[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "31275",
+            "name_resolved": "Replication: Lag in bytes",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "replication"
+                }
+            ]
+        },
+        {
+            "itemid": "48598",
+            "name": "Replication: Lag in seconds",
+            "key_": "pgsql.replication.lag.sec[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "31284",
+            "name_resolved": "Replication: Lag in seconds",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "replication"
+                }
+            ]
+        },
+        {
+            "itemid": "48599",
+            "name": "Get replication",
+            "key_": "pgsql.replication.process[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "33175",
+            "name_resolved": "Get replication",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48600",
+            "name": "Replication: Recovery role",
+            "key_": "pgsql.replication.recovery_role[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "31285",
+            "name_resolved": "Replication: Recovery role",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "replication"
+                }
+            ]
+        },
+        {
+            "itemid": "48601",
+            "name": "Replication: Status",
+            "key_": "pgsql.replication.status[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "31286",
+            "name_resolved": "Replication: Status",
+            "lastvalue": "2",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "replication"
+                }
+            ]
+        },
+        {
+            "itemid": "48602",
+            "name": "Uptime",
+            "key_": "pgsql.uptime[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "31287",
+            "name_resolved": "Uptime",
+            "lastvalue": "21134.347294",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48603",
+            "name": "Version",
+            "key_": "pgsql.version[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "0",
+            "templateid": "46130",
+            "name_resolved": "Version",
+            "lastvalue": "PostgreSQL 16.6 (Ubuntu 16.6-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.2.0-23ubuntu4) 13.2.0, 64-bit",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48604",
+            "name": "Get WAL",
+            "key_": "pgsql.wal.stat[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31290",
+            "name_resolved": "Get WAL",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48605",
+            "name": "Archive: Count of archived files",
+            "key_": "pgsql.archive.count_archived_files",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31297",
+            "name_resolved": "Archive: Count of archived files",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "archive"
+                }
+            ]
+        },
+        {
+            "itemid": "48606",
+            "name": "Archive: Count of files in archive_status need to archive",
+            "key_": "pgsql.archive.count_files_to_archive",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31332",
+            "name_resolved": "Archive: Count of files in archive_status need to archive",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "archive"
+                }
+            ]
+        },
+        {
+            "itemid": "48607",
+            "name": "Archive: Count of failed attempts to archive files",
+            "key_": "pgsql.archive.failed_trying_to_archive",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31309",
+            "name_resolved": "Archive: Count of failed attempts to archive files",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "archive"
+                }
+            ]
+        },
+        {
+            "itemid": "48608",
+            "name": "Archive: Size of files need to archive",
+            "key_": "pgsql.archive.size_files_to_archive",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31310",
+            "name_resolved": "Archive: Size of files need to archive",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "archive"
+                }
+            ]
+        },
+        {
+            "itemid": "48609",
+            "name": "Bgwriter: Buffers allocated per second",
+            "key_": "pgsql.bgwriter.buffers_alloc.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31311",
+            "name_resolved": "Bgwriter: Buffers allocated per second",
+            "lastvalue": "0.18333297847096466",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48610",
+            "name": "Bgwriter: Times a backend executed its own fsync per second",
+            "key_": "pgsql.bgwriter.buffers_backend_fsync.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31312",
+            "name_resolved": "Bgwriter: Times a backend executed its own fsync per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48611",
+            "name": "Bgwriter: Buffers written directly by a backend per second",
+            "key_": "pgsql.bgwriter.buffers_backend.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31313",
+            "name_resolved": "Bgwriter: Buffers written directly by a backend per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48612",
+            "name": "Checkpoint: Buffers written during checkpoints per second",
+            "key_": "pgsql.bgwriter.buffers_checkpoint.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31314",
+            "name_resolved": "Checkpoint: Buffers written during checkpoints per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48613",
+            "name": "Checkpoint: Buffers written by the background writer per second",
+            "key_": "pgsql.bgwriter.buffers_clean.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31315",
+            "name_resolved": "Checkpoint: Buffers written by the background writer per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48614",
+            "name": "Checkpoint: Requested per second",
+            "key_": "pgsql.bgwriter.checkpoints_req.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31317",
+            "name_resolved": "Checkpoint: Requested per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48615",
+            "name": "Checkpoint: Scheduled per second",
+            "key_": "pgsql.bgwriter.checkpoints_timed.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31318",
+            "name_resolved": "Checkpoint: Scheduled per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48616",
+            "name": "Checkpoint: Checkpoint sync time per second",
+            "key_": "pgsql.bgwriter.checkpoint_sync_time.rate",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "33176",
+            "name_resolved": "Checkpoint: Checkpoint sync time per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48617",
+            "name": "Checkpoint: Checkpoint write time per second",
+            "key_": "pgsql.bgwriter.checkpoint_write_time.rate",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31316",
+            "name_resolved": "Checkpoint: Checkpoint write time per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48618",
+            "name": "Bgwriter: Number of bgwriter cleaning scan stopped per second",
+            "key_": "pgsql.bgwriter.maxwritten_clean.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31319",
+            "name_resolved": "Bgwriter: Number of bgwriter cleaning scan stopped per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "bgwriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48619",
+            "name": "Connections sum: Active",
+            "key_": "pgsql.connections.sum.active",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31320",
+            "name_resolved": "Connections sum: Active",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48620",
+            "name": "Connections sum: Disabled",
+            "key_": "pgsql.connections.sum.disabled",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31322",
+            "name_resolved": "Connections sum: Disabled",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48621",
+            "name": "Connections sum: Fastpath function call",
+            "key_": "pgsql.connections.sum.fastpath_function_call",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31323",
+            "name_resolved": "Connections sum: Fastpath function call",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48622",
+            "name": "Connections sum: Idle",
+            "key_": "pgsql.connections.sum.idle",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31324",
+            "name_resolved": "Connections sum: Idle",
+            "lastvalue": "34",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48623",
+            "name": "Connections sum: Idle in transaction",
+            "key_": "pgsql.connections.sum.idle_in_transaction",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31325",
+            "name_resolved": "Connections sum: Idle in transaction",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48624",
+            "name": "Connections sum: Idle in transaction (aborted)",
+            "key_": "pgsql.connections.sum.idle_in_transaction_aborted",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31326",
+            "name_resolved": "Connections sum: Idle in transaction (aborted)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48625",
+            "name": "Connections sum: Prepared",
+            "key_": "pgsql.connections.sum.prepared",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31327",
+            "name_resolved": "Connections sum: Prepared",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48626",
+            "name": "Connections sum: Total",
+            "key_": "pgsql.connections.sum.total",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31328",
+            "name_resolved": "Connections sum: Total",
+            "lastvalue": "36",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48627",
+            "name": "Connections sum: Total, %",
+            "key_": "pgsql.connections.sum.total_pct",
+            "units": "%",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31329",
+            "name_resolved": "Connections sum: Total, %",
+            "lastvalue": "36",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48628",
+            "name": "Connections sum: Waiting",
+            "key_": "pgsql.connections.sum.waiting",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31330",
+            "name_resolved": "Connections sum: Waiting",
+            "lastvalue": "35",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48629",
+            "name": "Dbstat: Blocks read time",
+            "key_": "pgsql.dbstat.sum.blk_read_time",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31331",
+            "name_resolved": "Dbstat: Blocks read time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48630",
+            "name": "Dbstat: Hit blocks read per second",
+            "key_": "pgsql.dbstat.sum.blks_hit.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31321",
+            "name_resolved": "Dbstat: Hit blocks read per second",
+            "lastvalue": "2067.1030380484854",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cache"
+                }
+            ]
+        },
+        {
+            "itemid": "48631",
+            "name": "Dbstat: Disk blocks read per second",
+            "key_": "pgsql.dbstat.sum.blks_read.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31307",
+            "name_resolved": "Dbstat: Disk blocks read per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48632",
+            "name": "Dbstat: Blocks write time",
+            "key_": "pgsql.dbstat.sum.blk_write_time",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31306",
+            "name_resolved": "Dbstat: Blocks write time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48633",
+            "name": "Dbstat: Checksum failures per second",
+            "key_": "pgsql.dbstat.sum.checksum_failures.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31303",
+            "name_resolved": "Dbstat: Checksum failures per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48634",
+            "name": "Dbstat: Conflicts per second",
+            "key_": "pgsql.dbstat.sum.conflicts.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31305",
+            "name_resolved": "Dbstat: Conflicts per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                }
+            ]
+        },
+        {
+            "itemid": "48635",
+            "name": "Dbstat: Deadlocks per second",
+            "key_": "pgsql.dbstat.sum.deadlocks.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31293",
+            "name_resolved": "Dbstat: Deadlocks per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "deadlocks"
+                }
+            ]
+        },
+        {
+            "itemid": "48636",
+            "name": "Dbstat: Backends connected",
+            "key_": "pgsql.dbstat.sum.numbackends",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31292",
+            "name_resolved": "Dbstat: Backends connected",
+            "lastvalue": "36",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "backends"
+                }
+            ]
+        },
+        {
+            "itemid": "48637",
+            "name": "Dbstat: Number temp bytes per second",
+            "key_": "pgsql.dbstat.sum.temp_bytes.rate",
+            "units": "b",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31294",
+            "name_resolved": "Dbstat: Number temp bytes per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48638",
+            "name": "Dbstat: Number temp files per second",
+            "key_": "pgsql.dbstat.sum.temp_files.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31295",
+            "name_resolved": "Dbstat: Number temp files per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48639",
+            "name": "Dbstat: Rows deleted per second",
+            "key_": "pgsql.dbstat.sum.tup_deleted.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31296",
+            "name_resolved": "Dbstat: Rows deleted per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                }
+            ]
+        },
+        {
+            "itemid": "48640",
+            "name": "Dbstat: Rows fetched per second",
+            "key_": "pgsql.dbstat.sum.tup_fetched.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31291",
+            "name_resolved": "Dbstat: Rows fetched per second",
+            "lastvalue": "1078.4552055203612",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                }
+            ]
+        },
+        {
+            "itemid": "48641",
+            "name": "Dbstat: Rows inserted per second",
+            "key_": "pgsql.dbstat.sum.tup_inserted.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31298",
+            "name_resolved": "Dbstat: Rows inserted per second",
+            "lastvalue": "4.450365365428216",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                }
+            ]
+        },
+        {
+            "itemid": "48642",
+            "name": "Dbstat: Rows returned per second",
+            "key_": "pgsql.dbstat.sum.tup_returned.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31299",
+            "name_resolved": "Dbstat: Rows returned per second",
+            "lastvalue": "3996.7781268911444",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                }
+            ]
+        },
+        {
+            "itemid": "48643",
+            "name": "Dbstat: Rows updated per second",
+            "key_": "pgsql.dbstat.sum.tup_updated.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31300",
+            "name_resolved": "Dbstat: Rows updated per second",
+            "lastvalue": "1.0334181747436306",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                }
+            ]
+        },
+        {
+            "itemid": "48644",
+            "name": "Dbstat: Committed transactions per second",
+            "key_": "pgsql.dbstat.sum.xact_commit.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31301",
+            "name_resolved": "Dbstat: Committed transactions per second",
+            "lastvalue": "14.951227463629625",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "transactions"
+                }
+            ]
+        },
+        {
+            "itemid": "48645",
+            "name": "Dbstat: Roll backed transactions per second",
+            "key_": "pgsql.dbstat.sum.xact_rollback.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31302",
+            "name_resolved": "Dbstat: Roll backed transactions per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "transactions"
+                }
+            ]
+        },
+        {
+            "itemid": "48646",
+            "name": "WAL: Segments count",
+            "key_": "pgsql.wal.count",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31304",
+            "name_resolved": "WAL: Segments count",
+            "lastvalue": "8",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "wal"
+                }
+            ]
+        },
+        {
+            "itemid": "48647",
+            "name": "WAL: Bytes received",
+            "key_": "pgsql.wal.receive",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "39821",
+            "name_resolved": "WAL: Bytes received",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "wal"
+                }
+            ]
+        },
+        {
+            "itemid": "48648",
+            "name": "WAL: Bytes written",
+            "key_": "pgsql.wal.write",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31333",
+            "name_resolved": "WAL: Bytes written",
+            "lastvalue": "6818",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "wal"
+                }
+            ]
+        },
+        {
+            "itemid": "48778",
+            "name": "Service status",
+            "key_": "net.tcp.service[http,\"{$NGINX.STUB_STATUS.HOST}\",\"{$NGINX.STUB_STATUS.PORT}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "28810",
+            "name_resolved": "Service status",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                },
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
+            "itemid": "48779",
+            "name": "Service response time",
+            "key_": "net.tcp.service.perf[http,\"{$NGINX.STUB_STATUS.HOST}\",\"{$NGINX.STUB_STATUS.PORT}\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "28805",
+            "name_resolved": "Service response time",
+            "lastvalue": "0.00068",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                },
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
+            "itemid": "48780",
+            "name": "Get processes summary",
+            "key_": "proc.get[{$NGINX.PROCESS.NAME.PARAMETER},,,summary]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "44343",
+            "name_resolved": "Get processes summary",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48781",
+            "name": "Get stub status page",
+            "key_": "web.page.get[\"{$NGINX.STUB_STATUS.HOST}\",\"{$NGINX.STUB_STATUS.PATH}\",\"{$NGINX.STUB_STATUS.PORT}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "28804",
+            "name_resolved": "Get stub status page",
+            "lastvalue": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 106\r\nContent-Type: text/plain\r\nDate: Sun, 02 Feb 2025 15:29:01 GMT\r\nServer: nginx/1.24.0 (Ubuntu)\r\n\r\nActive connections: 1 \nserver accepts handled requests\n 8794 8794 9062 \nReading: 0 Writing: 1 Waiting: 0 \n",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                },
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
+            "itemid": "48786",
+            "name": "Connections accepted per second",
+            "key_": "nginx.connections.accepted.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "28817",
+            "name_resolved": "Connections accepted per second",
+            "lastvalue": "0.4165797722989058",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48787",
+            "name": "Connections active",
+            "key_": "nginx.connections.active",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "28813",
+            "name_resolved": "Connections active",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48788",
+            "name": "Connections dropped per second",
+            "key_": "nginx.connections.dropped.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "28816",
+            "name_resolved": "Connections dropped per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48789",
+            "name": "Connections handled per second",
+            "key_": "nginx.connections.handled.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "28815",
+            "name_resolved": "Connections handled per second",
+            "lastvalue": "0.4165797722989058",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48790",
+            "name": "Connections reading",
+            "key_": "nginx.connections.reading",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "28814",
+            "name_resolved": "Connections reading",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48791",
+            "name": "Connections waiting",
+            "key_": "nginx.connections.waiting",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "28811",
+            "name_resolved": "Connections waiting",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48792",
+            "name": "Connections writing",
+            "key_": "nginx.connections.writing",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "28812",
+            "name_resolved": "Connections writing",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48793",
+            "name": "Requests total",
+            "key_": "nginx.requests.total",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "28819",
+            "name_resolved": "Requests total",
+            "lastvalue": "9062",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "requests"
+                }
+            ]
+        },
+        {
+            "itemid": "48794",
+            "name": "Requests per second",
+            "key_": "nginx.requests.total.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "28818",
+            "name_resolved": "Requests per second",
+            "lastvalue": "0.38325339051499335",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "requests"
+                }
+            ]
+        },
+        {
+            "itemid": "48795",
+            "name": "Version",
+            "key_": "nginx.version",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "28820",
+            "name_resolved": "Version",
+            "lastvalue": "1.24.0 (Ubuntu)",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48879",
+            "name": "Queue usage",
+            "key_": "php-fpm.listen_queue_usage",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "15",
+            "templateid": "31573",
+            "name_resolved": "Queue usage",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48880",
+            "name": "Get processes summary",
+            "key_": "proc.get[{$PHP_FPM.PROCESS.NAME.PARAMETER},,,summary]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "44351",
+            "name_resolved": "Get processes summary",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48881",
+            "name": "php-fpm_ping",
+            "key_": "web.page.get[\"{$PHP_FPM.HOST}\",\"{$PHP_FPM.PING.PAGE}\",\"{$PHP_FPM.PORT}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31571",
+            "name_resolved": "php-fpm_ping",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
+            "itemid": "48882",
+            "name": "Get status page",
+            "key_": "web.page.get[\"{$PHP_FPM.HOST}\",\"{$PHP_FPM.STATUS.PAGE}?json\",\"{$PHP_FPM.PORT}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "31570",
+            "name_resolved": "Get status page",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "raw"
+                }
+            ]
+        },
+        {
+            "itemid": "48883",
+            "name": "Accepted connections per second",
+            "key_": "php-fpm.conn_accepted.rate",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "31581",
+            "name_resolved": "Accepted connections per second",
+            "lastvalue": "0.33333517791576295",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "connections"
+                }
+            ]
+        },
+        {
+            "itemid": "48884",
+            "name": "Listen queue",
+            "key_": "php-fpm.listen_queue",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31583",
+            "name_resolved": "Listen queue",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "listen-queue"
+                }
+            ]
+        },
+        {
+            "itemid": "48885",
+            "name": "Listen queue, len",
+            "key_": "php-fpm.listen_queue_len",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31591",
+            "name_resolved": "Listen queue, len",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "listen-queue"
+                }
+            ]
+        },
+        {
+            "itemid": "48886",
+            "name": "Listen queue, max",
+            "key_": "php-fpm.listen_queue_max",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31590",
+            "name_resolved": "Listen queue, max",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "listen-queue"
+                }
+            ]
+        },
+        {
+            "itemid": "48887",
+            "name": "Max children reached",
+            "key_": "php-fpm.max_children",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31589",
+            "name_resolved": "Max children reached",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48888",
+            "name": "Pool name",
+            "key_": "php-fpm.name",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "31588",
+            "name_resolved": "Pool name",
+            "lastvalue": "zabbix",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48889",
+            "name": "Processes, active",
+            "key_": "php-fpm.processes_active",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31585",
+            "name_resolved": "Processes, active",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48890",
+            "name": "Processes, idle",
+            "key_": "php-fpm.processes_idle",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31584",
+            "name_resolved": "Processes, idle",
+            "lastvalue": "7",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48891",
+            "name": "Processes, max active",
+            "key_": "php-fpm.processes_max_active",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31592",
+            "name_resolved": "Processes, max active",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48892",
+            "name": "Processes, total",
+            "key_": "php-fpm.processes_total",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31582",
+            "name_resolved": "Processes, total",
+            "lastvalue": "8",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48893",
+            "name": "Process manager",
+            "key_": "php-fpm.process_manager",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "31586",
+            "name_resolved": "Process manager",
+            "lastvalue": "dynamic",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48894",
+            "name": "Slow requests",
+            "key_": "php-fpm.slow_requests",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31577",
+            "name_resolved": "Slow requests",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48895",
+            "name": "Start time",
+            "key_": "php-fpm.start_time",
+            "units": "unixtime",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31580",
+            "name_resolved": "Start time",
+            "lastvalue": "1738489007",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48896",
+            "name": "Uptime",
+            "key_": "php-fpm.uptime",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31579",
+            "name_resolved": "Uptime",
+            "lastvalue": "21115",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48897",
+            "name": "Ping",
+            "key_": "php-fpm.ping",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "31587",
+            "name_resolved": "Ping",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
+            "itemid": "48898",
+            "name": "Version",
+            "key_": "php-fpm.version",
+            "units": "",
+            "formula": "",
+            "value_type": "1",
+            "type": "18",
+            "templateid": "31578",
+            "name_resolved": "Version",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        }
+    ]
+}

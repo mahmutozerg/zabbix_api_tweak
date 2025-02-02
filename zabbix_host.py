@@ -1,6 +1,8 @@
 import json
 import time
 from pprint import pp
+from traceback import print_tb
+
 import pandas as pd
 import requests
 import utils
@@ -119,9 +121,6 @@ class ZabbixHost:
                     "hostid",
                     "host",
                 ],
-                "selectInterfaces": [
-                    "ip"
-                ],
                  "selectParentTemplates": [
                      "templateid",
                      "name"
@@ -129,10 +128,6 @@ class ZabbixHost:
 
 
             })
-
-
-
-
 
 
 
@@ -168,30 +163,43 @@ class ZabbixHost:
         return "|".join(group["name"] for group in res)
 
 
-    def get_items(self,hid,template_ids):
+
+    def get_items(self,hostids,tids):
         """
         DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
 
         hostid in here means template's id
         "Zabbix server health" etc
         """
+
         from_template_ids_content =self.__do_request(
             method="item.get",
             params={
-                "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","hostid","templateid"],
-                "hostids":hid,
+                "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","templateid","lastvalue"],
+                "templateids":hostids,
                 "sortfield": "itemid",
                 "selectTags": "extend",
-                "filter":
-                    {
-                        "templateids":template_ids
-                    },
+                "inherited":True
 
 
             }
         )
 
+        from_template_ids_content_ =self.__do_request(
+            method="item.get",
+            params={
+                "output": ["itemid","name","name_resolved","key_","units","formula","value_type","type","templateid","lastvalue","hostids"],
+                "hostids":hostids,
+                "sortfield": "itemid",
+                "selectTags": "extend",
+                "inherited":True
 
+
+            }
+        )
+
+        utils.write_to_file(from_template_ids_content_,"test.json")
+        #from_host_ids_content = self.get_item_s_real_templateid(from_template_ids_content,hostids)
 
         """
         host_dict = {hid["key_"]: hid for hid in from_host_ids_content}
@@ -217,10 +225,7 @@ class ZabbixHost:
             host_groups = self.get_groups(host["hostid"])
 
 
-            items= self.get_items(host["hostid"], list(i["templateid"] for i in host["parentTemplates"]))
-
-
-
+            items= self.get_items(host["hostid"],list(i["templateid"] for i in host["parentTemplates"]))
 
 
             data = {"host":host,"host_groups":host_groups,"items":items}

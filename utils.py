@@ -13,7 +13,7 @@ def raise_if_zabbix_response_error(res,func):
 
     return  content
 
-def safe_list_index(l, value, default=-1):
+def safe_list_index(l, value, default=None):
   try:
     res = l.index(value)
     return res
