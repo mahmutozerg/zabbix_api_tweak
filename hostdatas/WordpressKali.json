@@ -676,24 +676,6 @@
             ]
         },
         {
-            "itemid": "49093",
-            "name": "Get filesystems",
-            "key_": "vfs.fs.get",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10001",
-            "name_resolved": "Get filesystems",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
-                }
-            ]
-        },
-        {
             "itemid": "49094",
             "name": "Available memory",
             "key_": "vm.memory.size[available]",
@@ -798,6 +780,1022 @@
                 {
                     "tag": "component",
                     "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "49128",
+            "name": "Interface eth0: Bits received",
+            "key_": "net.if.in[\"eth0\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Bits received",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49129",
+            "name": "Interface eth0: Inbound packets discarded",
+            "key_": "net.if.in[\"eth0\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Inbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49130",
+            "name": "Interface eth0: Inbound packets with errors",
+            "key_": "net.if.in[\"eth0\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Inbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49131",
+            "name": "Interface eth0: Bits sent",
+            "key_": "net.if.out[\"eth0\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Bits sent",
+            "lastvalue": "88672",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49132",
+            "name": "Interface eth0: Outbound packets discarded",
+            "key_": "net.if.out[\"eth0\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Outbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49133",
+            "name": "Interface eth0: Outbound packets with errors",
+            "key_": "net.if.out[\"eth0\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Outbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49134",
+            "name": "Interface eth0: Operational status",
+            "key_": "vfs.file.contents[\"/sys/class/net/eth0/operstate\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Operational status",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49135",
+            "name": "Interface eth0: Speed",
+            "key_": "vfs.file.contents[\"/sys/class/net/eth0/speed\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Speed",
+            "lastvalue": "1000000000",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49136",
+            "name": "Interface eth0: Interface type",
+            "key_": "vfs.file.contents[\"/sys/class/net/eth0/type\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface eth0: Interface type",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "eth0"
+                }
+            ]
+        },
+        {
+            "itemid": "49137",
+            "name": "sda: Disk read request avg waiting time (r_await)",
+            "key_": "vfs.dev.read.await[sda]",
+            "units": "!ms",
+            "formula": "",
+            "value_type": "0",
+            "type": "15",
+            "templateid": "0",
+            "name_resolved": "sda: Disk read request avg waiting time (r_await)",
+            "lastvalue": "2",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49138",
+            "name": "sda: Disk write request avg waiting time (w_await)",
+            "key_": "vfs.dev.write.await[sda]",
+            "units": "!ms",
+            "formula": "",
+            "value_type": "0",
+            "type": "15",
+            "templateid": "0",
+            "name_resolved": "sda: Disk write request avg waiting time (w_await)",
+            "lastvalue": "1.6724137931034482",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49140",
+            "name": "sda: Disk write time (rate)",
+            "key_": "vfs.dev.write.time.rate[sda]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk write time (rate)",
+            "lastvalue": "0.003233260050739856",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49141",
+            "name": "sda: Disk write rate",
+            "key_": "vfs.dev.write.rate[sda]",
+            "units": "!w/s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk write rate",
+            "lastvalue": "1.933289514875378",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49142",
+            "name": "sda: Disk utilization",
+            "key_": "vfs.dev.util[sda]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk utilization",
+            "lastvalue": "0.0466656089797505",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49143",
+            "name": "sda: Disk read time (rate)",
+            "key_": "vfs.dev.read.time.rate[sda]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk read time (rate)",
+            "lastvalue": "3.333257784267893e-05",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49144",
+            "name": "sda: Disk read rate",
+            "key_": "vfs.dev.read.rate[sda]",
+            "units": "!r/s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk read rate",
+            "lastvalue": "0.016666288921339464",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49145",
+            "name": "sda: Disk average queue size (avgqu-sz)",
+            "key_": "vfs.dev.queue_size[sda]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk average queue size (avgqu-sz)",
+            "lastvalue": "0.003516586962402627",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "49147",
+            "name": "FS [/]: Space: Used",
+            "key_": "vfs.fs.dependent.size[/,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Used",
+            "lastvalue": "15885692928",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49148",
+            "name": "FS [/]: Space: Total",
+            "key_": "vfs.fs.dependent.size[/,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Total",
+            "lastvalue": "21658157056",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49149",
+            "name": "FS [/]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[/,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Used, in %",
+            "lastvalue": "77.37026216384167",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49150",
+            "name": "FS [/]: Space: Available",
+            "key_": "vfs.fs.dependent.size[/,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Available",
+            "lastvalue": "4646346752",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49151",
+            "name": "FS [/]: Inodes: Free, in %",
+            "key_": "vfs.fs.dependent.inode[/,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Inodes: Free, in %",
+            "lastvalue": "66.65699562957714",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49152",
+            "name": "FS [/]: Option: Read-only",
+            "key_": "vfs.fs.dependent[/,readonly]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Option: Read-only",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49154",
+            "name": "FS [/tmp]: Space: Used",
+            "key_": "vfs.fs.dependent.size[/tmp,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/tmp]: Space: Used",
+            "lastvalue": "112514048",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/tmp"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49155",
+            "name": "FS [/tmp]: Space: Total",
+            "key_": "vfs.fs.dependent.size[/tmp,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/tmp]: Space: Total",
+            "lastvalue": "456992768",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/tmp"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49156",
+            "name": "FS [/tmp]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[/tmp,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/tmp]: Space: Used, in %",
+            "lastvalue": "26.298002704546263",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/tmp"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49157",
+            "name": "FS [/tmp]: Space: Available",
+            "key_": "vfs.fs.dependent.size[/tmp,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/tmp]: Space: Available",
+            "lastvalue": "315328512",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/tmp"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49158",
+            "name": "FS [/tmp]: Inodes: Free, in %",
+            "key_": "vfs.fs.dependent.inode[/tmp,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/tmp]: Inodes: Free, in %",
+            "lastvalue": "96.81840551181102",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/tmp"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49159",
+            "name": "FS [/tmp]: Option: Read-only",
+            "key_": "vfs.fs.dependent[/tmp,readonly]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/tmp]: Option: Read-only",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/tmp"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49161",
+            "name": "FS [/home]: Space: Used",
+            "key_": "vfs.fs.dependent.size[/home,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/home]: Space: Used",
+            "lastvalue": "1308225536",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/home"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49162",
+            "name": "FS [/home]: Space: Total",
+            "key_": "vfs.fs.dependent.size[/home,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/home]: Space: Total",
+            "lastvalue": "31108034560",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/home"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49163",
+            "name": "FS [/home]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[/home,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/home]: Space: Used, in %",
+            "lastvalue": "4.434380495839903",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/home"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49164",
+            "name": "FS [/home]: Space: Available",
+            "key_": "vfs.fs.dependent.size[/home,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/home]: Space: Available",
+            "lastvalue": "28193652736",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/home"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49165",
+            "name": "FS [/home]: Inodes: Free, in %",
+            "key_": "vfs.fs.dependent.inode[/home,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/home]: Inodes: Free, in %",
+            "lastvalue": "99.37816249670358",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/home"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49166",
+            "name": "FS [/home]: Option: Read-only",
+            "key_": "vfs.fs.dependent[/home,readonly]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/home]: Option: Read-only",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/home"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49168",
+            "name": "FS [/var]: Space: Used",
+            "key_": "vfs.fs.dependent.size[/var,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/var]: Space: Used",
+            "lastvalue": "1993695232",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/var"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49169",
+            "name": "FS [/var]: Space: Total",
+            "key_": "vfs.fs.dependent.size[/var,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/var]: Space: Total",
+            "lastvalue": "9192288256",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/var"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49170",
+            "name": "FS [/var]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[/var,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/var]: Space: Used, in %",
+            "lastvalue": "22.907521744266433",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/var"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49171",
+            "name": "FS [/var]: Space: Available",
+            "key_": "vfs.fs.dependent.size[/var,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/var]: Space: Available",
+            "lastvalue": "6709538816",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/var"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49172",
+            "name": "FS [/var]: Inodes: Free, in %",
+            "key_": "vfs.fs.dependent.inode[/var,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/var]: Inodes: Free, in %",
+            "lastvalue": "93.74168237773095",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/var"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49173",
+            "name": "FS [/var]: Option: Read-only",
+            "key_": "vfs.fs.dependent[/var,readonly]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/var]: Option: Read-only",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/var"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "49186",
+            "name": "Wordpress update status wordpress",
+            "key_": "wp.update_available[/var/www/wordpress]",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Wordpress update status wordpress",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "Application",
+                    "value": "Wordpress"
                 }
             ]
         }

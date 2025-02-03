@@ -1,6 +1,8 @@
 import json
 import urllib.parse
 from pprint import pp
+from tempfile import template
+
 import requests
 import utils
 
@@ -61,7 +63,6 @@ class GrafanaHost:
         return res.json()
 
     def __get_folders_by_search(self,query):
-        print(self.__host_addr+self.__api_paths["folder_search"]+query)
         res = requests.get(self.__host_addr+self.__api_paths["folder_search"]+query,headers=self.default_authorized_request_header)
         res.raise_for_status()
         return res.json()
@@ -98,58 +99,58 @@ class GrafanaHost:
 
 
 
-    def __create_host_folders(self,host_name,template_folder):
+    def __create_host_folders(self,host_name,hostid,template_folder):
 
         host_name_folder_info = dict()
 
-        folders = self.__get_folders_by_search(host_name)
+        folders = self.__get_folders_by_search(host_name+hostid)
         for folder in folders:
-            if folder["title"] == host_name and folder["folderUid"] == self.__api_folder["uid"]:
+            if folder["title"] == host_name+hostid and folder["folderUid"] == self.__api_folder["uid"]:
                 host_name_folder_info = {"id":folder["id"],"title":folder["title"],"uid":folder["uid"]}
-                print(f"host folder found ! {host_name_folder_info}")
                 break
 
 
         else:
             host_name_folder_info = self.__create_folder_if_not_exists(
                 data = {
-                    "title": host_name,
+                    "title": host_name+hostid,
                     "parentUid": self.__api_folder["uid"]
 
                 }
             )
-            print(f"host folder created ! {host_name_folder_info}")
 
-        return
-        for folder in self.__folders:
-            if folder["title"] in template_folder:
 
-                hostname_uid =host_name_folder_info["uid"]
+        template_folder_info= list(dict())
+        for _template in template_folder:
+            folders = self.__get_folders_by_search(_template)
 
-                template_folder_info = self.__get_folder_by_uuid(folder["uid"])
-                template_folder_puid = template_folder_info.get("parentUid")
+            for folder in folders:
+                if (_template + hostid) == folder["title"]:
+                    template_folder_info.append({"id":folder["id"],"title":folder["title"],"uid":folder["uid"]})
+                    break
 
-                if template_folder_puid and template_folder_puid == hostname_uid:
-                    print(f"Template folder found ! {template_folder_info}")
+            else:
+                folder_info=self.__create_folder_if_not_exists( data = {
+                        "title": _template + hostid,
+                        "parentUid": host_name_folder_info["uid"]
 
-                if template_folder_puid is None:
-                    template_folder_info =self.__create_folder_if_not_exists(
-                        data={
-                            "title": host_name,
-                            "parentUid" : hostname_uid
+                    })
+                template_folder_info.append(folder_info)
 
-                        }
-                    )
+        return host_name_folder_info,template_folder_info
 
-                    print(f"Template folder created ! {template_folder_info}")
+
+
 
     def start(self):
         zabbix_host_data = utils.read_from_zabbix_json_data()
         for zhost in [zabbix_host_data[2]]:
-            host_name =zhost["host"]["host"] + zhost["host"]["hostid"]
+            host_name,host_id =zhost["host"]["host"] , zhost["host"]["hostid"]
             template_names = list(i["name"] for i in zhost["host"]["parentTemplates"])
 
-            self.__create_host_folders(host_name,template_names)
+            host_folder,template_folder = self.__create_host_folders(host_name,host_id,template_names)
+
+            print(host_folder,template_folder)
 
 
 

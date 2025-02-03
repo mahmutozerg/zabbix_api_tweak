@@ -37,7 +37,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed numeric (float) values per second",
-            "lastvalue": "2.6255998053282457",
+            "lastvalue": "2.6422287754339755",
             "tags": [
                 {
                     "tag": "component",
@@ -103,7 +103,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed numeric (unsigned) values per second",
-            "lastvalue": "2.027372239148753",
+            "lastvalue": "1.952575548653145",
             "tags": [
                 {
                     "tag": "component",
@@ -125,7 +125,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed text values per second",
-            "lastvalue": "0.4653111554164137",
+            "lastvalue": "0.47133380923020374",
             "tags": [
                 {
                     "tag": "component",
@@ -147,7 +147,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed not supported values per second",
-            "lastvalue": "0.23265761793809533",
+            "lastvalue": "0.21883703836406024",
             "tags": [
                 {
                     "tag": "component",
@@ -187,7 +187,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of configuration syncer internal processes, in %",
-            "lastvalue": "0.30390005065000847",
+            "lastvalue": "0.33715441672285906",
             "tags": [
                 {
                     "tag": "component",
@@ -205,7 +205,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of escalator internal processes, in %",
-            "lastvalue": "0.13527223537368954",
+            "lastvalue": "0.15218126479540076",
             "tags": [
                 {
                     "tag": "component",
@@ -223,7 +223,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of history syncer internal processes, in %",
-            "lastvalue": "0.5882102212181919",
+            "lastvalue": "0.6994785705201577",
             "tags": [
                 {
                     "tag": "component",
@@ -241,7 +241,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of housekeeper internal processes, in %",
-            "lastvalue": "0",
+            "lastvalue": "0.15238740264138165",
             "tags": [
                 {
                     "tag": "component",
@@ -403,7 +403,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of timer internal processes, in %",
-            "lastvalue": "0.01688048615800135",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -421,7 +421,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of trapper data collector processes, in %",
-            "lastvalue": "0.0033905201057842275",
+            "lastvalue": "0.0033350008337502085",
             "tags": [
                 {
                     "tag": "component",
@@ -493,7 +493,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Configuration cache, % used",
-            "lastvalue": "26.494503021240234",
+            "lastvalue": "26.494574546813965",
             "tags": [
                 {
                     "tag": "component",
@@ -565,7 +565,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed values per second",
-            "lastvalue": "5.135023230187428",
+            "lastvalue": "5.0500143540429665",
             "tags": [
                 {
                     "tag": "component",
@@ -605,7 +605,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Value cache, % used",
-            "lastvalue": "1.3357773945950895",
+            "lastvalue": "2.475756489097096",
             "tags": [
                 {
                     "tag": "component",
@@ -623,7 +623,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Value cache hits",
-            "lastvalue": "14.021712474572121",
+            "lastvalue": "13.82881182887275",
             "tags": [
                 {
                     "tag": "component",
@@ -695,7 +695,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of task manager internal processes, in %",
-            "lastvalue": "0.016929067208396816",
+            "lastvalue": "0.016926201760324982",
             "tags": [
                 {
                     "tag": "component",
@@ -731,7 +731,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of alert manager internal processes, in %",
-            "lastvalue": "0.0169061707523246",
+            "lastvalue": "0.016809547823163556",
             "tags": [
                 {
                     "tag": "component",
@@ -749,7 +749,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of preprocessing manager internal processes, in %",
-            "lastvalue": "0.050770011846336095",
+            "lastvalue": "0.0841467519353753",
             "tags": [
                 {
                     "tag": "component",
@@ -767,7 +767,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of preprocessing worker internal processes, in %",
-            "lastvalue": "0.002115417160264004",
+            "lastvalue": "0.0010589630633683496",
             "tags": [
                 {
                     "tag": "component",
@@ -839,7 +839,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of LLD worker internal processes, in %",
-            "lastvalue": "0.0836470096194061",
+            "lastvalue": "0.0757002271006813",
             "tags": [
                 {
                     "tag": "component",
@@ -857,7 +857,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of alert syncer internal processes, in %",
-            "lastvalue": "0.0169061707523246",
+            "lastvalue": "0.016812373907195696",
             "tags": [
                 {
                     "tag": "component",
@@ -911,7 +911,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of availability manager internal processes, in %",
-            "lastvalue": "0.08583690987124463",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1019,29 +1019,11 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of service manager internal processes, in %",
-            "lastvalue": "0.016852039096730706",
+            "lastvalue": "0.03355704697986577",
             "tags": [
                 {
                     "tag": "component",
                     "value": "internal-process"
-                }
-            ]
-        },
-        {
-            "itemid": "39805",
-            "name": "Zabbix stats cluster",
-            "key_": "zabbix[cluster,discovery,nodes]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "5",
-            "templateid": "10047",
-            "name_resolved": "Zabbix stats cluster",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -1113,7 +1095,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU system time",
-            "lastvalue": "0.631193",
+            "lastvalue": "0.387885",
             "tags": [
                 {
                     "tag": "component",
@@ -1131,7 +1113,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU user time",
-            "lastvalue": "0.366288",
+            "lastvalue": "0.134894",
             "tags": [
                 {
                     "tag": "component",
@@ -1167,7 +1149,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System local time",
-            "lastvalue": "1738523512",
+            "lastvalue": "1738533592",
             "tags": [
                 {
                     "tag": "component",
@@ -1319,7 +1301,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System uptime",
-            "lastvalue": "2575",
+            "lastvalue": "12655",
             "tags": [
                 {
                     "tag": "component",
@@ -1373,7 +1355,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Available memory",
-            "lastvalue": "9186004992",
+            "lastvalue": "9170313216",
             "tags": [
                 {
                     "tag": "component",
@@ -1391,7 +1373,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Available memory in %",
-            "lastvalue": "89.83541",
+            "lastvalue": "89.65077",
             "tags": [
                 {
                     "tag": "component",
@@ -1445,7 +1427,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU softirq time",
-            "lastvalue": "0.216567",
+            "lastvalue": "0.138429",
             "tags": [
                 {
                     "tag": "component",
@@ -1481,7 +1463,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (1m avg)",
-            "lastvalue": "0.466309",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1607,7 +1589,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Interrupts per second",
-            "lastvalue": "495.90467935655437",
+            "lastvalue": "475.8309337038148",
             "tags": [
                 {
                     "tag": "component",
@@ -1625,7 +1607,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (5m avg)",
-            "lastvalue": "0.361816",
+            "lastvalue": "0.03418",
             "tags": [
                 {
                     "tag": "component",
@@ -1643,7 +1625,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU iowait time",
-            "lastvalue": "0.419004",
+            "lastvalue": "0.516979",
             "tags": [
                 {
                     "tag": "component",
@@ -1661,7 +1643,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (15m avg)",
-            "lastvalue": "0.224609",
+            "lastvalue": "0.041504",
             "tags": [
                 {
                     "tag": "component",
@@ -1697,7 +1679,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Context switches per second",
-            "lastvalue": "505.3653883701851",
+            "lastvalue": "473.98675250953966",
             "tags": [
                 {
                     "tag": "component",
@@ -1751,7 +1733,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU idle time",
-            "lastvalue": "98.671714",
+            "lastvalue": "98.780653",
             "tags": [
                 {
                     "tag": "component",
@@ -1805,7 +1787,7 @@
             "type": "18",
             "templateid": "10001",
             "name_resolved": "CPU utilization",
-            "lastvalue": "1.3282860000000056",
+            "lastvalue": "1.219346999999999",
             "tags": [
                 {
                     "tag": "component",
@@ -1823,47 +1805,11 @@
             "type": "18",
             "templateid": "10001",
             "name_resolved": "Memory utilization",
-            "lastvalue": "10.164590000000004",
+            "lastvalue": "10.349230000000006",
             "tags": [
                 {
                     "tag": "component",
                     "value": "memory"
-                }
-            ]
-        },
-        {
-            "itemid": "44056",
-            "name": "Zabbix proxies stats",
-            "key_": "zabbix[proxy,discovery]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "5",
-            "templateid": "10047",
-            "name_resolved": "Zabbix proxies stats",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
-                }
-            ]
-        },
-        {
-            "itemid": "44437",
-            "name": "Get filesystems",
-            "key_": "vfs.fs.get",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10001",
-            "name_resolved": "Get filesystems",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -1985,7 +1931,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of agent poller data collector processes, in %",
-            "lastvalue": "0.06778512116590409",
+            "lastvalue": "0.05080440304826418",
             "tags": [
                 {
                     "tag": "component",
@@ -2039,7 +1985,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of values synchronized with the database per second",
-            "lastvalue": "4.702922079429712",
+            "lastvalue": "4.376136886248115",
             "tags": [
                 {
                     "tag": "component",
@@ -2079,7 +2025,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of configuration syncer worker internal processes, in %",
-            "lastvalue": "0.01688048615800135",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2124,38 +2070,688 @@
             ]
         },
         {
-            "itemid": "47552",
-            "name": "Zabbix proxy groups stats",
-            "key_": "zabbix[proxy group,discovery]",
-            "units": "",
+            "itemid": "48369",
+            "name": "FS [/]: Space: Available",
+            "key_": "vfs.fs.dependent.size[/,free]",
+            "units": "B",
             "formula": "",
-            "value_type": "4",
-            "type": "5",
-            "templateid": "10047",
-            "name_resolved": "Zabbix proxy groups stats",
-            "lastvalue": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Available",
+            "lastvalue": "3948982272",
             "tags": [
                 {
                     "tag": "component",
-                    "value": "raw"
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
                 }
             ]
         },
         {
-            "itemid": "48584",
-            "name": "Get archive",
-            "key_": "pgsql.archive[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
+            "itemid": "48370",
+            "name": "FS [/]: Option: Read-only",
+            "key_": "vfs.fs.dependent[/,readonly]",
             "units": "",
             "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get archive",
-            "lastvalue": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Option: Read-only",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
-                    "value": "raw"
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48371",
+            "name": "FS [/]: Space: Used",
+            "key_": "vfs.fs.dependent.size[/,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Used",
+            "lastvalue": "7458021376",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48372",
+            "name": "FS [/]: Space: Total",
+            "key_": "vfs.fs.dependent.size[/,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Total",
+            "lastvalue": "12040970240",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48373",
+            "name": "FS [/]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[/,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Space: Used, in %",
+            "lastvalue": "65.38107294554624",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48374",
+            "name": "FS [/]: Inodes: Free, in %",
+            "key_": "vfs.fs.dependent.inode[/,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/]: Inodes: Free, in %",
+            "lastvalue": "78.87175186820652",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48376",
+            "name": "FS [/boot]: Space: Available",
+            "key_": "vfs.fs.dependent.size[/boot,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/boot]: Space: Available",
+            "lastvalue": "1723994112",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/boot"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48377",
+            "name": "FS [/boot]: Option: Read-only",
+            "key_": "vfs.fs.dependent[/boot,readonly]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/boot]: Option: Read-only",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/boot"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48378",
+            "name": "FS [/boot]: Space: Used",
+            "key_": "vfs.fs.dependent.size[/boot,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/boot]: Space: Used",
+            "lastvalue": "192229376",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/boot"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48379",
+            "name": "FS [/boot]: Space: Total",
+            "key_": "vfs.fs.dependent.size[/boot,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/boot]: Space: Total",
+            "lastvalue": "2040373248",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/boot"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48380",
+            "name": "FS [/boot]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[/boot,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/boot]: Space: Used, in %",
+            "lastvalue": "10.031678309122157",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/boot"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48381",
+            "name": "FS [/boot]: Inodes: Free, in %",
+            "key_": "vfs.fs.dependent.inode[/boot,pfree]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [/boot]: Inodes: Free, in %",
+            "lastvalue": "99.75509643554688",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "/boot"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "ext4"
+                }
+            ]
+        },
+        {
+            "itemid": "48382",
+            "name": "Interface enp0s3: Inbound packets discarded",
+            "key_": "net.if.in[\"enp0s3\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Inbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48383",
+            "name": "Interface enp0s3: Inbound packets with errors",
+            "key_": "net.if.in[\"enp0s3\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Inbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48384",
+            "name": "Interface enp0s3: Bits received",
+            "key_": "net.if.in[\"enp0s3\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Bits received",
+            "lastvalue": "1264",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48385",
+            "name": "Interface enp0s3: Outbound packets discarded",
+            "key_": "net.if.out[\"enp0s3\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Outbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48386",
+            "name": "Interface enp0s3: Outbound packets with errors",
+            "key_": "net.if.out[\"enp0s3\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Outbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48387",
+            "name": "Interface enp0s3: Bits sent",
+            "key_": "net.if.out[\"enp0s3\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Bits sent",
+            "lastvalue": "23216",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48388",
+            "name": "Interface enp0s3: Operational status",
+            "key_": "vfs.file.contents[\"/sys/class/net/enp0s3/operstate\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Operational status",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48389",
+            "name": "Interface enp0s3: Interface type",
+            "key_": "vfs.file.contents[\"/sys/class/net/enp0s3/type\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Interface type",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48390",
+            "name": "Interface enp0s3: Speed",
+            "key_": "vfs.file.contents[\"/sys/class/net/enp0s3/speed\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface enp0s3: Speed",
+            "lastvalue": "1000000000",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "interface",
+                    "value": "enp0s3"
+                }
+            ]
+        },
+        {
+            "itemid": "48391",
+            "name": "sda: Disk read request avg waiting time (r_await)",
+            "key_": "vfs.dev.read.await[sda]",
+            "units": "!ms",
+            "formula": "",
+            "value_type": "0",
+            "type": "15",
+            "templateid": "0",
+            "name_resolved": "sda: Disk read request avg waiting time (r_await)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "48392",
+            "name": "sda: Disk write request avg waiting time (w_await)",
+            "key_": "vfs.dev.write.await[sda]",
+            "units": "!ms",
+            "formula": "",
+            "value_type": "0",
+            "type": "15",
+            "templateid": "0",
+            "name_resolved": "sda: Disk write request avg waiting time (w_await)",
+            "lastvalue": "4.530674846625767",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "48394",
+            "name": "sda: Disk write time (rate)",
+            "key_": "vfs.dev.write.time.rate[sda]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk write time (rate)",
+            "lastvalue": "0.03450789387931183",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "48395",
+            "name": "sda: Disk write rate",
+            "key_": "vfs.dev.write.rate[sda]",
+            "units": "!w/s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk write rate",
+            "lastvalue": "9.876052640169842",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "48396",
+            "name": "sda: Disk utilization",
+            "key_": "vfs.dev.util[sda]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk utilization",
+            "lastvalue": "2.604746429886279",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "48397",
+            "name": "sda: Disk read time (rate)",
+            "key_": "vfs.dev.read.time.rate[sda]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk read time (rate)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "48398",
+            "name": "sda: Disk read rate",
+            "key_": "vfs.dev.read.rate[sda]",
+            "units": "!r/s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk read rate",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
+                }
+            ]
+        },
+        {
+            "itemid": "48399",
+            "name": "sda: Disk average queue size (avgqu-sz)",
+            "key_": "vfs.dev.queue_size[sda]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "sda: Disk average queue size (avgqu-sz)",
+            "lastvalue": "0.058323670060497115",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "sda"
                 }
             ]
         },
@@ -2178,24 +2774,6 @@
             ]
         },
         {
-            "itemid": "48586",
-            "name": "Get bgwriter",
-            "key_": "pgsql.bgwriter[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get bgwriter",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
-                }
-            ]
-        },
-        {
             "itemid": "48587",
             "name": "Cache hit ratio, %",
             "key_": "pgsql.cache.hit",
@@ -2205,29 +2783,11 @@
             "type": "15",
             "templateid": "10329",
             "name_resolved": "Cache hit ratio, %",
-            "lastvalue": "100",
+            "lastvalue": "99.91927762863955",
             "tags": [
                 {
                     "tag": "component",
                     "value": "cache"
-                }
-            ]
-        },
-        {
-            "itemid": "48588",
-            "name": "Get connections sum",
-            "key_": "pgsql.connections[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get connections sum",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -2246,60 +2806,6 @@
                 {
                     "tag": "component",
                     "value": "application"
-                }
-            ]
-        },
-        {
-            "itemid": "48590",
-            "name": "Get dbstat",
-            "key_": "pgsql.dbstat[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get dbstat",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
-                }
-            ]
-        },
-        {
-            "itemid": "48591",
-            "name": "Get dbstat sum",
-            "key_": "pgsql.dbstat.sum[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get dbstat sum",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
-                }
-            ]
-        },
-        {
-            "itemid": "48592",
-            "name": "Get locks",
-            "key_": "pgsql.locks[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get locks",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -2340,24 +2846,6 @@
                 {
                     "tag": "component",
                     "value": "health"
-                }
-            ]
-        },
-        {
-            "itemid": "48595",
-            "name": "Get queries",
-            "key_": "pgsql.queries[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\",\"{$PG.QUERY_ETIME.MAX.WARN}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get queries",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -2416,24 +2904,6 @@
             ]
         },
         {
-            "itemid": "48599",
-            "name": "Get replication",
-            "key_": "pgsql.replication.process[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get replication",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
-                }
-            ]
-        },
-        {
             "itemid": "48600",
             "name": "Replication: Recovery role",
             "key_": "pgsql.replication.recovery_role[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
@@ -2479,7 +2949,7 @@
             "type": "0",
             "templateid": "10329",
             "name_resolved": "Uptime",
-            "lastvalue": "2533.850133",
+            "lastvalue": "12613.705812",
             "tags": [
                 {
                     "tag": "component",
@@ -2502,24 +2972,6 @@
                 {
                     "tag": "component",
                     "value": "application"
-                }
-            ]
-        },
-        {
-            "itemid": "48604",
-            "name": "Get WAL",
-            "key_": "pgsql.wal.stat[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"{$PG.DATABASE}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10329",
-            "name_resolved": "Get WAL",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -2605,7 +3057,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Bgwriter: Buffers allocated per second",
-            "lastvalue": "0.10000483430869411",
+            "lastvalue": "0.016666032168322874",
             "tags": [
                 {
                     "tag": "component",
@@ -2947,7 +3399,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Connections sum: Waiting",
-            "lastvalue": "35",
+            "lastvalue": "34",
             "tags": [
                 {
                     "tag": "component",
@@ -2983,7 +3435,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Hit blocks read per second",
-            "lastvalue": "1695.4673608933756",
+            "lastvalue": "264.3584676680995",
             "tags": [
                 {
                     "tag": "component",
@@ -3001,7 +3453,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Disk blocks read per second",
-            "lastvalue": "0.016666181998539045",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3163,7 +3615,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows fetched per second",
-            "lastvalue": "949.1557309987971",
+            "lastvalue": "75.98097680613198",
             "tags": [
                 {
                     "tag": "component",
@@ -3181,7 +3633,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows inserted per second",
-            "lastvalue": "4.116546953639144",
+            "lastvalue": "4.666521935888781",
             "tags": [
                 {
                     "tag": "component",
@@ -3199,7 +3651,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows returned per second",
-            "lastvalue": "4137.69633859529",
+            "lastvalue": "2459.240394063617",
             "tags": [
                 {
                     "tag": "component",
@@ -3217,7 +3669,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows updated per second",
-            "lastvalue": "0.733312007935718",
+            "lastvalue": "0.6333136912991918",
             "tags": [
                 {
                     "tag": "component",
@@ -3235,7 +3687,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Committed transactions per second",
-            "lastvalue": "18.266135470398794",
+            "lastvalue": "9.866360664450566",
             "tags": [
                 {
                     "tag": "component",
@@ -3253,7 +3705,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Roll backed transactions per second",
-            "lastvalue": "0.2499927299780857",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3307,11 +3759,1683 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "WAL: Bytes written",
-            "lastvalue": "8235",
+            "lastvalue": "7000",
             "tags": [
                 {
                     "tag": "component",
                     "value": "wal"
+                }
+            ]
+        },
+        {
+            "itemid": "48696",
+            "name": "DB [postgres]: Database age",
+            "key_": "pgsql.db.age[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Database age",
+            "lastvalue": "957916",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48697",
+            "name": "DB [zabbix]: Database age",
+            "key_": "pgsql.db.age[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Database age",
+            "lastvalue": "957919",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48698",
+            "name": "DB [postgres]: Bloating tables",
+            "key_": "pgsql.db.bloating_tables[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Bloating tables",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "tables"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48699",
+            "name": "DB [zabbix]: Bloating tables",
+            "key_": "pgsql.db.bloating_tables[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Bloating tables",
+            "lastvalue": "12",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "tables"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48700",
+            "name": "DB [postgres]: Database size",
+            "key_": "pgsql.db.size[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"postgres\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Database size",
+            "lastvalue": "9335267",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48701",
+            "name": "DB [zabbix]: Database size",
+            "key_": "pgsql.db.size[\"{$PG.CONNSTRING.AGENT2}\",\"{$PG.USER}\",\"{$PG.PASSWORD}\",\"zabbix\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Database size",
+            "lastvalue": "263369187",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48703",
+            "name": "DB [postgres]: Rollbacks per second",
+            "key_": "pgsql.dbstat.xact_rollback.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Rollbacks per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "transactions"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48704",
+            "name": "DB [postgres]: Commits per second",
+            "key_": "pgsql.dbstat.xact_commit.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Commits per second",
+            "lastvalue": "0.516699949497777",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "transactions"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48705",
+            "name": "DB [postgres]: Tuples updated per second",
+            "key_": "pgsql.dbstat.tup_updated.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Tuples updated per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48706",
+            "name": "DB [postgres]: Tuples returned per second",
+            "key_": "pgsql.dbstat.tup_returned.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Tuples returned per second",
+            "lastvalue": "120.62443659727134",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48707",
+            "name": "DB [postgres]: Tuples inserted per second",
+            "key_": "pgsql.dbstat.tup_inserted.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Tuples inserted per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48708",
+            "name": "DB [postgres]: Tuples fetched per second",
+            "key_": "pgsql.dbstat.tup_fetched.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Tuples fetched per second",
+            "lastvalue": "1.4500934066550515",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48709",
+            "name": "DB [postgres]: Tuples deleted per second",
+            "key_": "pgsql.dbstat.tup_deleted.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Tuples deleted per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48710",
+            "name": "DB [postgres]: Temp_files created per second",
+            "key_": "pgsql.dbstat.temp_files.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Temp_files created per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48711",
+            "name": "DB [postgres]: Temp_bytes written per second",
+            "key_": "pgsql.dbstat.temp_bytes.rate[\"postgres\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Temp_bytes written per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48712",
+            "name": "DB [postgres]: Backends connected",
+            "key_": "pgsql.dbstat.numbackends[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Backends connected",
+            "lastvalue": "3",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "backends"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48713",
+            "name": "DB [postgres]: Detected deadlocks per second",
+            "key_": "pgsql.dbstat.deadlocks.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Detected deadlocks per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "deadlocks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48714",
+            "name": "DB [postgres]: Detected conflicts per second",
+            "key_": "pgsql.dbstat.conflicts.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Detected conflicts per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48715",
+            "name": "DB [postgres]: Checksum failures",
+            "key_": "pgsql.dbstat.checksum_failures.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Checksum failures",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48716",
+            "name": "DB [postgres]: Disk blocks write time",
+            "key_": "pgsql.dbstat.blk_write_time.rate[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Disk blocks write time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48717",
+            "name": "DB [postgres]: Disk blocks read per second",
+            "key_": "pgsql.dbstat.blks_read.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Disk blocks read per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48718",
+            "name": "DB [postgres]: Blocks hit per second",
+            "key_": "pgsql.dbstat.blks_hit.rate[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Blocks hit per second",
+            "lastvalue": "8.250531451658052",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cache"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48719",
+            "name": "DB [postgres]: Disk blocks read time per second",
+            "key_": "pgsql.dbstat.blk_read_time.rate[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Disk blocks read time per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48721",
+            "name": "DB [zabbix]: Rollbacks per second",
+            "key_": "pgsql.dbstat.xact_rollback.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Rollbacks per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "transactions"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48722",
+            "name": "DB [zabbix]: Commits per second",
+            "key_": "pgsql.dbstat.xact_commit.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Commits per second",
+            "lastvalue": "9.167257168508945",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "transactions"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48723",
+            "name": "DB [zabbix]: Tuples updated per second",
+            "key_": "pgsql.dbstat.tup_updated.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Tuples updated per second",
+            "lastvalue": "0.6333741316424363",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48724",
+            "name": "DB [zabbix]: Tuples returned per second",
+            "key_": "pgsql.dbstat.tup_returned.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Tuples returned per second",
+            "lastvalue": "2249.16154468321",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48725",
+            "name": "DB [zabbix]: Tuples inserted per second",
+            "key_": "pgsql.dbstat.tup_inserted.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Tuples inserted per second",
+            "lastvalue": "4.683635026092753",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48726",
+            "name": "DB [zabbix]: Tuples fetched per second",
+            "key_": "pgsql.dbstat.tup_fetched.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Tuples fetched per second",
+            "lastvalue": "71.95463490264203",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48727",
+            "name": "DB [zabbix]: Tuples deleted per second",
+            "key_": "pgsql.dbstat.tup_deleted.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Tuples deleted per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48728",
+            "name": "DB [zabbix]: Temp_files created per second",
+            "key_": "pgsql.dbstat.temp_files.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Temp_files created per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48729",
+            "name": "DB [zabbix]: Temp_bytes written per second",
+            "key_": "pgsql.dbstat.temp_bytes.rate[\"zabbix\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Temp_bytes written per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48730",
+            "name": "DB [zabbix]: Backends connected",
+            "key_": "pgsql.dbstat.numbackends[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Backends connected",
+            "lastvalue": "33",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "backends"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48731",
+            "name": "DB [zabbix]: Detected deadlocks per second",
+            "key_": "pgsql.dbstat.deadlocks.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Detected deadlocks per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "deadlocks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48732",
+            "name": "DB [zabbix]: Detected conflicts per second",
+            "key_": "pgsql.dbstat.conflicts.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Detected conflicts per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48733",
+            "name": "DB [zabbix]: Checksum failures",
+            "key_": "pgsql.dbstat.checksum_failures.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Checksum failures",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48734",
+            "name": "DB [zabbix]: Disk blocks write time",
+            "key_": "pgsql.dbstat.blk_write_time.rate[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Disk blocks write time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48735",
+            "name": "DB [zabbix]: Disk blocks read per second",
+            "key_": "pgsql.dbstat.blks_read.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Disk blocks read per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48736",
+            "name": "DB [zabbix]: Blocks hit per second",
+            "key_": "pgsql.dbstat.blks_hit.rate[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Blocks hit per second",
+            "lastvalue": "243.7990374614188",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cache"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48737",
+            "name": "DB [zabbix]: Disk blocks read time per second",
+            "key_": "pgsql.dbstat.blk_read_time.rate[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Disk blocks read time per second",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48739",
+            "name": "DB [postgres]: Num of locks total",
+            "key_": "pgsql.locks.total[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of locks total",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48740",
+            "name": "DB [postgres]: Num of shareupdateexclusive locks",
+            "key_": "pgsql.locks.shareupdateexclusive[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of shareupdateexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48741",
+            "name": "DB [postgres]: Num of sharerowexclusive locks",
+            "key_": "pgsql.locks.sharerowexclusive[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of sharerowexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48742",
+            "name": "DB [postgres]: Num of share locks",
+            "key_": "pgsql.locks.share[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of share locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48743",
+            "name": "DB [postgres]: Num of rowshare locks",
+            "key_": "pgsql.locks.rowshare[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of rowshare locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48744",
+            "name": "DB [postgres]: Num of rowexclusive locks",
+            "key_": "pgsql.locks.rowexclusive[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of rowexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48745",
+            "name": "DB [postgres]: Num of exclusive locks",
+            "key_": "pgsql.locks.exclusive[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of exclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48746",
+            "name": "DB [postgres]: Num of accessshare locks",
+            "key_": "pgsql.locks.accessshare[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of accessshare locks",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48747",
+            "name": "DB [postgres]: Num of accessexclusive locks",
+            "key_": "pgsql.locks.accessexclusive[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Num of accessexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48749",
+            "name": "DB [zabbix]: Num of locks total",
+            "key_": "pgsql.locks.total[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of locks total",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48750",
+            "name": "DB [zabbix]: Num of shareupdateexclusive locks",
+            "key_": "pgsql.locks.shareupdateexclusive[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of shareupdateexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48751",
+            "name": "DB [zabbix]: Num of sharerowexclusive locks",
+            "key_": "pgsql.locks.sharerowexclusive[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of sharerowexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48752",
+            "name": "DB [zabbix]: Num of share locks",
+            "key_": "pgsql.locks.share[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of share locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48753",
+            "name": "DB [zabbix]: Num of rowshare locks",
+            "key_": "pgsql.locks.rowshare[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of rowshare locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48754",
+            "name": "DB [zabbix]: Num of rowexclusive locks",
+            "key_": "pgsql.locks.rowexclusive[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of rowexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48755",
+            "name": "DB [zabbix]: Num of exclusive locks",
+            "key_": "pgsql.locks.exclusive[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of exclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48756",
+            "name": "DB [zabbix]: Num of accessshare locks",
+            "key_": "pgsql.locks.accessshare[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of accessshare locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48757",
+            "name": "DB [zabbix]: Num of accessexclusive locks",
+            "key_": "pgsql.locks.accessexclusive[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Num of accessexclusive locks",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "locks"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48759",
+            "name": "DB [postgres]: Queries sum transaction time",
+            "key_": "pgsql.queries.tx.time_sum[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries sum transaction time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48760",
+            "name": "DB [postgres]: Queries max transaction time",
+            "key_": "pgsql.queries.tx.time_max[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries max transaction time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48761",
+            "name": "DB [postgres]: Queries slow transaction count",
+            "key_": "pgsql.queries.tx.slow_count[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries slow transaction count",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48762",
+            "name": "DB [postgres]: Queries sum query time",
+            "key_": "pgsql.queries.query.time_sum[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries sum query time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48763",
+            "name": "DB [postgres]: Queries max query time",
+            "key_": "pgsql.queries.query.time_max[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries max query time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48764",
+            "name": "DB [postgres]: Queries slow query count",
+            "key_": "pgsql.queries.query.slow_count[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries slow query count",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48765",
+            "name": "DB [postgres]: Queries sum maintenance time",
+            "key_": "pgsql.queries.mro.time_sum[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries sum maintenance time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48766",
+            "name": "DB [postgres]: Queries max maintenance time",
+            "key_": "pgsql.queries.mro.time_max[\"postgres\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries max maintenance time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48767",
+            "name": "DB [postgres]: Queries slow maintenance count",
+            "key_": "pgsql.queries.mro.slow_count[\"postgres\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [postgres]: Queries slow maintenance count",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "postgres"
+                }
+            ]
+        },
+        {
+            "itemid": "48769",
+            "name": "DB [zabbix]: Queries sum transaction time",
+            "key_": "pgsql.queries.tx.time_sum[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries sum transaction time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48770",
+            "name": "DB [zabbix]: Queries max transaction time",
+            "key_": "pgsql.queries.tx.time_max[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries max transaction time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48771",
+            "name": "DB [zabbix]: Queries slow transaction count",
+            "key_": "pgsql.queries.tx.slow_count[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries slow transaction count",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48772",
+            "name": "DB [zabbix]: Queries sum query time",
+            "key_": "pgsql.queries.query.time_sum[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries sum query time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48773",
+            "name": "DB [zabbix]: Queries max query time",
+            "key_": "pgsql.queries.query.time_max[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries max query time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48774",
+            "name": "DB [zabbix]: Queries slow query count",
+            "key_": "pgsql.queries.query.slow_count[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries slow query count",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48775",
+            "name": "DB [zabbix]: Queries sum maintenance time",
+            "key_": "pgsql.queries.mro.time_sum[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries sum maintenance time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48776",
+            "name": "DB [zabbix]: Queries max maintenance time",
+            "key_": "pgsql.queries.mro.time_max[\"zabbix\"]",
+            "units": "s",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries max maintenance time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
+                }
+            ]
+        },
+        {
+            "itemid": "48777",
+            "name": "DB [zabbix]: Queries slow maintenance count",
+            "key_": "pgsql.queries.mro.slow_count[\"zabbix\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "DB [zabbix]: Queries slow maintenance count",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "queries"
+                },
+                {
+                    "tag": "database",
+                    "value": "zabbix"
                 }
             ]
         },
@@ -3347,7 +5471,7 @@
             "type": "0",
             "templateid": "10266",
             "name_resolved": "Service response time",
-            "lastvalue": "0.000693",
+            "lastvalue": "0.000449",
             "tags": [
                 {
                     "tag": "component",
@@ -3356,24 +5480,6 @@
                 {
                     "tag": "component",
                     "value": "health"
-                }
-            ]
-        },
-        {
-            "itemid": "48780",
-            "name": "Get processes summary",
-            "key_": "proc.get[{$NGINX.PROCESS.NAME.PARAMETER},,,summary]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10266",
-            "name_resolved": "Get processes summary",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -3387,7 +5493,7 @@
             "type": "0",
             "templateid": "10266",
             "name_resolved": "Get stub status page",
-            "lastvalue": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 103\r\nContent-Type: text/plain\r\nDate: Sun, 02 Feb 2025 19:12:01 GMT\r\nServer: nginx/1.24.0 (Ubuntu)\r\n\r\nActive connections: 7 \nserver accepts handled requests\n 562 562 585 \nReading: 0 Writing: 1 Waiting: 6 \n",
+            "lastvalue": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 106\r\nContent-Type: text/plain\r\nDate: Sun, 02 Feb 2025 22:00:01 GMT\r\nServer: nginx/1.24.0 (Ubuntu)\r\n\r\nActive connections: 1 \nserver accepts handled requests\n 2210 2210 3026 \nReading: 0 Writing: 1 Waiting: 0 \n",
             "tags": [
                 {
                     "tag": "component",
@@ -3409,7 +5515,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Connections accepted per second",
-            "lastvalue": "0.16666307004150482",
+            "lastvalue": "0.0833343464123158",
             "tags": [
                 {
                     "tag": "component",
@@ -3427,7 +5533,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Connections active",
-            "lastvalue": "7",
+            "lastvalue": "1",
             "tags": [
                 {
                     "tag": "component",
@@ -3463,7 +5569,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Connections handled per second",
-            "lastvalue": "0.16666307004150482",
+            "lastvalue": "0.0833343464123158",
             "tags": [
                 {
                     "tag": "component",
@@ -3499,7 +5605,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Connections waiting",
-            "lastvalue": "6",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3535,7 +5641,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Requests total",
-            "lastvalue": "585",
+            "lastvalue": "3026",
             "tags": [
                 {
                     "tag": "component",
@@ -3553,7 +5659,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Requests per second",
-            "lastvalue": "0.36665875409131066",
+            "lastvalue": "0.05000060784738948",
             "tags": [
                 {
                     "tag": "component",
@@ -3580,6 +5686,114 @@
             ]
         },
         {
+            "itemid": "48827",
+            "name": "Memory usage (vsize)",
+            "key_": "nginx.proc.vmem[nginx]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Memory usage (vsize)",
+            "lastvalue": "80175104",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48828",
+            "name": "Memory usage (rss)",
+            "key_": "nginx.proc.rss[nginx]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Memory usage (rss)",
+            "lastvalue": "30920704",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48829",
+            "name": "Memory usage, %",
+            "key_": "nginx.proc.pmem[nginx]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Memory usage, %",
+            "lastvalue": "0.3022868325233242",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48830",
+            "name": "Number of running processes",
+            "key_": "nginx.proc.num[nginx]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Number of running processes",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48831",
+            "name": "CPU utilization",
+            "key_": "proc.cpu.util[nginx]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "CPU utilization",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48838",
+            "name": "Get ping page",
+            "key_": "php-fpm.get_ping",
+            "units": "",
+            "formula": "",
+            "value_type": "4",
+            "type": "19",
+            "templateid": "0",
+            "name_resolved": "Get ping page",
+            "lastvalue": "",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "health"
+                }
+            ]
+        },
+        {
             "itemid": "48879",
             "name": "Queue usage",
             "key_": "php-fpm.listen_queue_usage",
@@ -3594,24 +5808,6 @@
                 {
                     "tag": "component",
                     "value": "application"
-                }
-            ]
-        },
-        {
-            "itemid": "48880",
-            "name": "Get processes summary",
-            "key_": "proc.get[{$PHP_FPM.PROCESS.NAME.PARAMETER},,,summary]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10330",
-            "name_resolved": "Get processes summary",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
                 }
             ]
         },
@@ -3634,24 +5830,6 @@
             ]
         },
         {
-            "itemid": "48882",
-            "name": "Get status page",
-            "key_": "web.page.get[\"{$PHP_FPM.HOST}\",\"{$PHP_FPM.STATUS.PAGE}?json\",\"{$PHP_FPM.PORT}\"]",
-            "units": "",
-            "formula": "",
-            "value_type": "4",
-            "type": "0",
-            "templateid": "10330",
-            "name_resolved": "Get status page",
-            "lastvalue": "",
-            "tags": [
-                {
-                    "tag": "component",
-                    "value": "raw"
-                }
-            ]
-        },
-        {
             "itemid": "48883",
             "name": "Accepted connections per second",
             "key_": "php-fpm.conn_accepted.rate",
@@ -3661,7 +5839,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Accepted connections per second",
-            "lastvalue": "0.31666576911448846",
+            "lastvalue": "0.03333326135737764",
             "tags": [
                 {
                     "tag": "component",
@@ -3787,7 +5965,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Processes, idle",
-            "lastvalue": "7",
+            "lastvalue": "10",
             "tags": [
                 {
                     "tag": "component",
@@ -3823,7 +6001,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Processes, total",
-            "lastvalue": "8",
+            "lastvalue": "11",
             "tags": [
                 {
                     "tag": "component",
@@ -3895,7 +6073,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Uptime",
-            "lastvalue": "2574",
+            "lastvalue": "12594",
             "tags": [
                 {
                     "tag": "component",
@@ -3936,6 +6114,96 @@
                 {
                     "tag": "component",
                     "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48907",
+            "name": "Memory usage (vsize)",
+            "key_": "php-fpm.proc.vmem[php-fpm8.3]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Memory usage (vsize)",
+            "lastvalue": "3302309888",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48908",
+            "name": "Memory usage (rss)",
+            "key_": "php-fpm.proc.rss[php-fpm8.3]",
+            "units": "B",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Memory usage (rss)",
+            "lastvalue": "475295744",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48909",
+            "name": "Memory usage, %",
+            "key_": "php-fpm.proc.pmem[php-fpm8.3]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Memory usage, %",
+            "lastvalue": "4.646583886498081",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48910",
+            "name": "Number of running processes",
+            "key_": "php-fpm.proc.num[php-fpm8.3]",
+            "units": "",
+            "formula": "",
+            "value_type": "3",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Number of running processes",
+            "lastvalue": "14",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48911",
+            "name": "CPU utilization",
+            "key_": "proc.cpu.util[php-fpm8.3]",
+            "units": "%",
+            "formula": "",
+            "value_type": "0",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "CPU utilization",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
                 }
             ]
         }
