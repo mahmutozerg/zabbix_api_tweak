@@ -1,9 +1,4 @@
 import json
-import time
-from pprint import pp
-from traceback import print_tb
-
-import pandas as pd
 import requests
 import utils
 
@@ -67,7 +62,7 @@ class ZabbixHost:
 
         self.__test_connection()
 
-        self.start()
+        self.start_gathering_host_keys()
 
 
     def __test_connection(self):
@@ -161,24 +156,8 @@ class ZabbixHost:
 
         return "|".join(group["name"] for group in res)
 
+    def __get_items_with_missing_tids(self,hostids):
 
-
-    def get_items(self,hostids,tids):
-        """
-        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
-
-        will look into template ids that are 0 (they are prototypes?)
-
-        What we are doing here is simple...
-
-        when you got items with hostids you can't control templateid, they don't actually represent the template's id that item is inherited
-        when you get items with templateids you can't control hostid's, they don't actually represent the host's id that item is owned by
-
-        so we are combining them, The reason why you can't batch request the tids request is, zabbix api always returns templateid = '0' since you just asked for them
-        zabbix assumes that you know that which item comes from which template
-
-
-        """
 
         items_with_missing_tids =self.__do_request(
             method="item.get",
@@ -193,7 +172,7 @@ class ZabbixHost:
         """
             removing the raw data type since it is not processed
         """
-        filtered_items = []
+        filtered_items_with_missing_tids = []
         for item in items_with_missing_tids:
             keep_item = True
 
@@ -203,9 +182,29 @@ class ZabbixHost:
                     break
 
             if keep_item:
-                filtered_items.append(item)
+                filtered_items_with_missing_tids.append(item)
 
-        items_with_missing_tids = filtered_items
+
+        return filtered_items_with_missing_tids
+    def get_items(self,hostids,tids):
+        """
+        DOCS -> https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/get?hl=item.get
+
+        will look into template ids that are 0 (they are prototypes?)
+
+        What we are doing here is simple...
+
+        when you get  items with hostids you can't control templateid, they don't actually represent the template's id that item is inherited
+        when you get items with templateids you can't control hostid's, they don't actually represent the host's id that item is owned by
+
+        so we are combining them, The reason why you can't batch request the tids request is, zabbix api always returns templateid = '0' since you just asked for them
+        zabbix assumes that you know that which item comes from which template
+
+
+        """
+
+        items_with_missing_tids = self.__get_items_with_missing_tids(hostids)
+
         for tid in tids:
 
             items_with_missing_higs =self.__do_request(
@@ -231,7 +230,7 @@ class ZabbixHost:
         return  items_with_missing_tids
 
 
-    def start(self):
+    def start_gathering_host_keys(self):
 
         hosts = self.get_hosts()
 

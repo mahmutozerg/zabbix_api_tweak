@@ -1,5 +1,6 @@
 import copy
 import json
+import os
 
 
 def raise_if_zabbix_response_error(res,func):
@@ -39,9 +40,13 @@ def read_from_file_custom_string(file_name="./tempdatas/data.txt"):
 
     return  data
 
-def read_from_zabbix_json_data(file_name="data.json"):
-    with open(file_name, "r", encoding="utf-8") as file:
-        data = json.load(file)
+def read_from_zabbix_json_data():
+    data = []
+
+    for path in os.listdir("./hostdatas"):
+
+        with open("./hostdatas/"+path, "r", encoding="utf-8") as file:
+            data.append(json.load(file))
 
     return data
 
