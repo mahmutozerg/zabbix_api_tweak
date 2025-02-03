@@ -1,5 +1,6 @@
 import json
 import urllib.parse
+from copy import deepcopy
 from pprint import pp, pprint
 from tempfile import template
 
@@ -93,8 +94,8 @@ class GrafanaHost:
                 "id": None,
                 "uid": None,
                 "title":title ,
+                "timezone": "browser",
                 "schemaVersion": 16,
-                "version": 0
             },
             "folderUid": parent_uuid,  # Assign to specific folder
             "overwrite": False
@@ -104,7 +105,9 @@ class GrafanaHost:
                             headers=self.default_authorized_request_header)
 
         res.raise_for_status()
-        return res.json()
+        res = res.json()
+        res["title"] = title
+        return res
 
     def __create_api_folder_if_not_exists(self):
 
@@ -151,46 +154,81 @@ class GrafanaHost:
 
             for template_db in template_dbs:
                 if template_db_name == template_db["title"]:
-                    template_db_info.append({"id":template_db["id"],"title":template_db["title"],"uid":template_db["uid"]})
+                    template_db_info.append(template_db)
                     break
 
             else:
                 dashboard_info=self.__create_dash_board(title=template_db_name,parent_uuid=host_name_folder_info["uid"])
-                template_db_info.append({"id":dashboard_info["id"],"title":dashboard_info["slug"],"uid":dashboard_info["uid"],"folderuid":dashboard_info["folderUid"]})
+                template_db_info.append(dashboard_info)
 
         return host_name_folder_info,template_db_info
 
 
 
-    def __add_dashboard(self, host_folder, template_folder, host):
-
-        for item in host["items"]:
-            template = list(i for i in template_folder if i["title"].endswith(item["templateid"]))
+    def __add_panels_to_dashboard(self, host_folder, template_dbs, host):
 
 
-            if template:
+
+        for item in sorted([i for i in host["items"] if i["templateid"] !="0"],key=lambda x: x['templateid']):
+
+            for i in template_dbs:
+                if i["slug"] != "" and i["slug"].endswith(item["templateid"]):
+                    target_db = list(i for i in template_dbs if i["slug"].endswith(item["templateid"]))
+                else:
+                    target_db = list(i for i in template_dbs if i["title"].endswith(item["templateid"]))
+
+
+
+            if len(target_db) != 1:
+                raise  Exception("I don't know why but it matches multiple template dashboards")
+
+            target_db = target_db[0]
+            if target_db:
+                if "panels" not in target_db:
+                    target_db["panels"] = []
+                
+                if "version" not in target_db:
+                    target_db["version"] = 0
+                else:
+                    target_db["version"] += 1
 
                 db = GrafanaDicts.stat_single_value.copy()
                 db["pluginVersion"] =self.grafana_version
                 db["targets"][0]["group"]["filter"]= f"/{host['host_groups']}/"
                 db["targets"][0]["host"]["filter"]=host['host']['host']
-                db["targets"][0]["item"]["filter"]= item["name_resolved"]
+                db["targets"][0]["item"]["filter"]= item["name"]
                 db["datasource"]["type"] = self.__zabbix_data_source_info["type"]
                 db["datasource"]["uid"] = self.__zabbix_data_source_info["uid"]
                 db["title"] = item["name"]
-                pprint(db)
-                break
+
+                target_db["panels"].append(deepcopy(db))
+
+        for i in  template_dbs:
+            data = {
+                "dashboard": i,
+                "folderUid": host_folder["uid"],  # Assign to specific folder
+                "overwrite": True,
+                "message":"initial"
+            }
+            res = requests.post(self.__host_addr + self.__api_paths["dashboards_add"],
+                                json=data,
+                                headers=self.default_authorized_request_header)
+
+            res.raise_for_status()
+
+
+
 
 
     def start(self):
         zabbix_host_data = utils.read_from_zabbix_json_data()
-        for zhost in [zabbix_host_data[2]]:
+        for zhost in zabbix_host_data:
             host_name,host_id =zhost["host"]["host"] , zhost["host"]["hostid"]
             templates = list(i for i in zhost["host"]["parentTemplates"])
 
             host_folder,template_folder = self.__create_host_folders(host_name,host_id,templates)
 
-            self.__add_dashboard(host_folder,template_folder,zhost)
+            self.__add_panels_to_dashboard(host_folder,template_folder,zhost)
 
 
 

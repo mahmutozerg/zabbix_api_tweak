@@ -114,6 +114,7 @@ class ZabbixHost:
                 "output": [
                     "hostid",
                     "host",
+                    "name"
                 ],
                  "selectParentTemplates": [
                      "templateid",
@@ -244,7 +245,7 @@ class ZabbixHost:
 
 
             data = {"host":host,"host_groups":host_groups,"items":items}
-            write_to_file(data,"./hostdatas/"+host["host"]+".json")
+            write_to_file(data,"./hostdatas/"+host["name"]+".json")
 
 
 
