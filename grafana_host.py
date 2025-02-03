@@ -1,10 +1,11 @@
 import json
 import urllib.parse
-from pprint import pp
+from pprint import pp, pprint
 from tempfile import template
 
 import requests
 import utils
+from granafa_dashboard_jsons import GrafanaDicts
 
 
 class GrafanaHost:
@@ -21,9 +22,9 @@ class GrafanaHost:
         self.__api_paths= {
             "api_health":"/health",
             "data_sources":"/datasources",
-            "dashboard_add":"/dashboards/db",
+            "dashboards_add":"/dashboards/db",
             "folder":"/folders",
-            "folder_search":"/search?query="
+            "folder_search":"/search?query=",
 
         }
 
@@ -66,6 +67,9 @@ class GrafanaHost:
         res = requests.get(self.__host_addr+self.__api_paths["folder_search"]+query,headers=self.default_authorized_request_header)
         res.raise_for_status()
         return res.json()
+
+
+
     def __get_folder_by_uuid(self,uuid):
         res = requests.get(self.__host_addr+self.__api_paths["folder"]+"/"+uuid,headers=self.default_authorized_request_header)
         res.raise_for_status()
@@ -82,7 +86,25 @@ class GrafanaHost:
 
         folder_info = {"id": content["id"], "title": content["title"], "uid": content["uid"]}
         return folder_info
+    def __create_dash_board(self, title,parent_uuid):
 
+        dashboard_payload = {
+            "dashboard": {
+                "id": None,
+                "uid": None,
+                "title":title ,
+                "schemaVersion": 16,
+                "version": 0
+            },
+            "folderUid": parent_uuid,  # Assign to specific folder
+            "overwrite": False
+        }
+        res = requests.post(self.__host_addr + self.__api_paths["dashboards_add"],
+                            json=dashboard_payload,
+                            headers=self.default_authorized_request_header)
+
+        res.raise_for_status()
+        return res.json()
 
     def __create_api_folder_if_not_exists(self):
 
@@ -99,13 +121,13 @@ class GrafanaHost:
 
 
 
-    def __create_host_folders(self,host_name,hostid,template_folder):
+    def __create_host_folders(self,host_name,hostid,templates):
 
         host_name_folder_info = dict()
-
-        folders = self.__get_folders_by_search(host_name+hostid)
+        host_name_folder_name= host_name+"_"+hostid
+        folders = self.__get_folders_by_search(host_name_folder_name)
         for folder in folders:
-            if folder["title"] == host_name+hostid and folder["folderUid"] == self.__api_folder["uid"]:
+            if folder["title"] == host_name_folder_name and folder["folderUid"] == self.__api_folder["uid"]:
                 host_name_folder_info = {"id":folder["id"],"title":folder["title"],"uid":folder["uid"]}
                 break
 
@@ -113,44 +135,65 @@ class GrafanaHost:
         else:
             host_name_folder_info = self.__create_folder_if_not_exists(
                 data = {
-                    "title": host_name+hostid,
+                    "title": host_name_folder_name,
                     "parentUid": self.__api_folder["uid"]
 
                 }
             )
 
 
-        template_folder_info= list(dict())
-        for _template in template_folder:
-            folders = self.__get_folders_by_search(_template)
+        template_db_info= list(dict())
+        for _template in templates:
+            template_db_name = hostid+"_"+_template["name"]+"_"+_template['templateid']
 
-            for folder in folders:
-                if (_template + hostid) == folder["title"]:
-                    template_folder_info.append({"id":folder["id"],"title":folder["title"],"uid":folder["uid"]})
+            template_dbs = self.__get_folders_by_search(f"{template_db_name}&type=dash-db")
+
+
+            for template_db in template_dbs:
+                if template_db_name == template_db["title"]:
+                    template_db_info.append({"id":template_db["id"],"title":template_db["title"],"uid":template_db["uid"]})
                     break
 
             else:
-                folder_info=self.__create_folder_if_not_exists( data = {
-                        "title": _template + hostid,
-                        "parentUid": host_name_folder_info["uid"]
+                dashboard_info=self.__create_dash_board(title=template_db_name,parent_uuid=host_name_folder_info["uid"])
+                template_db_info.append({"id":dashboard_info["id"],"title":dashboard_info["slug"],"uid":dashboard_info["uid"],"folderuid":dashboard_info["folderUid"]})
 
-                    })
-                template_folder_info.append(folder_info)
-
-        return host_name_folder_info,template_folder_info
+        return host_name_folder_info,template_db_info
 
 
+
+    def __add_dashboard(self, host_folder, template_folder, host):
+
+        for item in host["items"]:
+            template = list(i for i in template_folder if i["title"].endswith(item["templateid"]))
+
+
+            if template:
+
+                db = GrafanaDicts.stat_single_value.copy()
+                db["pluginVersion"] =self.grafana_version
+                db["targets"][0]["group"]["filter"]= f"/{host['host_groups']}/"
+                db["targets"][0]["host"]["filter"]=host['host']['host']
+                db["targets"][0]["item"]["filter"]= item["name_resolved"]
+                db["datasource"]["type"] = self.__zabbix_data_source_info["type"]
+                db["datasource"]["uid"] = self.__zabbix_data_source_info["uid"]
+                db["title"] = item["name"]
+                pprint(db)
+                break
 
 
     def start(self):
         zabbix_host_data = utils.read_from_zabbix_json_data()
         for zhost in [zabbix_host_data[2]]:
             host_name,host_id =zhost["host"]["host"] , zhost["host"]["hostid"]
-            template_names = list(i["name"] for i in zhost["host"]["parentTemplates"])
+            templates = list(i for i in zhost["host"]["parentTemplates"])
 
-            host_folder,template_folder = self.__create_host_folders(host_name,host_id,template_names)
+            host_folder,template_folder = self.__create_host_folders(host_name,host_id,templates)
 
-            print(host_folder,template_folder)
+            self.__add_dashboard(host_folder,template_folder,zhost)
+
+
+
 
 
 

@@ -182,6 +182,7 @@ class ZabbixHost:
                     break
 
             if keep_item:
+                item["value_type"] = self.zabbix_value_types[int(item["value_type"])]
                 filtered_items_with_missing_tids.append(item)
 
 
@@ -223,6 +224,7 @@ class ZabbixHost:
             for degistirelecek_item in items_with_missing_tids:
                 if degistirelecek_item["key_"] in ornek_key:
                     degistirelecek_item["templateid"] = tid
+
 
 
 
