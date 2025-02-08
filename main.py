@@ -1,4 +1,5 @@
 import sys
+import time
 
 import grafana_host
 import utils
@@ -21,8 +22,13 @@ def main():
     args = parser.parse_args()
 
 
-    #zabbix_host.ZabbixHost(args.zip,args.zport,args.zauth)
+    ztime = time.time()
+    zabbix_host.ZabbixHost(args.zip,args.zport,args.zauth)
+    print("zabbix data toplama işlemi için geçen süre ",time.time()-ztime)
+
+    gtime = time.time()
     grafana_host.GrafanaHost(args.gip,args.gport,args.gauth)
+    print("Grafana panelleri oluşturma işlemi için geçen süre ",time.time()-gtime)
 
 
 

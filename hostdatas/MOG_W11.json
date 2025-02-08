@@ -1,0 +1,3514 @@
+{
+    "host": {
+        "hostid": "10651",
+        "host": "MOG",
+        "name": "MOG_W11",
+        "parentTemplates": [
+            {
+                "templateid": "10081",
+                "name": "Windows by Zabbix agent"
+            }
+        ]
+    },
+    "host_groups": "Windows",
+    "items": [
+        {
+            "itemid": "48400",
+            "name": "Host name of Zabbix agent running",
+            "key_": "agent.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "character",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Host name of Zabbix agent running",
+            "lastvalue": "MOG",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48401",
+            "name": "Zabbix agent ping",
+            "key_": "agent.ping",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Zabbix agent ping",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48402",
+            "name": "Version of Zabbix agent running",
+            "key_": "agent.version",
+            "units": "",
+            "formula": "",
+            "value_type": "character",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Version of Zabbix agent running",
+            "lastvalue": "7.0.8",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "application"
+                }
+            ]
+        },
+        {
+            "itemid": "48403",
+            "name": "Cache bytes",
+            "key_": "perf_counter_en[\"\\Memory\\Cache Bytes\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Cache bytes",
+            "lastvalue": "604966912",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48404",
+            "name": "Free system page table entries",
+            "key_": "perf_counter_en[\"\\Memory\\Free System Page Table Entries\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Free system page table entries",
+            "lastvalue": "4294967295",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48405",
+            "name": "Memory page faults per second",
+            "key_": "perf_counter_en[\"\\Memory\\Page Faults/sec\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Memory page faults per second",
+            "lastvalue": "84315.183321",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48406",
+            "name": "Memory pages per second",
+            "key_": "perf_counter_en[\"\\Memory\\Pages/sec\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Memory pages per second",
+            "lastvalue": "0.990895",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48407",
+            "name": "Memory pool non-paged",
+            "key_": "perf_counter_en[\"\\Memory\\Pool Nonpaged Bytes\"]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Memory pool non-paged",
+            "lastvalue": "1252134912",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48408",
+            "name": "Used swap space in %",
+            "key_": "perf_counter_en[\"\\Paging file(_Total)\\% Usage\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Used swap space in %",
+            "lastvalue": "0.034385",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48409",
+            "name": "CPU DPC time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% DPC Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU DPC time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48410",
+            "name": "CPU interrupt time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% Interrupt Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU interrupt time",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48411",
+            "name": "CPU privileged time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% Privileged Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU privileged time",
+            "lastvalue": "0.678306",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48412",
+            "name": "CPU user time",
+            "key_": "perf_counter_en[\"\\Processor Information(_total)\\% User Time\"]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU user time",
+            "lastvalue": "1.065926",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48413",
+            "name": "Context switches per second",
+            "key_": "perf_counter_en[\"\\System\\Context Switches/sec\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Context switches per second",
+            "lastvalue": "81167.634443",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48414",
+            "name": "CPU queue length",
+            "key_": "perf_counter_en[\"\\System\\Processor Queue Length\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU queue length",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48415",
+            "name": "Number of threads",
+            "key_": "perf_counter_en[\"\\System\\Threads\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Number of threads",
+            "lastvalue": "6178",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48416",
+            "name": "Number of processes",
+            "key_": "proc.num[]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Number of processes",
+            "lastvalue": "326",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48417",
+            "name": "CPU utilization",
+            "key_": "system.cpu.util",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "CPU utilization",
+            "lastvalue": "3.794003",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48418",
+            "name": "System name",
+            "key_": "system.hostname",
+            "units": "",
+            "formula": "",
+            "value_type": "character",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "System name",
+            "lastvalue": "MOG",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48419",
+            "name": "System local time",
+            "key_": "system.localtime",
+            "units": "unixtime",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "System local time",
+            "lastvalue": "1738594741",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48420",
+            "name": "Free swap space",
+            "key_": "system.swap.free",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "15",
+            "templateid": "10081",
+            "name_resolved": "Free swap space",
+            "lastvalue": "11919990781",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48421",
+            "name": "Total swap space",
+            "key_": "system.swap.size[,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Total swap space",
+            "lastvalue": "11924090880",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48422",
+            "name": "Operating system architecture",
+            "key_": "system.sw.arch",
+            "units": "",
+            "formula": "",
+            "value_type": "character",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Operating system architecture",
+            "lastvalue": "x64",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48423",
+            "name": "Operating system",
+            "key_": "system.sw.os",
+            "units": "",
+            "formula": "",
+            "value_type": "character",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Operating system",
+            "lastvalue": "Windows 10 Home 22621.1.amd64fre.ni_release.220506-1250 Build 22631.4751",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "os"
+                }
+            ]
+        },
+        {
+            "itemid": "48424",
+            "name": "System description",
+            "key_": "system.uname",
+            "units": "",
+            "formula": "",
+            "value_type": "character",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "System description",
+            "lastvalue": "Windows MOG 10.0.22631 Microsoft Windows 11 Home x64",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48425",
+            "name": "Uptime",
+            "key_": "system.uptime",
+            "units": "uptime",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Uptime",
+            "lastvalue": "189271",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48427",
+            "name": "Total memory",
+            "key_": "vm.memory.size[total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Total memory",
+            "lastvalue": "67849539584",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48428",
+            "name": "Used memory",
+            "key_": "vm.memory.size[used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Used memory",
+            "lastvalue": "29821464576",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48429",
+            "name": "Memory utilization",
+            "key_": "vm.memory.util",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "15",
+            "templateid": "10081",
+            "name_resolved": "Memory utilization",
+            "lastvalue": "43.95234626327866",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                }
+            ]
+        },
+        {
+            "itemid": "48431",
+            "name": "Number of cores",
+            "key_": "wmi.get[root/cimv2,\"Select NumberOfLogicalProcessors from Win32_ComputerSystem\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "10081",
+            "name_resolved": "Number of cores",
+            "lastvalue": "16",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "cpu"
+                }
+            ]
+        },
+        {
+            "itemid": "48432",
+            "name": "Zabbix agent availability",
+            "key_": "zabbix[host,agent,available]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "5",
+            "templateid": "10081",
+            "name_resolved": "Zabbix agent availability",
+            "lastvalue": "1",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                }
+            ]
+        },
+        {
+            "itemid": "48433",
+            "name": "Free swap space in %",
+            "key_": "system.swap.pfree",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "10081",
+            "name_resolved": "Free swap space in %",
+            "lastvalue": "99.965615",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "memory"
+                },
+                {
+                    "tag": "component",
+                    "value": "storage"
+                }
+            ]
+        },
+        {
+            "itemid": "48462",
+            "name": "FS [(C:)]: Space: Used",
+            "key_": "vfs.fs.dependent.size[C:,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [(C:)]: Space: Used",
+            "lastvalue": "1176644841472",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "C:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "NTFS"
+                }
+            ]
+        },
+        {
+            "itemid": "48463",
+            "name": "FS [(C:)]: Space: Total",
+            "key_": "vfs.fs.dependent.size[C:,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [(C:)]: Space: Total",
+            "lastvalue": "2047541768192",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "C:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "NTFS"
+                }
+            ]
+        },
+        {
+            "itemid": "48464",
+            "name": "FS [(C:)]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[C:,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [(C:)]: Space: Used, in %",
+            "lastvalue": "57.466219",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "C:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "NTFS"
+                }
+            ]
+        },
+        {
+            "itemid": "48465",
+            "name": "FS [(C:)]: Space: Available",
+            "key_": "vfs.fs.dependent.size[C:,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [(C:)]: Space: Available",
+            "lastvalue": "870896926720",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "C:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "NTFS"
+                }
+            ]
+        },
+        {
+            "itemid": "48466",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Bits received",
+            "key_": "net.if.in[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Bits received",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48467",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits received",
+            "key_": "net.if.in[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits received",
+            "lastvalue": "40152",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48469",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Inbound packets discarded",
+            "key_": "net.if.in[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Inbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48470",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Inbound packets discarded",
+            "key_": "net.if.in[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Inbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48472",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Inbound packets with errors",
+            "key_": "net.if.in[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Inbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48473",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Inbound packets with errors",
+            "key_": "net.if.in[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Inbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48475",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Bits sent",
+            "key_": "net.if.out[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Bits sent",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48476",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits sent",
+            "key_": "net.if.out[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits sent",
+            "lastvalue": "8336",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48478",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Outbound packets discarded",
+            "key_": "net.if.out[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Outbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48479",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Outbound packets discarded",
+            "key_": "net.if.out[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Outbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48481",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Outbound packets with errors",
+            "key_": "net.if.out[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Outbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48482",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Outbound packets with errors",
+            "key_": "net.if.out[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Outbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48484",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Speed",
+            "key_": "net.if.speed[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Speed",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48485",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Speed",
+            "key_": "net.if.speed[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Speed",
+            "lastvalue": "1000000000",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48487",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Operational status",
+            "key_": "net.if.status[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Operational status",
+            "lastvalue": "7",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48488",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Operational status",
+            "key_": "net.if.status[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Operational status",
+            "lastvalue": "2",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48490",
+            "name": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Interface type",
+            "key_": "net.if.type[\"{69A177A7-C607-4438-8A89-CBE7D80929E1}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter(Wi-Fi): Interface type",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Wi-Fi"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter"
+                }
+            ]
+        },
+        {
+            "itemid": "48491",
+            "name": "Interface Realtek PCIe GbE Family Controller(Ethernet): Interface type",
+            "key_": "net.if.type[\"{52B1C9AE-5C89-4F82-84DA-702501DAA96E}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Interface type",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Ethernet"
+                },
+                {
+                    "tag": "interface",
+                    "value": "Realtek PCIe GbE Family Controller"
+                }
+            ]
+        },
+        {
+            "itemid": "48493",
+            "name": "State of service \"AMD Crash Defender Service\" (AMD Crash Defender Service)",
+            "key_": "service.info[\"AMD Crash Defender Service\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"AMD Crash Defender Service\" (AMD Crash Defender Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "AMD Crash Defender Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "AMD Crash Defender Service"
+                }
+            ]
+        },
+        {
+            "itemid": "48494",
+            "name": "State of service \"AMD External Events Utility\" (AMD External Events Utility)",
+            "key_": "service.info[\"AMD External Events Utility\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"AMD External Events Utility\" (AMD External Events Utility)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "AMD External Events Utility"
+                },
+                {
+                    "tag": "service",
+                    "value": "AMD External Events Utility"
+                }
+            ]
+        },
+        {
+            "itemid": "48495",
+            "name": "State of service \"AudioEndpointBuilder\" (Windows Ses Biti\u015f Noktas\u0131 Olu\u015fturucu)",
+            "key_": "service.info[\"AudioEndpointBuilder\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"AudioEndpointBuilder\" (Windows Ses Biti\u015f Noktas\u0131 Olu\u015fturucu)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Ses Biti\u015f Noktas\u0131 Olu\u015fturucu"
+                },
+                {
+                    "tag": "service",
+                    "value": "AudioEndpointBuilder"
+                }
+            ]
+        },
+        {
+            "itemid": "48496",
+            "name": "State of service \"Audiosrv\" (Windows Ses)",
+            "key_": "service.info[\"Audiosrv\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Audiosrv\" (Windows Ses)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Ses"
+                },
+                {
+                    "tag": "service",
+                    "value": "Audiosrv"
+                }
+            ]
+        },
+        {
+            "itemid": "48497",
+            "name": "State of service \"AzureAttestService\" (AzureAttestService)",
+            "key_": "service.info[\"AzureAttestService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"AzureAttestService\" (AzureAttestService)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "AzureAttestService"
+                },
+                {
+                    "tag": "service",
+                    "value": "AzureAttestService"
+                }
+            ]
+        },
+        {
+            "itemid": "48498",
+            "name": "State of service \"BDESVC\" (BitLocker Drive Encryption Service)",
+            "key_": "service.info[\"BDESVC\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"BDESVC\" (BitLocker Drive Encryption Service)",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "BitLocker Drive Encryption Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "BDESVC"
+                }
+            ]
+        },
+        {
+            "itemid": "48499",
+            "name": "State of service \"BFE\" (Temel Filtre Altyap\u0131s\u0131)",
+            "key_": "service.info[\"BFE\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"BFE\" (Temel Filtre Altyap\u0131s\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Temel Filtre Altyap\u0131s\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "BFE"
+                }
+            ]
+        },
+        {
+            "itemid": "48500",
+            "name": "State of service \"brave\" (Brave Update Service (brave))",
+            "key_": "service.info[\"brave\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"brave\" (Brave Update Service (brave))",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Brave Update Service (brave)"
+                },
+                {
+                    "tag": "service",
+                    "value": "brave"
+                }
+            ]
+        },
+        {
+            "itemid": "48501",
+            "name": "State of service \"BrokerInfrastructure\" (Arka Plan G\u00f6revleri Altyap\u0131 Hizmeti)",
+            "key_": "service.info[\"BrokerInfrastructure\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"BrokerInfrastructure\" (Arka Plan G\u00f6revleri Altyap\u0131 Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Arka Plan G\u00f6revleri Altyap\u0131 Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "BrokerInfrastructure"
+                }
+            ]
+        },
+        {
+            "itemid": "48502",
+            "name": "State of service \"BTAGService\" (Bluetooth Audio Gateway Service)",
+            "key_": "service.info[\"BTAGService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"BTAGService\" (Bluetooth Audio Gateway Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Bluetooth Audio Gateway Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "BTAGService"
+                }
+            ]
+        },
+        {
+            "itemid": "48503",
+            "name": "State of service \"bthserv\" (Bluetooth Support Service)",
+            "key_": "service.info[\"bthserv\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"bthserv\" (Bluetooth Support Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Bluetooth Support Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "bthserv"
+                }
+            ]
+        },
+        {
+            "itemid": "48504",
+            "name": "State of service \"ClickToRunSvc\" (Microsoft Office Click-to-Run Service)",
+            "key_": "service.info[\"ClickToRunSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"ClickToRunSvc\" (Microsoft Office Click-to-Run Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Microsoft Office Click-to-Run Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "ClickToRunSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48505",
+            "name": "State of service \"CoreMessagingRegistrar\" (CoreMessaging)",
+            "key_": "service.info[\"CoreMessagingRegistrar\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"CoreMessagingRegistrar\" (CoreMessaging)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "CoreMessaging"
+                },
+                {
+                    "tag": "service",
+                    "value": "CoreMessagingRegistrar"
+                }
+            ]
+        },
+        {
+            "itemid": "48506",
+            "name": "State of service \"CryptSvc\" (\u015eifreleme Hizmetleri)",
+            "key_": "service.info[\"CryptSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"CryptSvc\" (\u015eifreleme Hizmetleri)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "\u015eifreleme Hizmetleri"
+                },
+                {
+                    "tag": "service",
+                    "value": "CryptSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48507",
+            "name": "State of service \"DcomLaunch\" (DCOM Sunucusu \u0130\u015flem Ba\u015flat\u0131c\u0131s\u0131)",
+            "key_": "service.info[\"DcomLaunch\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"DcomLaunch\" (DCOM Sunucusu \u0130\u015flem Ba\u015flat\u0131c\u0131s\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "DCOM Sunucusu \u0130\u015flem Ba\u015flat\u0131c\u0131s\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "DcomLaunch"
+                }
+            ]
+        },
+        {
+            "itemid": "48508",
+            "name": "State of service \"Dhcp\" (DHCP \u0130stemcisi)",
+            "key_": "service.info[\"Dhcp\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Dhcp\" (DHCP \u0130stemcisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "DHCP \u0130stemcisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "Dhcp"
+                }
+            ]
+        },
+        {
+            "itemid": "48509",
+            "name": "State of service \"DiagTrack\" (Ba\u011fl\u0131 Kullan\u0131c\u0131 Deneyimleri ve Telemetrisi)",
+            "key_": "service.info[\"DiagTrack\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"DiagTrack\" (Ba\u011fl\u0131 Kullan\u0131c\u0131 Deneyimleri ve Telemetrisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Ba\u011fl\u0131 Kullan\u0131c\u0131 Deneyimleri ve Telemetrisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "DiagTrack"
+                }
+            ]
+        },
+        {
+            "itemid": "48510",
+            "name": "State of service \"DispBrokerDesktopSvc\" (\u0130lke Hizmetini G\u00f6r\u00fcnt\u00fcle)",
+            "key_": "service.info[\"DispBrokerDesktopSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"DispBrokerDesktopSvc\" (\u0130lke Hizmetini G\u00f6r\u00fcnt\u00fcle)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "\u0130lke Hizmetini G\u00f6r\u00fcnt\u00fcle"
+                },
+                {
+                    "tag": "service",
+                    "value": "DispBrokerDesktopSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48511",
+            "name": "State of service \"Dnscache\" (DNS \u0130stemcisi)",
+            "key_": "service.info[\"Dnscache\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Dnscache\" (DNS \u0130stemcisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "DNS \u0130stemcisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "Dnscache"
+                }
+            ]
+        },
+        {
+            "itemid": "48512",
+            "name": "State of service \"DPS\" (Tan\u0131 \u0130lkesi Hizmeti)",
+            "key_": "service.info[\"DPS\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"DPS\" (Tan\u0131 \u0130lkesi Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Tan\u0131 \u0130lkesi Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "DPS"
+                }
+            ]
+        },
+        {
+            "itemid": "48513",
+            "name": "State of service \"DusmSvc\" (Veri Kullan\u0131m\u0131)",
+            "key_": "service.info[\"DusmSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"DusmSvc\" (Veri Kullan\u0131m\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Veri Kullan\u0131m\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "DusmSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48514",
+            "name": "State of service \"EventLog\" (Windows Olay G\u00fcnl\u00fc\u011f\u00fc)",
+            "key_": "service.info[\"EventLog\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"EventLog\" (Windows Olay G\u00fcnl\u00fc\u011f\u00fc)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Olay G\u00fcnl\u00fc\u011f\u00fc"
+                },
+                {
+                    "tag": "service",
+                    "value": "EventLog"
+                }
+            ]
+        },
+        {
+            "itemid": "48515",
+            "name": "State of service \"EventSystem\" (COM+ Olay Sistemi)",
+            "key_": "service.info[\"EventSystem\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"EventSystem\" (COM+ Olay Sistemi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "COM+ Olay Sistemi"
+                },
+                {
+                    "tag": "service",
+                    "value": "EventSystem"
+                }
+            ]
+        },
+        {
+            "itemid": "48516",
+            "name": "State of service \"FMAPOService\" (Fortemedia APO Control Service)",
+            "key_": "service.info[\"FMAPOService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"FMAPOService\" (Fortemedia APO Control Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Fortemedia APO Control Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "FMAPOService"
+                }
+            ]
+        },
+        {
+            "itemid": "48517",
+            "name": "State of service \"FontCache\" (Windows Yaz\u0131 Tipi \u00d6nbelle\u011fi Hizmeti)",
+            "key_": "service.info[\"FontCache\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"FontCache\" (Windows Yaz\u0131 Tipi \u00d6nbelle\u011fi Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Yaz\u0131 Tipi \u00d6nbelle\u011fi Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "FontCache"
+                }
+            ]
+        },
+        {
+            "itemid": "48518",
+            "name": "State of service \"GamingServices\" (Gaming Services)",
+            "key_": "service.info[\"GamingServices\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"GamingServices\" (Gaming Services)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Gaming Services"
+                },
+                {
+                    "tag": "service",
+                    "value": "GamingServices"
+                }
+            ]
+        },
+        {
+            "itemid": "48519",
+            "name": "State of service \"GamingServicesNet\" (Gaming Services)",
+            "key_": "service.info[\"GamingServicesNet\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"GamingServicesNet\" (Gaming Services)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Gaming Services"
+                },
+                {
+                    "tag": "service",
+                    "value": "GamingServicesNet"
+                }
+            ]
+        },
+        {
+            "itemid": "48520",
+            "name": "State of service \"GoodbyeDPI\" (GoodbyeDPI)",
+            "key_": "service.info[\"GoodbyeDPI\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"GoodbyeDPI\" (GoodbyeDPI)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "GoodbyeDPI"
+                },
+                {
+                    "tag": "service",
+                    "value": "GoodbyeDPI"
+                }
+            ]
+        },
+        {
+            "itemid": "48523",
+            "name": "State of service \"IKEEXT\" (IKE ve AuthIP IPsec Anahtarlama Mod\u00fclleri)",
+            "key_": "service.info[\"IKEEXT\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"IKEEXT\" (IKE ve AuthIP IPsec Anahtarlama Mod\u00fclleri)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "IKE ve AuthIP IPsec Anahtarlama Mod\u00fclleri"
+                },
+                {
+                    "tag": "service",
+                    "value": "IKEEXT"
+                }
+            ]
+        },
+        {
+            "itemid": "48524",
+            "name": "State of service \"ImControllerService\" (System Interface Foundation Service)",
+            "key_": "service.info[\"ImControllerService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"ImControllerService\" (System Interface Foundation Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "System Interface Foundation Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "ImControllerService"
+                }
+            ]
+        },
+        {
+            "itemid": "48525",
+            "name": "State of service \"iphlpsvc\" (IP Yard\u0131mc\u0131s\u0131)",
+            "key_": "service.info[\"iphlpsvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"iphlpsvc\" (IP Yard\u0131mc\u0131s\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "IP Yard\u0131mc\u0131s\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "iphlpsvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48526",
+            "name": "State of service \"JetBrainsEtwHost.16\" (JetBrains ETW Host Service v16.42.0 (x64))",
+            "key_": "service.info[\"JetBrainsEtwHost.16\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"JetBrainsEtwHost.16\" (JetBrains ETW Host Service v16.42.0 (x64))",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "JetBrains ETW Host Service v16.42.0 (x64)"
+                },
+                {
+                    "tag": "service",
+                    "value": "JetBrainsEtwHost.16"
+                }
+            ]
+        },
+        {
+            "itemid": "48527",
+            "name": "State of service \"LanmanServer\" (Sunucu)",
+            "key_": "service.info[\"LanmanServer\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"LanmanServer\" (Sunucu)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Sunucu"
+                },
+                {
+                    "tag": "service",
+                    "value": "LanmanServer"
+                }
+            ]
+        },
+        {
+            "itemid": "48528",
+            "name": "State of service \"LanmanWorkstation\" (\u0130\u015f \u0130stasyonu)",
+            "key_": "service.info[\"LanmanWorkstation\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"LanmanWorkstation\" (\u0130\u015f \u0130stasyonu)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "\u0130\u015f \u0130stasyonu"
+                },
+                {
+                    "tag": "service",
+                    "value": "LanmanWorkstation"
+                }
+            ]
+        },
+        {
+            "itemid": "48529",
+            "name": "State of service \"LenovoFnAndFunctionKeys\" (Lenovo Fn and function keys service)",
+            "key_": "service.info[\"LenovoFnAndFunctionKeys\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"LenovoFnAndFunctionKeys\" (Lenovo Fn and function keys service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Lenovo Fn and function keys service"
+                },
+                {
+                    "tag": "service",
+                    "value": "LenovoFnAndFunctionKeys"
+                }
+            ]
+        },
+        {
+            "itemid": "48530",
+            "name": "State of service \"LenovoVantageService\" (Critical Service for Lenovo Vantage)",
+            "key_": "service.info[\"LenovoVantageService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"LenovoVantageService\" (Critical Service for Lenovo Vantage)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Critical Service for Lenovo Vantage"
+                },
+                {
+                    "tag": "service",
+                    "value": "LenovoVantageService"
+                }
+            ]
+        },
+        {
+            "itemid": "48531",
+            "name": "State of service \"LSM\" (Yerel Oturum Y\u00f6neticisi)",
+            "key_": "service.info[\"LSM\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"LSM\" (Yerel Oturum Y\u00f6neticisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Yerel Oturum Y\u00f6neticisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "LSM"
+                }
+            ]
+        },
+        {
+            "itemid": "48532",
+            "name": "State of service \"MDCoreSvc\" (Microsoft Defender \u00c7ekirdek Hizmeti)",
+            "key_": "service.info[\"MDCoreSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"MDCoreSvc\" (Microsoft Defender \u00c7ekirdek Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Microsoft Defender \u00c7ekirdek Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "MDCoreSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48533",
+            "name": "State of service \"mpssvc\" (Windows Defender G\u00fcvenlik Duvar\u0131)",
+            "key_": "service.info[\"mpssvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"mpssvc\" (Windows Defender G\u00fcvenlik Duvar\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Defender G\u00fcvenlik Duvar\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "mpssvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48534",
+            "name": "State of service \"MSSQLSERVER\" (SQL Server (MSSQLSERVER))",
+            "key_": "service.info[\"MSSQLSERVER\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"MSSQLSERVER\" (SQL Server (MSSQLSERVER))",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "SQL Server (MSSQLSERVER)"
+                },
+                {
+                    "tag": "service",
+                    "value": "MSSQLSERVER"
+                }
+            ]
+        },
+        {
+            "itemid": "48535",
+            "name": "State of service \"NahimicService\" (Nahimic service)",
+            "key_": "service.info[\"NahimicService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"NahimicService\" (Nahimic service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Nahimic service"
+                },
+                {
+                    "tag": "service",
+                    "value": "NahimicService"
+                }
+            ]
+        },
+        {
+            "itemid": "48536",
+            "name": "State of service \"nsi\" (A\u011f Depo Arabirimi Hizmeti)",
+            "key_": "service.info[\"nsi\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"nsi\" (A\u011f Depo Arabirimi Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "A\u011f Depo Arabirimi Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "nsi"
+                }
+            ]
+        },
+        {
+            "itemid": "48538",
+            "name": "State of service \"NvContainerLocalSystem\" (NVIDIA LocalSystem Container)",
+            "key_": "service.info[\"NvContainerLocalSystem\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"NvContainerLocalSystem\" (NVIDIA LocalSystem Container)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "NVIDIA LocalSystem Container"
+                },
+                {
+                    "tag": "service",
+                    "value": "NvContainerLocalSystem"
+                }
+            ]
+        },
+        {
+            "itemid": "48539",
+            "name": "State of service \"NVDisplay.ContainerLocalSystem\" (NVIDIA Display Container LS)",
+            "key_": "service.info[\"NVDisplay.ContainerLocalSystem\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"NVDisplay.ContainerLocalSystem\" (NVIDIA Display Container LS)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "NVIDIA Display Container LS"
+                },
+                {
+                    "tag": "service",
+                    "value": "NVDisplay.ContainerLocalSystem"
+                }
+            ]
+        },
+        {
+            "itemid": "48540",
+            "name": "State of service \"OptionsPlusUpdaterService\" (Logi Options+)",
+            "key_": "service.info[\"OptionsPlusUpdaterService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"OptionsPlusUpdaterService\" (Logi Options+)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Logi Options+"
+                },
+                {
+                    "tag": "service",
+                    "value": "OptionsPlusUpdaterService"
+                }
+            ]
+        },
+        {
+            "itemid": "48541",
+            "name": "State of service \"PcaSvc\" (Program Uyumluluk Yard\u0131mc\u0131s\u0131 Hizmeti)",
+            "key_": "service.info[\"PcaSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"PcaSvc\" (Program Uyumluluk Yard\u0131mc\u0131s\u0131 Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Program Uyumluluk Yard\u0131mc\u0131s\u0131 Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "PcaSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48542",
+            "name": "State of service \"Power\" (G\u00fc\u00e7)",
+            "key_": "service.info[\"Power\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Power\" (G\u00fc\u00e7)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "G\u00fc\u00e7"
+                },
+                {
+                    "tag": "service",
+                    "value": "Power"
+                }
+            ]
+        },
+        {
+            "itemid": "48543",
+            "name": "State of service \"ProfSvc\" (Kullan\u0131c\u0131 Profili Hizmeti)",
+            "key_": "service.info[\"ProfSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"ProfSvc\" (Kullan\u0131c\u0131 Profili Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Kullan\u0131c\u0131 Profili Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "ProfSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48544",
+            "name": "State of service \"RpcEptMapper\" (RPC Biti\u015f Noktas\u0131 E\u015fle\u015ftiricisi)",
+            "key_": "service.info[\"RpcEptMapper\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"RpcEptMapper\" (RPC Biti\u015f Noktas\u0131 E\u015fle\u015ftiricisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "RPC Biti\u015f Noktas\u0131 E\u015fle\u015ftiricisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "RpcEptMapper"
+                }
+            ]
+        },
+        {
+            "itemid": "48545",
+            "name": "State of service \"RpcSs\" (Uzaktan Yordam \u00c7a\u011fr\u0131s\u0131 (RPC))",
+            "key_": "service.info[\"RpcSs\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"RpcSs\" (Uzaktan Yordam \u00c7a\u011fr\u0131s\u0131 (RPC))",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Uzaktan Yordam \u00c7a\u011fr\u0131s\u0131 (RPC)"
+                },
+                {
+                    "tag": "service",
+                    "value": "RpcSs"
+                }
+            ]
+        },
+        {
+            "itemid": "48546",
+            "name": "State of service \"RtkAudioUniversalService\" (Realtek Audio Universal Service)",
+            "key_": "service.info[\"RtkAudioUniversalService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"RtkAudioUniversalService\" (Realtek Audio Universal Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Realtek Audio Universal Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "RtkAudioUniversalService"
+                }
+            ]
+        },
+        {
+            "itemid": "48547",
+            "name": "State of service \"RtkBtManServ\" (Realtek Bluetooth Device Manager Service)",
+            "key_": "service.info[\"RtkBtManServ\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"RtkBtManServ\" (Realtek Bluetooth Device Manager Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Realtek Bluetooth Device Manager Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "RtkBtManServ"
+                }
+            ]
+        },
+        {
+            "itemid": "48548",
+            "name": "State of service \"SamSs\" (G\u00fcvenlik Hesaplar\u0131 Y\u00f6neticisi)",
+            "key_": "service.info[\"SamSs\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"SamSs\" (G\u00fcvenlik Hesaplar\u0131 Y\u00f6neticisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "G\u00fcvenlik Hesaplar\u0131 Y\u00f6neticisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "SamSs"
+                }
+            ]
+        },
+        {
+            "itemid": "48549",
+            "name": "State of service \"Schedule\" (G\u00f6rev Zamanlay\u0131c\u0131)",
+            "key_": "service.info[\"Schedule\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Schedule\" (G\u00f6rev Zamanlay\u0131c\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "G\u00f6rev Zamanlay\u0131c\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "Schedule"
+                }
+            ]
+        },
+        {
+            "itemid": "48550",
+            "name": "State of service \"SENS\" (Sistem Olay Bildirim Hizmeti)",
+            "key_": "service.info[\"SENS\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"SENS\" (Sistem Olay Bildirim Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Sistem Olay Bildirim Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "SENS"
+                }
+            ]
+        },
+        {
+            "itemid": "48551",
+            "name": "State of service \"Spooler\" (Yazd\u0131rma Biriktiricisi)",
+            "key_": "service.info[\"Spooler\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Spooler\" (Yazd\u0131rma Biriktiricisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Yazd\u0131rma Biriktiricisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "Spooler"
+                }
+            ]
+        },
+        {
+            "itemid": "48552",
+            "name": "State of service \"SQLTELEMETRY\" (SQL Server CEIP service (MSSQLSERVER))",
+            "key_": "service.info[\"SQLTELEMETRY\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"SQLTELEMETRY\" (SQL Server CEIP service (MSSQLSERVER))",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "SQL Server CEIP service (MSSQLSERVER)"
+                },
+                {
+                    "tag": "service",
+                    "value": "SQLTELEMETRY"
+                }
+            ]
+        },
+        {
+            "itemid": "48553",
+            "name": "State of service \"SQLWriter\" (SQL Server VSS Writer)",
+            "key_": "service.info[\"SQLWriter\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"SQLWriter\" (SQL Server VSS Writer)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "SQL Server VSS Writer"
+                },
+                {
+                    "tag": "service",
+                    "value": "SQLWriter"
+                }
+            ]
+        },
+        {
+            "itemid": "48554",
+            "name": "State of service \"StateRepository\" (Durum Depo Hizmeti)",
+            "key_": "service.info[\"StateRepository\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"StateRepository\" (Durum Depo Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Durum Depo Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "StateRepository"
+                }
+            ]
+        },
+        {
+            "itemid": "48555",
+            "name": "State of service \"StiSvc\" (Windows Resim Alma (WIA))",
+            "key_": "service.info[\"StiSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"StiSvc\" (Windows Resim Alma (WIA))",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Resim Alma (WIA)"
+                },
+                {
+                    "tag": "service",
+                    "value": "StiSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48556",
+            "name": "State of service \"StorSvc\" (Depolama Hizmeti)",
+            "key_": "service.info[\"StorSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"StorSvc\" (Depolama Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Depolama Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "StorSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48558",
+            "name": "State of service \"SysMain\" (SysMain)",
+            "key_": "service.info[\"SysMain\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"SysMain\" (SysMain)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "SysMain"
+                },
+                {
+                    "tag": "service",
+                    "value": "SysMain"
+                }
+            ]
+        },
+        {
+            "itemid": "48559",
+            "name": "State of service \"SystemEventsBroker\" (Sistem Etkinlikleri Arac\u0131s\u0131)",
+            "key_": "service.info[\"SystemEventsBroker\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"SystemEventsBroker\" (Sistem Etkinlikleri Arac\u0131s\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Sistem Etkinlikleri Arac\u0131s\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "SystemEventsBroker"
+                }
+            ]
+        },
+        {
+            "itemid": "48560",
+            "name": "State of service \"TextInputManagementService\" (Metin Giri\u015fi Y\u00f6netimi Hizmeti)",
+            "key_": "service.info[\"TextInputManagementService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"TextInputManagementService\" (Metin Giri\u015fi Y\u00f6netimi Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Metin Giri\u015fi Y\u00f6netimi Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "TextInputManagementService"
+                }
+            ]
+        },
+        {
+            "itemid": "48561",
+            "name": "State of service \"Themes\" (Temalar)",
+            "key_": "service.info[\"Themes\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Themes\" (Temalar)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Temalar"
+                },
+                {
+                    "tag": "service",
+                    "value": "Themes"
+                }
+            ]
+        },
+        {
+            "itemid": "48562",
+            "name": "State of service \"TrkWks\" (Da\u011f\u0131t\u0131lm\u0131\u015f Ba\u011flant\u0131 \u0130zleme \u0130stemcisi)",
+            "key_": "service.info[\"TrkWks\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"TrkWks\" (Da\u011f\u0131t\u0131lm\u0131\u015f Ba\u011flant\u0131 \u0130zleme \u0130stemcisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Da\u011f\u0131t\u0131lm\u0131\u015f Ba\u011flant\u0131 \u0130zleme \u0130stemcisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "TrkWks"
+                }
+            ]
+        },
+        {
+            "itemid": "48563",
+            "name": "State of service \"UserManager\" (Kullan\u0131c\u0131 Y\u00f6neticisi)",
+            "key_": "service.info[\"UserManager\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"UserManager\" (Kullan\u0131c\u0131 Y\u00f6neticisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Kullan\u0131c\u0131 Y\u00f6neticisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "UserManager"
+                }
+            ]
+        },
+        {
+            "itemid": "48564",
+            "name": "State of service \"UsoSvc\" (Orchestrator Hizmeti'ni G\u00fcncelle\u015ftir)",
+            "key_": "service.info[\"UsoSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"UsoSvc\" (Orchestrator Hizmeti'ni G\u00fcncelle\u015ftir)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Orchestrator Hizmeti'ni G\u00fcncelle\u015ftir"
+                },
+                {
+                    "tag": "service",
+                    "value": "UsoSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48565",
+            "name": "State of service \"Wcmsvc\" (Windows Ba\u011flant\u0131 Y\u00f6neticisi)",
+            "key_": "service.info[\"Wcmsvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Wcmsvc\" (Windows Ba\u011flant\u0131 Y\u00f6neticisi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Ba\u011flant\u0131 Y\u00f6neticisi"
+                },
+                {
+                    "tag": "service",
+                    "value": "Wcmsvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48566",
+            "name": "State of service \"WinDefend\" (Microsoft Defender Vir\u00fcsten Koruma Hizmeti)",
+            "key_": "service.info[\"WinDefend\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"WinDefend\" (Microsoft Defender Vir\u00fcsten Koruma Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Microsoft Defender Vir\u00fcsten Koruma Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "WinDefend"
+                }
+            ]
+        },
+        {
+            "itemid": "48567",
+            "name": "State of service \"Winmgmt\" (Windows Y\u00f6netim Yard\u0131mc\u0131lar\u0131)",
+            "key_": "service.info[\"Winmgmt\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"Winmgmt\" (Windows Y\u00f6netim Yard\u0131mc\u0131lar\u0131)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Y\u00f6netim Yard\u0131mc\u0131lar\u0131"
+                },
+                {
+                    "tag": "service",
+                    "value": "Winmgmt"
+                }
+            ]
+        },
+        {
+            "itemid": "48568",
+            "name": "State of service \"WlanSvc\" (Kablosuz Yerel A\u011f Otomatik Yap\u0131land\u0131rma)",
+            "key_": "service.info[\"WlanSvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"WlanSvc\" (Kablosuz Yerel A\u011f Otomatik Yap\u0131land\u0131rma)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Kablosuz Yerel A\u011f Otomatik Yap\u0131land\u0131rma"
+                },
+                {
+                    "tag": "service",
+                    "value": "WlanSvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48569",
+            "name": "State of service \"WpnService\" (Windows An\u0131nda \u0130letme Bildirimleri Hizmeti)",
+            "key_": "service.info[\"WpnService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"WpnService\" (Windows An\u0131nda \u0130letme Bildirimleri Hizmeti)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows An\u0131nda \u0130letme Bildirimleri Hizmeti"
+                },
+                {
+                    "tag": "service",
+                    "value": "WpnService"
+                }
+            ]
+        },
+        {
+            "itemid": "48570",
+            "name": "State of service \"wscsvc\" (G\u00fcvenlik Merkezi)",
+            "key_": "service.info[\"wscsvc\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"wscsvc\" (G\u00fcvenlik Merkezi)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "G\u00fcvenlik Merkezi"
+                },
+                {
+                    "tag": "service",
+                    "value": "wscsvc"
+                }
+            ]
+        },
+        {
+            "itemid": "48571",
+            "name": "State of service \"WSearch\" (Windows Search)",
+            "key_": "service.info[\"WSearch\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"WSearch\" (Windows Search)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Windows Search"
+                },
+                {
+                    "tag": "service",
+                    "value": "WSearch"
+                }
+            ]
+        },
+        {
+            "itemid": "48572",
+            "name": "State of service \"WslInstaller\" (Linux i\u00e7in Windows Alt Sistemi)",
+            "key_": "service.info[\"WslInstaller\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"WslInstaller\" (Linux i\u00e7in Windows Alt Sistemi)",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Linux i\u00e7in Windows Alt Sistemi"
+                },
+                {
+                    "tag": "service",
+                    "value": "WslInstaller"
+                }
+            ]
+        },
+        {
+            "itemid": "48573",
+            "name": "State of service \"WSLService\" (WSL Service)",
+            "key_": "service.info[\"WSLService\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"WSLService\" (WSL Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "WSL Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "WSLService"
+                }
+            ]
+        },
+        {
+            "itemid": "48576",
+            "name": "0 C:: Average disk read queue length",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\Avg. Disk Read Queue Length\",60]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Average disk read queue length",
+            "lastvalue": "0.022651",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "48577",
+            "name": "0 C:: Disk read request avg waiting time",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\Avg. Disk sec/Read\",60]",
+            "units": "s",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Disk read request avg waiting time",
+            "lastvalue": "0.001617",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "48578",
+            "name": "0 C:: Disk write request avg waiting time",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\Avg. Disk sec/Write\",60]",
+            "units": "s",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Disk write request avg waiting time",
+            "lastvalue": "0.000935",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "48579",
+            "name": "0 C:: Average disk write queue length",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\Avg. Disk Write Queue Length\",60]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Average disk write queue length",
+            "lastvalue": "0.029172",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "48580",
+            "name": "0 C:: Disk average queue size (avgqu-sz)",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\Current Disk Queue Length\",60]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Disk average queue size (avgqu-sz)",
+            "lastvalue": "0.083333",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "48581",
+            "name": "0 C:: Disk read rate",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\Disk Reads/sec\",60]",
+            "units": "!r/s",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Disk read rate",
+            "lastvalue": "78.52138",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "48582",
+            "name": "0 C:: Disk write rate",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\Disk Writes/sec\",60]",
+            "units": "!w/s",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Disk write rate",
+            "lastvalue": "65.18997",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "48583",
+            "name": "0 C:: Disk utilization by idle time",
+            "key_": "perf_counter_en[\"\\PhysicalDisk(0 C:)\\% Idle Time\",60]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "0 C:: Disk utilization by idle time",
+            "lastvalue": "4.333569999999995",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "disk",
+                    "value": "0 C:"
+                }
+            ]
+        },
+        {
+            "itemid": "50811",
+            "name": "State of service \"GoogleUpdaterInternalService134.0.6947.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6947.0))",
+            "key_": "service.info[\"GoogleUpdaterInternalService134.0.6947.0\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"GoogleUpdaterInternalService134.0.6947.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6947.0))",
+            "lastvalue": "255",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6947.0)"
+                },
+                {
+                    "tag": "service",
+                    "value": "GoogleUpdaterInternalService134.0.6947.0"
+                }
+            ]
+        },
+        {
+            "itemid": "50812",
+            "name": "State of service \"GoogleUpdaterService134.0.6947.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6947.0))",
+            "key_": "service.info[\"GoogleUpdaterService134.0.6947.0\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"GoogleUpdaterService134.0.6947.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6947.0))",
+            "lastvalue": "255",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6947.0)"
+                },
+                {
+                    "tag": "service",
+                    "value": "GoogleUpdaterService134.0.6947.0"
+                }
+            ]
+        },
+        {
+            "itemid": "50813",
+            "name": "State of service \"webthreatdefusersvc_6ea53\" (webthreatdefusersvc_6ea53)",
+            "key_": "service.info[\"webthreatdefusersvc_6ea53\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"webthreatdefusersvc_6ea53\" (webthreatdefusersvc_6ea53)",
+            "lastvalue": "255",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "webthreatdefusersvc_6ea53"
+                },
+                {
+                    "tag": "service",
+                    "value": "webthreatdefusersvc_6ea53"
+                }
+            ]
+        },
+        {
+            "itemid": "50814",
+            "name": "State of service \"webthreatdefusersvc_11dd53fa\" (Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_11dd53fa)",
+            "key_": "service.info[\"webthreatdefusersvc_11dd53fa\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"webthreatdefusersvc_11dd53fa\" (Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_11dd53fa)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_11dd53fa"
+                },
+                {
+                    "tag": "service",
+                    "value": "webthreatdefusersvc_11dd53fa"
+                }
+            ]
+        },
+        {
+            "itemid": "50815",
+            "name": "State of service \"GoogleUpdaterInternalService134.0.6985.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6985.0))",
+            "key_": "service.info[\"GoogleUpdaterInternalService134.0.6985.0\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"GoogleUpdaterInternalService134.0.6985.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6985.0))",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6985.0)"
+                },
+                {
+                    "tag": "service",
+                    "value": "GoogleUpdaterInternalService134.0.6985.0"
+                }
+            ]
+        },
+        {
+            "itemid": "50816",
+            "name": "State of service \"GoogleUpdaterService134.0.6985.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6985.0))",
+            "key_": "service.info[\"GoogleUpdaterService134.0.6985.0\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"GoogleUpdaterService134.0.6985.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6985.0))",
+            "lastvalue": "6",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6985.0)"
+                },
+                {
+                    "tag": "service",
+                    "value": "GoogleUpdaterService134.0.6985.0"
+                }
+            ]
+        }
+    ]
+}
