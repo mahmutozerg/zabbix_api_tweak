@@ -76,7 +76,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Cache bytes",
-            "lastvalue": "604966912",
+            "lastvalue": "813006848",
             "tags": [
                 {
                     "tag": "component",
@@ -94,7 +94,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Free system page table entries",
-            "lastvalue": "4294967295",
+            "lastvalue": "12206738",
             "tags": [
                 {
                     "tag": "component",
@@ -112,7 +112,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory page faults per second",
-            "lastvalue": "84315.183321",
+            "lastvalue": "27288.690641",
             "tags": [
                 {
                     "tag": "component",
@@ -130,7 +130,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory pages per second",
-            "lastvalue": "0.990895",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -148,7 +148,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory pool non-paged",
-            "lastvalue": "1252134912",
+            "lastvalue": "979181568",
             "tags": [
                 {
                     "tag": "component",
@@ -166,7 +166,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Used swap space in %",
-            "lastvalue": "0.034385",
+            "lastvalue": "0.029936",
             "tags": [
                 {
                     "tag": "component",
@@ -224,7 +224,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU privileged time",
-            "lastvalue": "0.678306",
+            "lastvalue": "0.777206",
             "tags": [
                 {
                     "tag": "component",
@@ -242,7 +242,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU user time",
-            "lastvalue": "1.065926",
+            "lastvalue": "1.552407",
             "tags": [
                 {
                     "tag": "component",
@@ -260,7 +260,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Context switches per second",
-            "lastvalue": "81167.634443",
+            "lastvalue": "76885.347486",
             "tags": [
                 {
                     "tag": "component",
@@ -296,7 +296,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Number of threads",
-            "lastvalue": "6178",
+            "lastvalue": "6072",
             "tags": [
                 {
                     "tag": "component",
@@ -314,7 +314,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Number of processes",
-            "lastvalue": "326",
+            "lastvalue": "316",
             "tags": [
                 {
                     "tag": "component",
@@ -332,7 +332,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU utilization",
-            "lastvalue": "3.794003",
+            "lastvalue": "3.735042",
             "tags": [
                 {
                     "tag": "component",
@@ -368,7 +368,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "System local time",
-            "lastvalue": "1738594741",
+            "lastvalue": "1741435201",
             "tags": [
                 {
                     "tag": "component",
@@ -386,7 +386,7 @@
             "type": "15",
             "templateid": "10081",
             "name_resolved": "Free swap space",
-            "lastvalue": "11919990781",
+            "lastvalue": "8672198633",
             "tags": [
                 {
                     "tag": "component",
@@ -408,7 +408,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Total swap space",
-            "lastvalue": "11924090880",
+            "lastvalue": "8674795520",
             "tags": [
                 {
                     "tag": "component",
@@ -448,7 +448,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Operating system",
-            "lastvalue": "Windows 10 Home 22621.1.amd64fre.ni_release.220506-1250 Build 22631.4751",
+            "lastvalue": "Windows 10 Home 22621.1.amd64fre.ni_release.220506-1250 Build 22631.4890",
             "tags": [
                 {
                     "tag": "component",
@@ -484,7 +484,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Uptime",
-            "lastvalue": "189271",
+            "lastvalue": "4199",
             "tags": [
                 {
                     "tag": "component",
@@ -520,7 +520,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Used memory",
-            "lastvalue": "29821464576",
+            "lastvalue": "27650301952",
             "tags": [
                 {
                     "tag": "component",
@@ -538,7 +538,7 @@
             "type": "15",
             "templateid": "10081",
             "name_resolved": "Memory utilization",
-            "lastvalue": "43.95234626327866",
+            "lastvalue": "40.75237963518971",
             "tags": [
                 {
                     "tag": "component",
@@ -592,7 +592,7 @@
             "type": "18",
             "templateid": "10081",
             "name_resolved": "Free swap space in %",
-            "lastvalue": "99.965615",
+            "lastvalue": "99.970064",
             "tags": [
                 {
                     "tag": "component",
@@ -614,7 +614,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Used",
-            "lastvalue": "1176644841472",
+            "lastvalue": "960632942592",
             "tags": [
                 {
                     "tag": "component",
@@ -666,7 +666,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Used, in %",
-            "lastvalue": "57.466219",
+            "lastvalue": "46.916403",
             "tags": [
                 {
                     "tag": "component",
@@ -692,7 +692,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Available",
-            "lastvalue": "870896926720",
+            "lastvalue": "1086908825600",
             "tags": [
                 {
                     "tag": "component",
@@ -744,7 +744,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits received",
-            "lastvalue": "40152",
+            "lastvalue": "98250472",
             "tags": [
                 {
                     "tag": "component",
@@ -900,7 +900,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits sent",
-            "lastvalue": "8336",
+            "lastvalue": "4875368",
             "tags": [
                 {
                     "tag": "component",
@@ -2140,14 +2140,14 @@
         },
         {
             "itemid": "48532",
-            "name": "State of service \"MDCoreSvc\" (Microsoft Defender \u00c7ekirdek Hizmeti)",
+            "name": "State of service \"MDCoreSvc\" (Microsoft Defender Core Service)",
             "key_": "service.info[\"MDCoreSvc\",state]",
             "units": "",
             "formula": "",
             "value_type": "numeric",
             "type": "0",
             "templateid": "0",
-            "name_resolved": "State of service \"MDCoreSvc\" (Microsoft Defender \u00c7ekirdek Hizmeti)",
+            "name_resolved": "State of service \"MDCoreSvc\" (Microsoft Defender Core Service)",
             "lastvalue": "0",
             "tags": [
                 {
@@ -2156,7 +2156,7 @@
                 },
                 {
                     "tag": "name",
-                    "value": "Microsoft Defender \u00c7ekirdek Hizmeti"
+                    "value": "Microsoft Defender Core Service"
                 },
                 {
                     "tag": "service",
@@ -2720,7 +2720,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "State of service \"StiSvc\" (Windows Resim Alma (WIA))",
-            "lastvalue": "6",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3188,7 +3188,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Average disk read queue length",
-            "lastvalue": "0.022651",
+            "lastvalue": "0.015938",
             "tags": [
                 {
                     "tag": "component",
@@ -3210,7 +3210,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk read request avg waiting time",
-            "lastvalue": "0.001617",
+            "lastvalue": "0.000783",
             "tags": [
                 {
                     "tag": "component",
@@ -3232,7 +3232,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk write request avg waiting time",
-            "lastvalue": "0.000935",
+            "lastvalue": "0.000582",
             "tags": [
                 {
                     "tag": "component",
@@ -3254,7 +3254,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Average disk write queue length",
-            "lastvalue": "0.029172",
+            "lastvalue": "0.033405",
             "tags": [
                 {
                     "tag": "component",
@@ -3276,7 +3276,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk average queue size (avgqu-sz)",
-            "lastvalue": "0.083333",
+            "lastvalue": "0.016667",
             "tags": [
                 {
                     "tag": "component",
@@ -3298,7 +3298,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk read rate",
-            "lastvalue": "78.52138",
+            "lastvalue": "16.989242",
             "tags": [
                 {
                     "tag": "component",
@@ -3320,7 +3320,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk write rate",
-            "lastvalue": "65.18997",
+            "lastvalue": "59.492455",
             "tags": [
                 {
                     "tag": "component",
@@ -3342,7 +3342,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk utilization by idle time",
-            "lastvalue": "4.333569999999995",
+            "lastvalue": "3.5341999999999985",
             "tags": [
                 {
                     "tag": "component",
@@ -3355,93 +3355,483 @@
             ]
         },
         {
-            "itemid": "50811",
-            "name": "State of service \"GoogleUpdaterInternalService134.0.6947.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6947.0))",
-            "key_": "service.info[\"GoogleUpdaterInternalService134.0.6947.0\",state]",
-            "units": "",
+            "itemid": "50820",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Bits received",
+            "key_": "net.if.in[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\"]",
+            "units": "bps",
             "formula": "",
             "value_type": "numeric",
             "type": "0",
             "templateid": "0",
-            "name_resolved": "State of service \"GoogleUpdaterInternalService134.0.6947.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6947.0))",
-            "lastvalue": "255",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Bits received",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
-                    "value": "system"
+                    "value": "network"
                 },
                 {
-                    "tag": "name",
-                    "value": "Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6947.0)"
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
                 },
                 {
-                    "tag": "service",
-                    "value": "GoogleUpdaterInternalService134.0.6947.0"
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
                 }
             ]
         },
         {
-            "itemid": "50812",
-            "name": "State of service \"GoogleUpdaterService134.0.6947.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6947.0))",
-            "key_": "service.info[\"GoogleUpdaterService134.0.6947.0\",state]",
-            "units": "",
+            "itemid": "50821",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Bits received",
+            "key_": "net.if.in[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\"]",
+            "units": "bps",
             "formula": "",
             "value_type": "numeric",
             "type": "0",
             "templateid": "0",
-            "name_resolved": "State of service \"GoogleUpdaterService134.0.6947.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6947.0))",
-            "lastvalue": "255",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Bits received",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
-                    "value": "system"
+                    "value": "network"
                 },
                 {
-                    "tag": "name",
-                    "value": "Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6947.0)"
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
                 },
                 {
-                    "tag": "service",
-                    "value": "GoogleUpdaterService134.0.6947.0"
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
                 }
             ]
         },
         {
-            "itemid": "50813",
-            "name": "State of service \"webthreatdefusersvc_6ea53\" (webthreatdefusersvc_6ea53)",
-            "key_": "service.info[\"webthreatdefusersvc_6ea53\",state]",
+            "itemid": "50822",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Inbound packets discarded",
+            "key_": "net.if.in[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\",dropped]",
             "units": "",
             "formula": "",
             "value_type": "numeric",
             "type": "0",
             "templateid": "0",
-            "name_resolved": "State of service \"webthreatdefusersvc_6ea53\" (webthreatdefusersvc_6ea53)",
-            "lastvalue": "255",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Inbound packets discarded",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
-                    "value": "system"
+                    "value": "network"
                 },
                 {
-                    "tag": "name",
-                    "value": "webthreatdefusersvc_6ea53"
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
                 },
                 {
-                    "tag": "service",
-                    "value": "webthreatdefusersvc_6ea53"
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
                 }
             ]
         },
         {
-            "itemid": "50814",
-            "name": "State of service \"webthreatdefusersvc_11dd53fa\" (Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_11dd53fa)",
-            "key_": "service.info[\"webthreatdefusersvc_11dd53fa\",state]",
+            "itemid": "50823",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Inbound packets discarded",
+            "key_": "net.if.in[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\",dropped]",
             "units": "",
             "formula": "",
             "value_type": "numeric",
             "type": "0",
             "templateid": "0",
-            "name_resolved": "State of service \"webthreatdefusersvc_11dd53fa\" (Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_11dd53fa)",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Inbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50824",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Inbound packets with errors",
+            "key_": "net.if.in[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Inbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
+                },
+                {
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
+                }
+            ]
+        },
+        {
+            "itemid": "50825",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Inbound packets with errors",
+            "key_": "net.if.in[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Inbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50826",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Bits sent",
+            "key_": "net.if.out[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Bits sent",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
+                },
+                {
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
+                }
+            ]
+        },
+        {
+            "itemid": "50827",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Bits sent",
+            "key_": "net.if.out[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Bits sent",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50828",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Outbound packets discarded",
+            "key_": "net.if.out[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Outbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
+                },
+                {
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
+                }
+            ]
+        },
+        {
+            "itemid": "50829",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Outbound packets discarded",
+            "key_": "net.if.out[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\",dropped]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Outbound packets discarded",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50830",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Outbound packets with errors",
+            "key_": "net.if.out[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Outbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
+                },
+                {
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
+                }
+            ]
+        },
+        {
+            "itemid": "50831",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Outbound packets with errors",
+            "key_": "net.if.out[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\",errors]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Outbound packets with errors",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50832",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Speed",
+            "key_": "net.if.speed[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Speed",
+            "lastvalue": "1000000000",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
+                },
+                {
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
+                }
+            ]
+        },
+        {
+            "itemid": "50833",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Speed",
+            "key_": "net.if.speed[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\"]",
+            "units": "bps",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Speed",
+            "lastvalue": "1000000000",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50834",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Operational status",
+            "key_": "net.if.status[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Operational status",
+            "lastvalue": "7",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
+                },
+                {
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
+                }
+            ]
+        },
+        {
+            "itemid": "50835",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Operational status",
+            "key_": "net.if.status[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Operational status",
+            "lastvalue": "7",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50836",
+            "name": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Interface type",
+            "key_": "net.if.type[\"{D6A06879-FDD5-480E-A14A-92C828F2B445}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface TAP-Windows Adapter V9 for OpenVPN Connect(Yerel A\u011f Ba\u011flant\u0131s\u0131): Interface type",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "Yerel A\u011f Ba\u011flant\u0131s\u0131"
+                },
+                {
+                    "tag": "interface",
+                    "value": "TAP-Windows Adapter V9 for OpenVPN Connect"
+                }
+            ]
+        },
+        {
+            "itemid": "50837",
+            "name": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Interface type",
+            "key_": "net.if.type[\"{30B810C3-EB36-4A66-9C55-2E9BF3E9DA51}\"]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "Interface OpenVPN Data Channel Offload(OpenVPN Connect DCO Adapter): Interface type",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "network"
+                },
+                {
+                    "tag": "description",
+                    "value": "OpenVPN Connect DCO Adapter"
+                },
+                {
+                    "tag": "interface",
+                    "value": "OpenVPN Data Channel Offload"
+                }
+            ]
+        },
+        {
+            "itemid": "50838",
+            "name": "State of service \"agent_ovpnconnect\" (OpenVPN Agent agent_ovpnconnect)",
+            "key_": "service.info[\"agent_ovpnconnect\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"agent_ovpnconnect\" (OpenVPN Agent agent_ovpnconnect)",
             "lastvalue": "0",
             "tags": [
                 {
@@ -3450,24 +3840,24 @@
                 },
                 {
                     "tag": "name",
-                    "value": "Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_11dd53fa"
+                    "value": "OpenVPN Agent agent_ovpnconnect"
                 },
                 {
                     "tag": "service",
-                    "value": "webthreatdefusersvc_11dd53fa"
+                    "value": "agent_ovpnconnect"
                 }
             ]
         },
         {
-            "itemid": "50815",
-            "name": "State of service \"GoogleUpdaterInternalService134.0.6985.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6985.0))",
-            "key_": "service.info[\"GoogleUpdaterInternalService134.0.6985.0\",state]",
+            "itemid": "50839",
+            "name": "State of service \"GoogleUpdaterInternalService135.0.7023.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService135.0.7023.0))",
+            "key_": "service.info[\"GoogleUpdaterInternalService135.0.7023.0\",state]",
             "units": "",
             "formula": "",
             "value_type": "numeric",
             "type": "0",
             "templateid": "0",
-            "name_resolved": "State of service \"GoogleUpdaterInternalService134.0.6985.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6985.0))",
+            "name_resolved": "State of service \"GoogleUpdaterInternalService135.0.7023.0\" (Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService135.0.7023.0))",
             "lastvalue": "6",
             "tags": [
                 {
@@ -3476,24 +3866,24 @@
                 },
                 {
                     "tag": "name",
-                    "value": "Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService134.0.6985.0)"
+                    "value": "Google G\u00fcncelleyici Dahili Hizmeti (GoogleUpdaterInternalService135.0.7023.0)"
                 },
                 {
                     "tag": "service",
-                    "value": "GoogleUpdaterInternalService134.0.6985.0"
+                    "value": "GoogleUpdaterInternalService135.0.7023.0"
                 }
             ]
         },
         {
-            "itemid": "50816",
-            "name": "State of service \"GoogleUpdaterService134.0.6985.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6985.0))",
-            "key_": "service.info[\"GoogleUpdaterService134.0.6985.0\",state]",
+            "itemid": "50840",
+            "name": "State of service \"GoogleUpdaterService135.0.7023.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService135.0.7023.0))",
+            "key_": "service.info[\"GoogleUpdaterService135.0.7023.0\",state]",
             "units": "",
             "formula": "",
             "value_type": "numeric",
             "type": "0",
             "templateid": "0",
-            "name_resolved": "State of service \"GoogleUpdaterService134.0.6985.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6985.0))",
+            "name_resolved": "State of service \"GoogleUpdaterService135.0.7023.0\" (Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService135.0.7023.0))",
             "lastvalue": "6",
             "tags": [
                 {
@@ -3502,11 +3892,63 @@
                 },
                 {
                     "tag": "name",
-                    "value": "Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService134.0.6985.0)"
+                    "value": "Google G\u00fcncelleyici Hizmeti (GoogleUpdaterService135.0.7023.0)"
                 },
                 {
                     "tag": "service",
-                    "value": "GoogleUpdaterService134.0.6985.0"
+                    "value": "GoogleUpdaterService135.0.7023.0"
+                }
+            ]
+        },
+        {
+            "itemid": "50841",
+            "name": "State of service \"ovpnhelper_service\" (OpenVPN Connect Helper Service)",
+            "key_": "service.info[\"ovpnhelper_service\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"ovpnhelper_service\" (OpenVPN Connect Helper Service)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "OpenVPN Connect Helper Service"
+                },
+                {
+                    "tag": "service",
+                    "value": "ovpnhelper_service"
+                }
+            ]
+        },
+        {
+            "itemid": "50842",
+            "name": "State of service \"webthreatdefusersvc_167f4d\" (Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_167f4d)",
+            "key_": "service.info[\"webthreatdefusersvc_167f4d\",state]",
+            "units": "",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "0",
+            "templateid": "0",
+            "name_resolved": "State of service \"webthreatdefusersvc_167f4d\" (Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_167f4d)",
+            "lastvalue": "0",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "system"
+                },
+                {
+                    "tag": "name",
+                    "value": "Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_167f4d"
+                },
+                {
+                    "tag": "service",
+                    "value": "webthreatdefusersvc_167f4d"
                 }
             ]
         }

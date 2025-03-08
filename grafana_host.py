@@ -1,18 +1,15 @@
-import json
-import urllib.parse
-from copy import deepcopy
-from pprint import pp, pprint
-from tempfile import template
-
 import requests
-import utils
-from granafa_dashboard_jsons import GrafanaDicts
+
+import utils.GrafanaPanelUtil
+from utils import GrafanaPanelUtil
+
+from utils.ResponseFileErrorsUtils import *
 
 
 class GrafanaHost:
 
     def __init__(self,ip,port,auth):
-
+        self.panel_util = GrafanaPanelUtil.PanelGenerator()
         self.__host_addr_list= [ip,port]
         self.__host_addr = str.join(":",self.__host_addr_list)+"/api"
         self.__item_key_regex = r"^([^.\[]+)(?:\.([^[]+))?(\[(.*)\])?"
@@ -167,11 +164,13 @@ class GrafanaHost:
 
     def __add_panels_to_dashboard(self, host_folder, template_dbs, host):
 
-
-
+        target_db =None
+        ## checking if the current host's current item has a template id different than "0"
+        ##if so we are creating our template folder name
         for item in sorted([i for i in host["items"] if i["templateid"] !="0"],key=lambda x: x['templateid']):
-
+            ## getting the information of the host's folder in grafana
             for i in template_dbs:
+                ## if dashboard is fresh it's name is stored as a slug in grafana
                 if i["slug"] != "" and i["slug"].endswith(item["templateid"]):
                     target_db = list(i for i in template_dbs if i["slug"].endswith(item["templateid"]))
                 else:
@@ -179,29 +178,25 @@ class GrafanaHost:
 
 
 
-            if len(target_db) != 1:
+            if not target_db and len(target_db) != 1:
                 raise  Exception("I don't know why but it matches multiple template dashboards")
 
             target_db = target_db[0]
+
+            ## if current dashboard has no panels in it
             if target_db:
                 if "panels" not in target_db:
                     target_db["panels"] = []
-                
+                ## create or update the version number
                 if "version" not in target_db:
                     target_db["version"] = 0
                 else:
                     target_db["version"] += 1
 
-                db = GrafanaDicts.stat_single_value.copy()
-                db["pluginVersion"] =self.grafana_version
-                db["targets"][0]["group"]["filter"]= f"/{host['host_groups']}/"
-                db["targets"][0]["host"]["filter"]=host['host']['host']
-                db["targets"][0]["item"]["filter"]= item["name"]
-                db["datasource"]["type"] = self.__zabbix_data_source_info["type"]
-                db["datasource"]["uid"] = self.__zabbix_data_source_info["uid"]
-                db["title"] = item["name"]
-
-                target_db["panels"].append(deepcopy(db))
+                dash_board = self.panel_util.create_panel(self.grafana_version, item, host,
+                                                                                self.__zabbix_data_source_info)
+                if dash_board:
+                    target_db["panels"].append(dash_board)
 
         for i in  template_dbs:
             data = {
@@ -221,7 +216,7 @@ class GrafanaHost:
 
 
     def start(self):
-        zabbix_host_data = utils.read_from_zabbix_json_data()
+        zabbix_host_data = read_from_zabbix_json_data()
         for zhost in zabbix_host_data:
             host_name,host_id =zhost["host"]["host"] , zhost["host"]["hostid"]
             templates = list(i for i in zhost["host"]["parentTemplates"])

@@ -116,7 +116,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Number of processes",
-            "lastvalue": "149",
+            "lastvalue": "148",
             "tags": [
                 {
                     "tag": "component",
@@ -152,7 +152,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System boot time",
-            "lastvalue": "1738593916",
+            "lastvalue": "1741431173",
             "tags": [
                 {
                     "tag": "component",
@@ -170,7 +170,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Interrupts per second",
-            "lastvalue": "435.6743971075509",
+            "lastvalue": "190.26241899570408",
             "tags": [
                 {
                     "tag": "component",
@@ -188,7 +188,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (1m avg)",
-            "lastvalue": "0",
+            "lastvalue": "0.022461",
             "tags": [
                 {
                     "tag": "component",
@@ -206,7 +206,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (15m avg)",
-            "lastvalue": "0.018066",
+            "lastvalue": "0.040527",
             "tags": [
                 {
                     "tag": "component",
@@ -224,7 +224,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (5m avg)",
-            "lastvalue": "0.025391",
+            "lastvalue": "0.040527",
             "tags": [
                 {
                     "tag": "component",
@@ -260,7 +260,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Context switches per second",
-            "lastvalue": "88.05148690197892",
+            "lastvalue": "117.38081741441269",
             "tags": [
                 {
                     "tag": "component",
@@ -314,7 +314,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU idle time",
-            "lastvalue": "99.868594",
+            "lastvalue": "99.858627",
             "tags": [
                 {
                     "tag": "component",
@@ -350,7 +350,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU iowait time",
-            "lastvalue": "0.013547",
+            "lastvalue": "0.006192",
             "tags": [
                 {
                     "tag": "component",
@@ -386,7 +386,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU softirq time",
-            "lastvalue": "0.02032",
+            "lastvalue": "0.058891",
             "tags": [
                 {
                     "tag": "component",
@@ -422,7 +422,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU system time",
-            "lastvalue": "0.067735",
+            "lastvalue": "0.053177",
             "tags": [
                 {
                     "tag": "component",
@@ -440,7 +440,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU user time",
-            "lastvalue": "0.027094",
+            "lastvalue": "0.016685",
             "tags": [
                 {
                     "tag": "component",
@@ -476,7 +476,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System local time",
-            "lastvalue": "1738594743",
+            "lastvalue": "1741435201",
             "tags": [
                 {
                     "tag": "component",
@@ -632,7 +632,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System uptime",
-            "lastvalue": "835",
+            "lastvalue": "4066",
             "tags": [
                 {
                     "tag": "component",
@@ -686,7 +686,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Available memory",
-            "lastvalue": "25787576320",
+            "lastvalue": "25814061056",
             "tags": [
                 {
                     "tag": "component",
@@ -704,7 +704,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Available memory in %",
-            "lastvalue": "96.672521",
+            "lastvalue": "96.771821",
             "tags": [
                 {
                     "tag": "component",
@@ -722,7 +722,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Total memory",
-            "lastvalue": "26675187712",
+            "lastvalue": "26675183616",
             "tags": [
                 {
                     "tag": "component",
@@ -758,7 +758,7 @@
             "type": "18",
             "templateid": "10001",
             "name_resolved": "CPU utilization",
-            "lastvalue": "0.13140599999999836",
+            "lastvalue": "0.14137300000000153",
             "tags": [
                 {
                     "tag": "component",
@@ -776,7 +776,7 @@
             "type": "18",
             "templateid": "10001",
             "name_resolved": "Memory utilization",
-            "lastvalue": "3.3274789999999967",
+            "lastvalue": "3.2281789999999972",
             "tags": [
                 {
                     "tag": "component",
@@ -794,7 +794,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface eth0: Bits received",
-            "lastvalue": "2400",
+            "lastvalue": "2848",
             "tags": [
                 {
                     "tag": "component",
@@ -860,7 +860,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface eth0: Bits sent",
-            "lastvalue": "3296",
+            "lastvalue": "3856",
             "tags": [
                 {
                     "tag": "component",
@@ -1014,7 +1014,7 @@
             "type": "15",
             "templateid": "0",
             "name_resolved": "sda: Disk write request avg waiting time (w_await)",
-            "lastvalue": "2.5714285714285707",
+            "lastvalue": "1.2916666666666667",
             "tags": [
                 {
                     "tag": "component",
@@ -1036,7 +1036,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk write time (rate)",
-            "lastvalue": "0.00031667341712528696",
+            "lastvalue": "0.000516734965103046",
             "tags": [
                 {
                     "tag": "component",
@@ -1058,7 +1058,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk write rate",
-            "lastvalue": "0.10000213172377483",
+            "lastvalue": "0.4000528762088098",
             "tags": [
                 {
                     "tag": "component",
@@ -1080,7 +1080,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk utilization",
-            "lastvalue": "0.026667235126339957",
+            "lastvalue": "0.026670191747253987",
             "tags": [
                 {
                     "tag": "component",
@@ -1146,7 +1146,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk average queue size (avgqu-sz)",
-            "lastvalue": "0.0005833457683886864",
+            "lastvalue": "0.0006500859238393159",
             "tags": [
                 {
                     "tag": "component",
@@ -1324,7 +1324,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/tmp]: Space: Used",
-            "lastvalue": "112514048",
+            "lastvalue": "209920",
             "tags": [
                 {
                     "tag": "component",
@@ -1376,7 +1376,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/tmp]: Space: Used, in %",
-            "lastvalue": "26.298002704546263",
+            "lastvalue": "0.04906477747329063",
             "tags": [
                 {
                     "tag": "component",
@@ -1402,7 +1402,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/tmp]: Space: Available",
-            "lastvalue": "315328512",
+            "lastvalue": "427632640",
             "tags": [
                 {
                     "tag": "component",
@@ -1428,7 +1428,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/tmp]: Inodes: Free, in %",
-            "lastvalue": "96.81840551181102",
+            "lastvalue": "99.90403543307086",
             "tags": [
                 {
                     "tag": "component",
@@ -1480,7 +1480,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/home]: Space: Used",
-            "lastvalue": "1308225536",
+            "lastvalue": "1315323904",
             "tags": [
                 {
                     "tag": "component",
@@ -1532,7 +1532,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/home]: Space: Used, in %",
-            "lastvalue": "4.434380495839903",
+            "lastvalue": "4.458441228294149",
             "tags": [
                 {
                     "tag": "component",
@@ -1558,7 +1558,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/home]: Space: Available",
-            "lastvalue": "28193652736",
+            "lastvalue": "28186554368",
             "tags": [
                 {
                     "tag": "component",
@@ -1584,7 +1584,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/home]: Inodes: Free, in %",
-            "lastvalue": "99.37816249670358",
+            "lastvalue": "99.37095159216773",
             "tags": [
                 {
                     "tag": "component",
@@ -1636,7 +1636,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/var]: Space: Used",
-            "lastvalue": "1993777152",
+            "lastvalue": "2006712320",
             "tags": [
                 {
                     "tag": "component",
@@ -1688,7 +1688,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/var]: Space: Used, in %",
-            "lastvalue": "22.908463003567846",
+            "lastvalue": "23.057087847259965",
             "tags": [
                 {
                     "tag": "component",
@@ -1714,7 +1714,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/var]: Space: Available",
-            "lastvalue": "6709456896",
+            "lastvalue": "6696521728",
             "tags": [
                 {
                     "tag": "component",
@@ -1740,7 +1740,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/var]: Inodes: Free, in %",
-            "lastvalue": "93.74168237773095",
+            "lastvalue": "93.7610901630254",
             "tags": [
                 {
                     "tag": "component",
@@ -1792,7 +1792,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Wordpress update status wordpress",
-            "lastvalue": "/etc/zabbix/scripts/wp_find_updates.sh: line 14: /usr/local/bin/wp: Permission denied\n/etc/zabbix/scripts/wp_find_updates.sh: line 24: /usr/local/bin/wp: Permission denied\nOK",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "Application",

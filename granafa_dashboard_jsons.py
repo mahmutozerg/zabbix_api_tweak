@@ -1,6 +1,12 @@
 
 
+"""
+w: Width of the panel, ranging from 1 to 24 (as the dashboard width is divided into 24 columns)
+h: Height of the panel in grid units, where each unit represents 30 pixels
+x: The x-coordinate (horizontal position) of the panel, using the same unit as w
+y: The y-coordinate (vertical position) of the panel, using the same unit as h
 
+"""
 class GrafanaDicts:
 
   stat_single_value = {
@@ -9,7 +15,7 @@ class GrafanaDicts:
   "title": "Total memory",
   "gridPos": {
     "x": 0,
-    "y": 2,
+    "y": 0,
     "h": 3,
     "w": 3
   },
@@ -17,7 +23,7 @@ class GrafanaDicts:
     "defaults": {
       "mappings": [],
       "thresholds": {
-        "mode": "absolute",
+        "mode": "percentage",
         "steps": [
           {
             "color": "dark-blue",
