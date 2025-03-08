@@ -1,8 +1,5 @@
 import requests
-
-import utils.GrafanaPanelUtil
 from utils import GrafanaPanelUtil
-
 from utils.ResponseFileErrorsUtils import *
 
 
@@ -123,14 +120,12 @@ class GrafanaHost:
 
     def __create_host_folders(self,host_name,hostid,templates):
 
-        host_name_folder_info = dict()
         host_name_folder_name= host_name+"_"+hostid
         folders = self.__get_folders_by_search(host_name_folder_name)
         for folder in folders:
             if folder["title"] == host_name_folder_name and folder["folderUid"] == self.__api_folder["uid"]:
                 host_name_folder_info = {"id":folder["id"],"title":folder["title"],"uid":folder["uid"]}
                 break
-
 
         else:
             host_name_folder_info = self.__create_folder_if_not_exists(
@@ -162,26 +157,30 @@ class GrafanaHost:
 
 
 
-    def __add_panels_to_dashboard(self, host_folder, template_dbs, host):
+    def __add_panels_to_dashboard(self, host_folder, host_db, host):
 
         target_db =None
-        ## checking if the current host's current item has a template id different than "0"
+        ## checking if the current host's current item has a template id different from "0"
         ##if so we are creating our template folder name
-        for item in sorted([i for i in host["items"] if i["templateid"] !="0"],key=lambda x: x['templateid']):
+
+        ## lambda x: (x["value_type"] not in ["text", "character"], x["value_type"]) this will cause text and character fields will be on the top of the list
+        a = sorted(
+            [i for i in host["items"] if i["templateid"] != "0"],
+            key=lambda x: (x["templateid"], x["value_type"] not in ["text", "character"] and(x["units"].lower()!="b") , x["value_type"])
+        )
+        for item in a:
             ## getting the information of the host's folder in grafana
-            for i in template_dbs:
+            for i in host_db:
                 ## if dashboard is fresh it's name is stored as a slug in grafana
                 if i["slug"] != "" and i["slug"].endswith(item["templateid"]):
-                    target_db = list(i for i in template_dbs if i["slug"].endswith(item["templateid"]))
+                    target_db = list(i for i in host_db if i["slug"].endswith(item["templateid"]))[0]
                 else:
-                    target_db = list(i for i in template_dbs if i["title"].endswith(item["templateid"]))
-
+                    target_db = list(i for i in host_db if i["title"].endswith(item["templateid"]))[0]
 
 
             if not target_db and len(target_db) != 1:
                 raise  Exception("I don't know why but it matches multiple template dashboards")
 
-            target_db = target_db[0]
 
             ## if current dashboard has no panels in it
             if target_db:
@@ -198,10 +197,10 @@ class GrafanaHost:
                 if dash_board:
                     target_db["panels"].append(dash_board)
 
-        for i in  template_dbs:
+        for db in  host_db:
             data = {
-                "dashboard": i,
-                "folderUid": host_folder["uid"],  # Assign to specific folder
+                "dashboard": db,
+                "folderUid": host_folder["uid"],
                 "overwrite": True,
                 "message":"initial"
             }
@@ -217,13 +216,14 @@ class GrafanaHost:
 
     def start(self):
         zabbix_host_data = read_from_zabbix_json_data()
-        for zhost in zabbix_host_data:
-            host_name,host_id =zhost["host"]["host"] , zhost["host"]["hostid"]
+        for zhost in [zabbix_host_data[2]]:
+            host_name,host_id =zhost["host"]["name"] , zhost["host"]["hostid"]
             templates = list(i for i in zhost["host"]["parentTemplates"])
 
             host_folder,template_folder = self.__create_host_folders(host_name,host_id,templates)
 
             self.__add_panels_to_dashboard(host_folder,template_folder,zhost)
+            self.panel_util.reset()
 
 
 
