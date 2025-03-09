@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 import requests
 from utils import GrafanaPanelUtil
 from utils.ResponseFileErrorsUtils import *
@@ -155,7 +157,47 @@ class GrafanaHost:
 
         return host_name_folder_info,template_db_info
 
+    def __group_items(self,host):
+        """
+            So this is very weird function,
+            simply i am grouping the item's by their type,
+            i will use this information to dynamicly set the width of the panels,
+            this is needed because grafana has negative gravity
+        :param host:
+        :return:
+        """
+        group1 = ["text", "character"]
 
+        """        
+        sorted_items = sorted(
+            [i for i in host["items"] if i["templateid"] != "0"],
+            key=lambda x: (x["templateid"], x["value_type"] not in group1 and (x["units"].lower()!="b") , x["value_type"])
+        )
+        """
+        group1_list = list()
+        group2_list = list()
+        group3_list = list()
+
+        grouped = list()
+
+        for item in [i for i in host["items"] if i["templateid"] != "0"]:
+            if item["value_type"] in group1:
+                group1_list.append(item)
+            elif item["units"].lower()== "b":
+                group2_list.append(item)
+
+            else:
+                group3_list.append(item)
+
+        if len(group1_list) > 0:
+            grouped.append(group1_list)
+
+        if len(group2_list) > 0:
+            grouped.append(group2_list)
+
+        if len(group3_list) > 0:
+            grouped.append(group3_list)
+        return grouped
 
     def __add_panels_to_dashboard(self, host_folder, host_db, host):
 
@@ -163,26 +205,15 @@ class GrafanaHost:
         ## checking if the current host's current item has a template id different from "0"
         ##if so we are creating our template folder name
 
-        ## lambda x: (x["value_type"] not in ["text", "character"], x["value_type"]) this will cause text and character fields will be on the top of the list
-        a = sorted(
-            [i for i in host["items"] if i["templateid"] != "0"],
-            key=lambda x: (x["templateid"], x["value_type"] not in ["text", "character"] and(x["units"].lower()!="b") , x["value_type"])
-        )
-        for item in a:
-            ## getting the information of the host's folder in grafana
+        sorted_item_groups = self.__group_items(host)
+
+        for item_group in sorted_item_groups:
             for i in host_db:
-                ## if dashboard is fresh it's name is stored as a slug in grafana
-                if i["slug"] != "" and i["slug"].endswith(item["templateid"]):
-                    target_db = list(i for i in host_db if i["slug"].endswith(item["templateid"]))[0]
+                if i["slug"] != "" and i["slug"].endswith(item_group[0]["templateid"]):
+                    target_db = list(i for i in host_db if i["slug"].endswith(item_group[0]["templateid"]))[0]
                 else:
-                    target_db = list(i for i in host_db if i["title"].endswith(item["templateid"]))[0]
+                    target_db = list(i for i in host_db if i["title"].endswith(item_group[0]["templateid"]))[0]
 
-
-            if not target_db and len(target_db) != 1:
-                raise  Exception("I don't know why but it matches multiple template dashboards")
-
-
-            ## if current dashboard has no panels in it
             if target_db:
                 if "panels" not in target_db:
                     target_db["panels"] = []
@@ -192,10 +223,10 @@ class GrafanaHost:
                 else:
                     target_db["version"] += 1
 
-                dash_board = self.panel_util.create_panel(self.grafana_version, item, host,
-                                                                                self.__zabbix_data_source_info)
-                if dash_board:
-                    target_db["panels"].append(dash_board)
+                panels = self.panel_util.create_panel(self.grafana_version, item_group, host,self.__zabbix_data_source_info)
+                if panels:
+                    for panel in panels:
+                        target_db["panels"].append(panel)
 
         for db in  host_db:
             data = {
@@ -216,13 +247,13 @@ class GrafanaHost:
 
     def start(self):
         zabbix_host_data = read_from_zabbix_json_data()
-        for zhost in [zabbix_host_data[2]]:
+        for zhost in zabbix_host_data:
             host_name,host_id =zhost["host"]["name"] , zhost["host"]["hostid"]
             templates = list(i for i in zhost["host"]["parentTemplates"])
 
-            host_folder,template_folder = self.__create_host_folders(host_name,host_id,templates)
+            host_folder, host_template_db = self.__create_host_folders(host_name,host_id,templates)
 
-            self.__add_panels_to_dashboard(host_folder,template_folder,zhost)
+            self.__add_panels_to_dashboard(host_folder,host_template_db,zhost)
             self.panel_util.reset()
 
 

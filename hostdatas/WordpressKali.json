@@ -26,7 +26,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Host name of Zabbix agent running",
-            "lastvalue": "WordpressKali",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -62,7 +62,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Version of Zabbix agent running",
-            "lastvalue": "7.0.8",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -80,7 +80,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Maximum number of open file descriptors",
-            "lastvalue": "9223372036854775807",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -98,7 +98,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Maximum number of processes",
-            "lastvalue": "4194304",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -152,7 +152,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System boot time",
-            "lastvalue": "1741431173",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -242,7 +242,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Number of CPUs",
-            "lastvalue": "5",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -458,7 +458,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System name",
-            "lastvalue": "kali",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -560,7 +560,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Operating system architecture",
-            "lastvalue": "x86_64",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -578,7 +578,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Operating system",
-            "lastvalue": "Linux version 6.11.2-amd64 (devel@kali.org) (x86_64-linux-gnu-gcc-14 (Debian 14.2.0-6) 14.2.0, GNU ld (GNU Binutils for Debian) 2.43.1) #1 SMP PREEMPT_DYNAMIC Kali 6.11.2-1kali1 (2024-10-15)",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -614,7 +614,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System description",
-            "lastvalue": "Linux kali 6.11.2-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.11.2-1kali1 (2024-10-15) x86_64",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -668,7 +668,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Checksum of /etc/passwd",
-            "lastvalue": "0a6cf07bbec99bfb0d01d99ef84c9debbf42ae40e6f0a927f4afdc2cdea703b3",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -948,7 +948,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface eth0: Speed",
-            "lastvalue": "1000000000",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -970,7 +970,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface eth0: Interface type",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",

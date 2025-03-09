@@ -38,7 +38,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed numeric (float) values per second",
-            "lastvalue": "2.9604495156496995",
+            "lastvalue": "2.9713968975650937",
             "tags": [
                 {
                     "tag": "component",
@@ -104,7 +104,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed numeric (unsigned) values per second",
-            "lastvalue": "3.6256770715513693",
+            "lastvalue": "3.6352979989009424",
             "tags": [
                 {
                     "tag": "component",
@@ -126,7 +126,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed text values per second",
-            "lastvalue": "0.498937941090334",
+            "lastvalue": "0.5145854348890794",
             "tags": [
                 {
                     "tag": "component",
@@ -148,7 +148,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed not supported values per second",
-            "lastvalue": "0.21620343403905828",
+            "lastvalue": "0.21578771599873647",
             "tags": [
                 {
                     "tag": "component",
@@ -188,7 +188,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of configuration syncer internal processes, in %",
-            "lastvalue": "0.35455005909167653",
+            "lastvalue": "0.2700877785280216",
             "tags": [
                 {
                     "tag": "component",
@@ -206,7 +206,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of escalator internal processes, in %",
-            "lastvalue": "0.11842327863305702",
+            "lastvalue": "0.06765899864682003",
             "tags": [
                 {
                     "tag": "component",
@@ -224,7 +224,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of history syncer internal processes, in %",
-            "lastvalue": "0.7017543859649122",
+            "lastvalue": "0.6764469623303598",
             "tags": [
                 {
                     "tag": "component",
@@ -404,7 +404,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of timer internal processes, in %",
-            "lastvalue": "0.01720282126268708",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -422,7 +422,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of trapper data collector processes, in %",
-            "lastvalue": "0",
+            "lastvalue": "0.006780810306831667",
             "tags": [
                 {
                     "tag": "component",
@@ -494,7 +494,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Configuration cache, % used",
-            "lastvalue": "26.349830627441406",
+            "lastvalue": "26.37197971343994",
             "tags": [
                 {
                     "tag": "component",
@@ -566,7 +566,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of processed values per second",
-            "lastvalue": "7.084927547688733",
+            "lastvalue": "7.137795035454658",
             "tags": [
                 {
                     "tag": "component",
@@ -606,7 +606,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Value cache, % used",
-            "lastvalue": "3.2249019577922575",
+            "lastvalue": "1.3337745868493738",
             "tags": [
                 {
                     "tag": "component",
@@ -624,7 +624,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Value cache hits",
-            "lastvalue": "19.507809388356545",
+            "lastvalue": "18.875750866105427",
             "tags": [
                 {
                     "tag": "component",
@@ -696,7 +696,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of task manager internal processes, in %",
-            "lastvalue": "0.016923337282112032",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -732,7 +732,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of alert manager internal processes, in %",
-            "lastvalue": "0.03379520108144644",
+            "lastvalue": "0.016891891891891893",
             "tags": [
                 {
                     "tag": "component",
@@ -750,7 +750,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of preprocessing manager internal processes, in %",
-            "lastvalue": "0.03382377811601556",
+            "lastvalue": "0.03376667229444538",
             "tags": [
                 {
                     "tag": "component",
@@ -768,7 +768,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of preprocessing worker internal processes, in %",
-            "lastvalue": "0",
+            "lastvalue": "0.00211864406779661",
             "tags": [
                 {
                     "tag": "component",
@@ -822,7 +822,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of LLD manager internal processes, in %",
-            "lastvalue": "0",
+            "lastvalue": "0.01688333614722269",
             "tags": [
                 {
                     "tag": "component",
@@ -840,7 +840,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of LLD worker internal processes, in %",
-            "lastvalue": "0.05884825556956705",
+            "lastvalue": "0.09316507156771407",
             "tags": [
                 {
                     "tag": "component",
@@ -858,7 +858,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of alert syncer internal processes, in %",
-            "lastvalue": "0",
+            "lastvalue": "0.016877637130801686",
             "tags": [
                 {
                     "tag": "component",
@@ -912,7 +912,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of availability manager internal processes, in %",
-            "lastvalue": "0.03389830508474576",
+            "lastvalue": "0.016914749661705007",
             "tags": [
                 {
                     "tag": "component",
@@ -930,7 +930,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of history poller internal processes, in %",
-            "lastvalue": "0.0033863867253640365",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1020,7 +1020,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of service manager internal processes, in %",
-            "lastvalue": "0.016874789065136685",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1096,7 +1096,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU system time",
-            "lastvalue": "1.658867",
+            "lastvalue": "1.301451",
             "tags": [
                 {
                     "tag": "component",
@@ -1114,7 +1114,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU user time",
-            "lastvalue": "2.221368",
+            "lastvalue": "1.718153",
             "tags": [
                 {
                     "tag": "component",
@@ -1150,7 +1150,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System local time",
-            "lastvalue": "1741449832",
+            "lastvalue": "1741526692",
             "tags": [
                 {
                     "tag": "component",
@@ -1302,7 +1302,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System uptime",
-            "lastvalue": "3160",
+            "lastvalue": "2478",
             "tags": [
                 {
                     "tag": "component",
@@ -1356,7 +1356,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Available memory",
-            "lastvalue": "9087967232",
+            "lastvalue": "9074802688",
             "tags": [
                 {
                     "tag": "component",
@@ -1374,7 +1374,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Available memory in %",
-            "lastvalue": "88.845882",
+            "lastvalue": "88.717183",
             "tags": [
                 {
                     "tag": "component",
@@ -1428,7 +1428,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU softirq time",
-            "lastvalue": "0.565107",
+            "lastvalue": "0.185641",
             "tags": [
                 {
                     "tag": "component",
@@ -1464,7 +1464,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (1m avg)",
-            "lastvalue": "0.270508",
+            "lastvalue": "0.164551",
             "tags": [
                 {
                     "tag": "component",
@@ -1554,7 +1554,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Number of running processes",
-            "lastvalue": "1",
+            "lastvalue": "5",
             "tags": [
                 {
                     "tag": "component",
@@ -1572,7 +1572,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "System boot time",
-            "lastvalue": "1741446710",
+            "lastvalue": "1741524192",
             "tags": [
                 {
                     "tag": "component",
@@ -1590,7 +1590,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Interrupts per second",
-            "lastvalue": "801.1635720879445",
+            "lastvalue": "860.2692124926874",
             "tags": [
                 {
                     "tag": "component",
@@ -1608,7 +1608,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (5m avg)",
-            "lastvalue": "0.213379",
+            "lastvalue": "0.322754",
             "tags": [
                 {
                     "tag": "component",
@@ -1626,7 +1626,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU iowait time",
-            "lastvalue": "0.469114",
+            "lastvalue": "0.526062",
             "tags": [
                 {
                     "tag": "component",
@@ -1644,7 +1644,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Load average (15m avg)",
-            "lastvalue": "0.182129",
+            "lastvalue": "0.324219",
             "tags": [
                 {
                     "tag": "component",
@@ -1680,7 +1680,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "Context switches per second",
-            "lastvalue": "804.3086151490938",
+            "lastvalue": "975.7185261063293",
             "tags": [
                 {
                     "tag": "component",
@@ -1734,7 +1734,7 @@
             "type": "0",
             "templateid": "10001",
             "name_resolved": "CPU idle time",
-            "lastvalue": "97.219749",
+            "lastvalue": "95.793307",
             "tags": [
                 {
                     "tag": "component",
@@ -1788,7 +1788,7 @@
             "type": "18",
             "templateid": "10001",
             "name_resolved": "CPU utilization",
-            "lastvalue": "2.780251000000007",
+            "lastvalue": "4.206693000000001",
             "tags": [
                 {
                     "tag": "component",
@@ -1806,7 +1806,7 @@
             "type": "18",
             "templateid": "10001",
             "name_resolved": "Memory utilization",
-            "lastvalue": "11.154117999999997",
+            "lastvalue": "11.282816999999994",
             "tags": [
                 {
                     "tag": "component",
@@ -1932,7 +1932,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of agent poller data collector processes, in %",
-            "lastvalue": "0.5594168503136124",
+            "lastvalue": "0.15254237288135594",
             "tags": [
                 {
                     "tag": "component",
@@ -1986,7 +1986,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Number of values synchronized with the database per second",
-            "lastvalue": "6.6362545963924715",
+            "lastvalue": "6.673055453056022",
             "tags": [
                 {
                     "tag": "component",
@@ -2044,7 +2044,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of internal poller data collector processes, in %",
-            "lastvalue": "0.03382377811601556",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2062,7 +2062,7 @@
             "type": "5",
             "templateid": "10047",
             "name_resolved": "Utilization of proxy group manager internal processes, in %",
-            "lastvalue": "0",
+            "lastvalue": "0.01688048615800135",
             "tags": [
                 {
                     "tag": "component",
@@ -2080,7 +2080,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/]: Space: Available",
-            "lastvalue": "3357933568",
+            "lastvalue": "3911073792",
             "tags": [
                 {
                     "tag": "component",
@@ -2132,7 +2132,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/]: Space: Used",
-            "lastvalue": "8049070080",
+            "lastvalue": "7495929856",
             "tags": [
                 {
                     "tag": "component",
@@ -2184,7 +2184,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/]: Space: Used, in %",
-            "lastvalue": "70.56252744699745",
+            "lastvalue": "65.71339930547202",
             "tags": [
                 {
                     "tag": "component",
@@ -2210,7 +2210,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/]: Inodes: Free, in %",
-            "lastvalue": "78.92270295516305",
+            "lastvalue": "74.8710300611413",
             "tags": [
                 {
                     "tag": "component",
@@ -2236,7 +2236,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/boot]: Space: Available",
-            "lastvalue": "1723994112",
+            "lastvalue": "1722425344",
             "tags": [
                 {
                     "tag": "component",
@@ -2288,7 +2288,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/boot]: Space: Used",
-            "lastvalue": "192229376",
+            "lastvalue": "193798144",
             "tags": [
                 {
                     "tag": "component",
@@ -2340,7 +2340,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [/boot]: Space: Used, in %",
-            "lastvalue": "10.031678309122157",
+            "lastvalue": "10.11354600408697",
             "tags": [
                 {
                     "tag": "component",
@@ -2436,7 +2436,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface enp0s3: Bits received",
-            "lastvalue": "20376",
+            "lastvalue": "40328",
             "tags": [
                 {
                     "tag": "component",
@@ -2502,7 +2502,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface enp0s3: Bits sent",
-            "lastvalue": "23312",
+            "lastvalue": "78128",
             "tags": [
                 {
                     "tag": "component",
@@ -2612,7 +2612,7 @@
             "type": "15",
             "templateid": "0",
             "name_resolved": "sda: Disk write request avg waiting time (w_await)",
-            "lastvalue": "2.979220779220779",
+            "lastvalue": "3.359267734553776",
             "tags": [
                 {
                     "tag": "component",
@@ -2634,7 +2634,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk write time (rate)",
-            "lastvalue": "0.027020988108075204",
+            "lastvalue": "0.05636613087089419",
             "tags": [
                 {
                     "tag": "component",
@@ -2656,7 +2656,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk write rate",
-            "lastvalue": "7.88459430914224",
+            "lastvalue": "15.249855040469598",
             "tags": [
                 {
                     "tag": "component",
@@ -2678,7 +2678,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk utilization",
-            "lastvalue": "2.065330306348253",
+            "lastvalue": "3.134970200122767",
             "tags": [
                 {
                     "tag": "component",
@@ -2700,7 +2700,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk read time (rate)",
-            "lastvalue": "0",
+            "lastvalue": "4.999952472285115e-05",
             "tags": [
                 {
                     "tag": "component",
@@ -2722,7 +2722,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk read rate",
-            "lastvalue": "0",
+            "lastvalue": "0.03333301648190076",
             "tags": [
                 {
                     "tag": "component",
@@ -2744,7 +2744,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "sda: Disk average queue size (avgqu-sz)",
-            "lastvalue": "0.04570730992741654",
+            "lastvalue": "0.0811492286251874",
             "tags": [
                 {
                     "tag": "component",
@@ -2784,7 +2784,7 @@
             "type": "15",
             "templateid": "10329",
             "name_resolved": "Cache hit ratio, %",
-            "lastvalue": "100.00000000000001",
+            "lastvalue": "100",
             "tags": [
                 {
                     "tag": "component",
@@ -2820,7 +2820,7 @@
             "type": "0",
             "templateid": "10329",
             "name_resolved": "Age of oldest xid",
-            "lastvalue": "0",
+            "lastvalue": "1",
             "tags": [
                 {
                     "tag": "component",
@@ -2950,7 +2950,7 @@
             "type": "0",
             "templateid": "10329",
             "name_resolved": "Uptime",
-            "lastvalue": "3114.953577",
+            "lastvalue": "563.811877",
             "tags": [
                 {
                     "tag": "component",
@@ -2968,7 +2968,7 @@
             "type": "0",
             "templateid": "10329",
             "name_resolved": "Version",
-            "lastvalue": "PostgreSQL 16.6 (Ubuntu 16.6-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.2.0-23ubuntu4) 13.2.0, 64-bit",
+            "lastvalue": "PostgreSQL 16.8 (Ubuntu 16.8-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit",
             "tags": [
                 {
                     "tag": "component",
@@ -3058,7 +3058,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Bgwriter: Buffers allocated per second",
-            "lastvalue": "0.13332330616524857",
+            "lastvalue": "0.03333391451013282",
             "tags": [
                 {
                     "tag": "component",
@@ -3094,7 +3094,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Bgwriter: Buffers written directly by a backend per second",
-            "lastvalue": "0.08332706635328035",
+            "lastvalue": "0.3500061023563946",
             "tags": [
                 {
                     "tag": "component",
@@ -3112,7 +3112,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Checkpoint: Buffers written during checkpoints per second",
-            "lastvalue": "3.466405960296463",
+            "lastvalue": "1.2500217941299807",
             "tags": [
                 {
                     "tag": "component",
@@ -3166,7 +3166,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Checkpoint: Scheduled per second",
-            "lastvalue": "0",
+            "lastvalue": "0.01666695725506641",
             "tags": [
                 {
                     "tag": "component",
@@ -3184,7 +3184,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Checkpoint: Checkpoint sync time per second",
-            "lastvalue": "0.0020498458322907006",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3202,7 +3202,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Checkpoint: Checkpoint write time per second",
-            "lastvalue": "0.985592540826598",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3436,7 +3436,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Hit blocks read per second",
-            "lastvalue": "8350.248912026043",
+            "lastvalue": "6457.036231829383",
             "tags": [
                 {
                     "tag": "component",
@@ -3598,7 +3598,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows deleted per second",
-            "lastvalue": "0",
+            "lastvalue": "0.016664910538114305",
             "tags": [
                 {
                     "tag": "component",
@@ -3616,7 +3616,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows fetched per second",
-            "lastvalue": "4908.136260375046",
+            "lastvalue": "3816.0312044806424",
             "tags": [
                 {
                     "tag": "component",
@@ -3634,7 +3634,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows inserted per second",
-            "lastvalue": "6.6155698447695634",
+            "lastvalue": "6.1326870780260645",
             "tags": [
                 {
                     "tag": "component",
@@ -3652,7 +3652,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows returned per second",
-            "lastvalue": "9925.471082948516",
+            "lastvalue": "8347.387028899302",
             "tags": [
                 {
                     "tag": "component",
@@ -3670,7 +3670,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Rows updated per second",
-            "lastvalue": "2.2162992175172596",
+            "lastvalue": "1.9831243540356023",
             "tags": [
                 {
                     "tag": "component",
@@ -3688,7 +3688,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "Dbstat: Committed transactions per second",
-            "lastvalue": "45.40913810326716",
+            "lastvalue": "39.12920994349239",
             "tags": [
                 {
                     "tag": "component",
@@ -3760,7 +3760,7 @@
             "type": "18",
             "templateid": "10329",
             "name_resolved": "WAL: Bytes written",
-            "lastvalue": "10379",
+            "lastvalue": "5232",
             "tags": [
                 {
                     "tag": "component",
@@ -3778,7 +3778,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "DB [postgres]: Database age",
-            "lastvalue": "1092654",
+            "lastvalue": "1100812",
             "tags": [
                 {
                     "tag": "component",
@@ -3800,7 +3800,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Database age",
-            "lastvalue": "1092657",
+            "lastvalue": "1100815",
             "tags": [
                 {
                     "tag": "component",
@@ -3888,7 +3888,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Database size",
-            "lastvalue": "99037667",
+            "lastvalue": "101642723",
             "tags": [
                 {
                     "tag": "component",
@@ -3932,7 +3932,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [postgres]: Commits per second",
-            "lastvalue": "0.5166672573551198",
+            "lastvalue": "0.5166901487871967",
             "tags": [
                 {
                     "tag": "component",
@@ -3976,7 +3976,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [postgres]: Tuples returned per second",
-            "lastvalue": "120.36680427802177",
+            "lastvalue": "120.37213724326239",
             "tags": [
                 {
                     "tag": "component",
@@ -4020,7 +4020,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [postgres]: Tuples fetched per second",
-            "lastvalue": "1.4000016005751632",
+            "lastvalue": "1.4000636289717585",
             "tags": [
                 {
                     "tag": "component",
@@ -4240,7 +4240,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [postgres]: Blocks hit per second",
-            "lastvalue": "8.166676003355118",
+            "lastvalue": "8.167037835668593",
             "tags": [
                 {
                     "tag": "component",
@@ -4306,7 +4306,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Commits per second",
-            "lastvalue": "44.66671773263616",
+            "lastvalue": "38.40174525179681",
             "tags": [
                 {
                     "tag": "component",
@@ -4328,7 +4328,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Tuples updated per second",
-            "lastvalue": "2.216669200910675",
+            "lastvalue": "1.9834234743766581",
             "tags": [
                 {
                     "tag": "component",
@@ -4350,7 +4350,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Tuples returned per second",
-            "lastvalue": "9594.360968913083",
+            "lastvalue": "8037.0819295365345",
             "tags": [
                 {
                     "tag": "component",
@@ -4372,7 +4372,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Tuples inserted per second",
-            "lastvalue": "6.6000075455686265",
+            "lastvalue": "6.666969661770279",
             "tags": [
                 {
                     "tag": "component",
@@ -4394,7 +4394,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Tuples fetched per second",
-            "lastvalue": "4818.522175522452",
+            "lastvalue": "3740.8700120676126",
             "tags": [
                 {
                     "tag": "component",
@@ -4416,7 +4416,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Tuples deleted per second",
-            "lastvalue": "0",
+            "lastvalue": "0.016667424154425698",
             "tags": [
                 {
                     "tag": "component",
@@ -4614,7 +4614,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Blocks hit per second",
-            "lastvalue": "8121.542618422291",
+            "lastvalue": "6266.584798732665",
             "tags": [
                 {
                     "tag": "component",
@@ -4856,7 +4856,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Num of locks total",
-            "lastvalue": "8",
+            "lastvalue": "2",
             "tags": [
                 {
                     "tag": "component",
@@ -4966,7 +4966,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Num of rowexclusive locks",
-            "lastvalue": "4",
+            "lastvalue": "2",
             "tags": [
                 {
                     "tag": "component",
@@ -5010,7 +5010,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "DB [zabbix]: Num of accessshare locks",
-            "lastvalue": "4",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5472,7 +5472,7 @@
             "type": "0",
             "templateid": "10266",
             "name_resolved": "Service response time",
-            "lastvalue": "0.000175",
+            "lastvalue": "0.00086",
             "tags": [
                 {
                     "tag": "component",
@@ -5494,7 +5494,7 @@
             "type": "0",
             "templateid": "10266",
             "name_resolved": "Get stub status page",
-            "lastvalue": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 106\r\nContent-Type: text/plain\r\nDate: Sat, 08 Mar 2025 16:04:01 GMT\r\nServer: nginx/1.24.0 (Ubuntu)\r\n\r\nActive connections: 1 \nserver accepts handled requests\n 2380 2380 2276 \nReading: 0 Writing: 1 Waiting: 0 \n",
+            "lastvalue": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 103\r\nContent-Type: text/plain\r\nDate: Sun, 09 Mar 2025 13:24:01 GMT\r\nServer: nginx/1.24.0 (Ubuntu)\r\n\r\nActive connections: 1 \nserver accepts handled requests\n 206 206 184 \nReading: 0 Writing: 1 Waiting: 0 \n",
             "tags": [
                 {
                     "tag": "component",
@@ -5516,7 +5516,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Connections accepted per second",
-            "lastvalue": "1.0334166738410453",
+            "lastvalue": "0.08332794333614739",
             "tags": [
                 {
                     "tag": "component",
@@ -5570,7 +5570,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Connections handled per second",
-            "lastvalue": "1.0334166738410453",
+            "lastvalue": "0.08332794333614739",
             "tags": [
                 {
                     "tag": "component",
@@ -5642,7 +5642,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Requests total",
-            "lastvalue": "2276",
+            "lastvalue": "184",
             "tags": [
                 {
                     "tag": "component",
@@ -5660,7 +5660,7 @@
             "type": "18",
             "templateid": "10266",
             "name_resolved": "Requests per second",
-            "lastvalue": "1.0000806521042374",
+            "lastvalue": "0.04999676600168843",
             "tags": [
                 {
                     "tag": "component",
@@ -5696,7 +5696,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Memory usage (vsize)",
-            "lastvalue": "79884288",
+            "lastvalue": "79745024",
             "tags": [
                 {
                     "tag": "component",
@@ -5714,7 +5714,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Memory usage (rss)",
-            "lastvalue": "30277632",
+            "lastvalue": "31145984",
             "tags": [
                 {
                     "tag": "component",
@@ -5732,7 +5732,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Memory usage, %",
-            "lastvalue": "0.29600050935152583",
+            "lastvalue": "0.30448970144872867",
             "tags": [
                 {
                     "tag": "component",
@@ -5768,7 +5768,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "CPU utilization",
-            "lastvalue": "0.3",
+            "lastvalue": "0.2",
             "tags": [
                 {
                     "tag": "component",
@@ -5840,7 +5840,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Accepted connections per second",
-            "lastvalue": "0.11665818743241944",
+            "lastvalue": "1.7996881895936525",
             "tags": [
                 {
                     "tag": "component",
@@ -5966,7 +5966,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Processes, idle",
-            "lastvalue": "9",
+            "lastvalue": "6",
             "tags": [
                 {
                     "tag": "component",
@@ -6002,7 +6002,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Processes, total",
-            "lastvalue": "10",
+            "lastvalue": "7",
             "tags": [
                 {
                     "tag": "component",
@@ -6056,7 +6056,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Start time",
-            "lastvalue": "1741446725",
+            "lastvalue": "1741526078",
             "tags": [
                 {
                     "tag": "component",
@@ -6074,7 +6074,7 @@
             "type": "18",
             "templateid": "10330",
             "name_resolved": "Uptime",
-            "lastvalue": "3157",
+            "lastvalue": "604",
             "tags": [
                 {
                     "tag": "component",
@@ -6128,7 +6128,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Memory usage (vsize)",
-            "lastvalue": "3063431168",
+            "lastvalue": "2355957760",
             "tags": [
                 {
                     "tag": "component",
@@ -6146,7 +6146,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Memory usage (rss)",
-            "lastvalue": "366145536",
+            "lastvalue": "283037696",
             "tags": [
                 {
                     "tag": "component",
@@ -6164,7 +6164,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Memory usage, %",
-            "lastvalue": "3.5795158998163212",
+            "lastvalue": "2.76703614673969",
             "tags": [
                 {
                     "tag": "component",
@@ -6182,7 +6182,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Number of running processes",
-            "lastvalue": "13",
+            "lastvalue": "10",
             "tags": [
                 {
                     "tag": "component",
@@ -6200,7 +6200,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "CPU utilization",
-            "lastvalue": "2.1",
+            "lastvalue": "1.1",
             "tags": [
                 {
                     "tag": "component",

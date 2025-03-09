@@ -76,7 +76,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Cache bytes",
-            "lastvalue": "546426880",
+            "lastvalue": "899108864",
             "tags": [
                 {
                     "tag": "component",
@@ -112,7 +112,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory page faults per second",
-            "lastvalue": "20049.416553",
+            "lastvalue": "1704.487426",
             "tags": [
                 {
                     "tag": "component",
@@ -130,7 +130,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory pages per second",
-            "lastvalue": "0",
+            "lastvalue": "0.994869",
             "tags": [
                 {
                     "tag": "component",
@@ -148,7 +148,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory pool non-paged",
-            "lastvalue": "1028481024",
+            "lastvalue": "1913638912",
             "tags": [
                 {
                     "tag": "component",
@@ -166,7 +166,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Used swap space in %",
-            "lastvalue": "1.512432",
+            "lastvalue": "1.825428",
             "tags": [
                 {
                     "tag": "component",
@@ -224,7 +224,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU privileged time",
-            "lastvalue": "0.097199",
+            "lastvalue": "0.194262",
             "tags": [
                 {
                     "tag": "component",
@@ -242,7 +242,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU user time",
-            "lastvalue": "1.165121",
+            "lastvalue": "1.165977",
             "tags": [
                 {
                     "tag": "component",
@@ -260,7 +260,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Context switches per second",
-            "lastvalue": "33862.455121",
+            "lastvalue": "27651.391093",
             "tags": [
                 {
                     "tag": "component",
@@ -296,7 +296,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Number of threads",
-            "lastvalue": "5657",
+            "lastvalue": "6153",
             "tags": [
                 {
                     "tag": "component",
@@ -314,7 +314,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Number of processes",
-            "lastvalue": "301",
+            "lastvalue": "314",
             "tags": [
                 {
                     "tag": "component",
@@ -332,7 +332,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU utilization",
-            "lastvalue": "1.251467",
+            "lastvalue": "1.710373",
             "tags": [
                 {
                     "tag": "component",
@@ -368,7 +368,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "System local time",
-            "lastvalue": "1741449839",
+            "lastvalue": "1741526700",
             "tags": [
                 {
                     "tag": "component",
@@ -386,7 +386,7 @@
             "type": "15",
             "templateid": "10081",
             "name_resolved": "Free swap space",
-            "lastvalue": "4230008836",
+            "lastvalue": "4216565760",
             "tags": [
                 {
                     "tag": "component",
@@ -484,7 +484,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Uptime",
-            "lastvalue": "18837",
+            "lastvalue": "95638",
             "tags": [
                 {
                     "tag": "component",
@@ -520,7 +520,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Used memory",
-            "lastvalue": "23172177920",
+            "lastvalue": "29050720256",
             "tags": [
                 {
                     "tag": "component",
@@ -538,7 +538,7 @@
             "type": "15",
             "templateid": "10081",
             "name_resolved": "Memory utilization",
-            "lastvalue": "34.15229942910971",
+            "lastvalue": "42.81638524611392",
             "tags": [
                 {
                     "tag": "component",
@@ -592,7 +592,7 @@
             "type": "18",
             "templateid": "10081",
             "name_resolved": "Free swap space in %",
-            "lastvalue": "98.487568",
+            "lastvalue": "98.174572",
             "tags": [
                 {
                     "tag": "component",
@@ -614,7 +614,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Used",
-            "lastvalue": "957406224384",
+            "lastvalue": "912324104192",
             "tags": [
                 {
                     "tag": "component",
@@ -666,7 +666,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Used, in %",
-            "lastvalue": "46.758813",
+            "lastvalue": "44.557045",
             "tags": [
                 {
                     "tag": "component",
@@ -692,7 +692,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Available",
-            "lastvalue": "1090135543808",
+            "lastvalue": "1135217664000",
             "tags": [
                 {
                     "tag": "component",
@@ -744,7 +744,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits received",
-            "lastvalue": "4528",
+            "lastvalue": "6376",
             "tags": [
                 {
                     "tag": "component",
@@ -900,7 +900,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits sent",
-            "lastvalue": "5392",
+            "lastvalue": "3488",
             "tags": [
                 {
                     "tag": "component",
@@ -3188,7 +3188,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Average disk read queue length",
-            "lastvalue": "0.019906",
+            "lastvalue": "0.019659",
             "tags": [
                 {
                     "tag": "component",
@@ -3210,7 +3210,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk read request avg waiting time",
-            "lastvalue": "0.002847",
+            "lastvalue": "0.002703",
             "tags": [
                 {
                     "tag": "component",
@@ -3232,7 +3232,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk write request avg waiting time",
-            "lastvalue": "0.001518",
+            "lastvalue": "0.002278",
             "tags": [
                 {
                     "tag": "component",
@@ -3254,7 +3254,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Average disk write queue length",
-            "lastvalue": "0.041628",
+            "lastvalue": "0.048637",
             "tags": [
                 {
                     "tag": "component",
@@ -3276,7 +3276,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk average queue size (avgqu-sz)",
-            "lastvalue": "0.116667",
+            "lastvalue": "0.05",
             "tags": [
                 {
                     "tag": "component",
@@ -3298,7 +3298,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk read rate",
-            "lastvalue": "8.85462",
+            "lastvalue": "9.009967",
             "tags": [
                 {
                     "tag": "component",
@@ -3320,7 +3320,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk write rate",
-            "lastvalue": "38.433585",
+            "lastvalue": "30.939901",
             "tags": [
                 {
                     "tag": "component",
@@ -3342,7 +3342,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk utilization by idle time",
-            "lastvalue": "3.7818089999999955",
+            "lastvalue": "4.376548999999997",
             "tags": [
                 {
                     "tag": "component",
@@ -3936,7 +3936,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "State of service \"webthreatdefusersvc_167f4d\" (Web Tehdit Savunmas\u0131 Kullan\u0131c\u0131 Hizmeti_167f4d)",
-            "lastvalue": "0",
+            "lastvalue": "255",
             "tags": [
                 {
                     "tag": "component",
@@ -3949,6 +3949,110 @@
                 {
                     "tag": "service",
                     "value": "webthreatdefusersvc_167f4d"
+                }
+            ]
+        },
+        {
+            "itemid": "50844",
+            "name": "FS [KINGSTON(D:)]: Space: Used",
+            "key_": "vfs.fs.dependent.size[D:,used]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [KINGSTON(D:)]: Space: Used",
+            "lastvalue": "190967709696",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "D:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "exFAT"
+                }
+            ]
+        },
+        {
+            "itemid": "50845",
+            "name": "FS [KINGSTON(D:)]: Space: Total",
+            "key_": "vfs.fs.dependent.size[D:,total]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [KINGSTON(D:)]: Space: Total",
+            "lastvalue": "1024190316544",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "D:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "exFAT"
+                }
+            ]
+        },
+        {
+            "itemid": "50846",
+            "name": "FS [KINGSTON(D:)]: Space: Used, in %",
+            "key_": "vfs.fs.dependent.size[D:,pused]",
+            "units": "%",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [KINGSTON(D:)]: Space: Used, in %",
+            "lastvalue": "18.645725",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "D:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "exFAT"
+                }
+            ]
+        },
+        {
+            "itemid": "50847",
+            "name": "FS [KINGSTON(D:)]: Space: Available",
+            "key_": "vfs.fs.dependent.size[D:,free]",
+            "units": "B",
+            "formula": "",
+            "value_type": "numeric",
+            "type": "18",
+            "templateid": "0",
+            "name_resolved": "FS [KINGSTON(D:)]: Space: Available",
+            "lastvalue": "833222606848",
+            "tags": [
+                {
+                    "tag": "component",
+                    "value": "storage"
+                },
+                {
+                    "tag": "filesystem",
+                    "value": "D:"
+                },
+                {
+                    "tag": "fstype",
+                    "value": "exFAT"
                 }
             ]
         }

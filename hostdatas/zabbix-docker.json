@@ -44,7 +44,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Architecture",
-            "lastvalue": "x86_64",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -62,7 +62,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Cgroup driver",
-            "lastvalue": "systemd",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -152,7 +152,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "CPU CFS Period enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -170,7 +170,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "CPU CFS Quota enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -188,7 +188,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "CPU Set enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -206,7 +206,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "CPU Shares enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -242,7 +242,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Default runtime",
-            "lastvalue": "runc",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -260,7 +260,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Storage driver",
-            "lastvalue": "overlay2",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -314,7 +314,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "IPv4 Forwarding enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -368,7 +368,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Kernel version",
-            "lastvalue": "6.8.0-52-generic",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -404,7 +404,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Logging driver",
-            "lastvalue": "json-file",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -422,7 +422,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Memory limit enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -548,7 +548,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Operating system",
-            "lastvalue": "Ubuntu 24.04.1 LTS",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -566,7 +566,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "OS type",
-            "lastvalue": "linux",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -584,7 +584,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Pids limit enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -602,7 +602,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Docker root dir",
-            "lastvalue": "/var/lib/docker",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -620,7 +620,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Server version",
-            "lastvalue": "27.5.1",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -638,7 +638,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Swap limit enabled",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -758,7 +758,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Image",
-            "lastvalue": "nextcloud/all-in-one:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -780,7 +780,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -846,7 +846,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Pid",
-            "lastvalue": "1609",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1022,7 +1022,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Started at",
-            "lastvalue": "1741431213",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1066,7 +1066,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1088,7 +1088,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Created",
-            "lastvalue": "1738146001",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1594,7 +1594,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/all-in-one:latest: Created",
-            "lastvalue": "1737113729",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1638,7 +1638,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Image",
-            "lastvalue": "nextcloud/aio-imaginary:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -1660,7 +1660,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Image",
-            "lastvalue": "nextcloud/aio-redis:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -1682,7 +1682,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Image",
-            "lastvalue": "nextcloud/aio-postgresql:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -1704,7 +1704,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Image",
-            "lastvalue": "nextcloud/aio-talk:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -1726,7 +1726,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Image",
-            "lastvalue": "nextcloud/aio-collabora:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -1748,7 +1748,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -1814,7 +1814,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Pid",
-            "lastvalue": "1571",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1990,7 +1990,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Started at",
-            "lastvalue": "1741431212",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2034,7 +2034,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2056,7 +2056,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Created",
-            "lastvalue": "1738146298",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2078,7 +2078,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -2144,7 +2144,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Pid",
-            "lastvalue": "1580",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2320,7 +2320,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Started at",
-            "lastvalue": "1741431208",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2364,7 +2364,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2386,7 +2386,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Created",
-            "lastvalue": "1738146287",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2408,7 +2408,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -2474,7 +2474,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Pid",
-            "lastvalue": "1607",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2650,7 +2650,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Started at",
-            "lastvalue": "1741431209",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2694,7 +2694,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2716,7 +2716,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Created",
-            "lastvalue": "1738146280",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2738,7 +2738,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -2804,7 +2804,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Pid",
-            "lastvalue": "1595",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2980,7 +2980,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Started at",
-            "lastvalue": "1741431209",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3024,7 +3024,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3046,7 +3046,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Created",
-            "lastvalue": "1738146259",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3068,7 +3068,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -3134,7 +3134,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Pid",
-            "lastvalue": "1593",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3310,7 +3310,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Started at",
-            "lastvalue": "1741431212",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3354,7 +3354,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3376,7 +3376,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Created",
-            "lastvalue": "1738146240",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5818,7 +5818,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-talk:latest: Created",
-            "lastvalue": "1737113790",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5840,7 +5840,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-imaginary:latest: Created",
-            "lastvalue": "1737113740",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5862,7 +5862,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-collabora:latest: Created",
-            "lastvalue": "1737113728",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5884,7 +5884,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-postgresql:latest: Created",
-            "lastvalue": "1737113713",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5906,7 +5906,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-redis:latest: Created",
-            "lastvalue": "1737113711",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6038,7 +6038,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Image",
-            "lastvalue": "nextcloud/aio-apache:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -6060,7 +6060,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Image",
-            "lastvalue": "nextcloud/aio-notify-push:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -6082,7 +6082,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Image",
-            "lastvalue": "nextcloud/aio-nextcloud:latest",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -6104,7 +6104,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -6170,7 +6170,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Pid",
-            "lastvalue": "1643",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6346,7 +6346,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Started at",
-            "lastvalue": "1741431212",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6390,7 +6390,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6412,7 +6412,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Created",
-            "lastvalue": "1738146417",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6434,7 +6434,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -6500,7 +6500,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Pid",
-            "lastvalue": "1624",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6676,7 +6676,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Started at",
-            "lastvalue": "1741431213",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6720,7 +6720,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6742,7 +6742,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Created",
-            "lastvalue": "1738146395",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6764,7 +6764,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Status",
-            "lastvalue": "running",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -6830,7 +6830,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Pid",
-            "lastvalue": "1653",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7006,7 +7006,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Started at",
-            "lastvalue": "1741431212",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7050,7 +7050,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Finished at",
-            "lastvalue": "1741431195",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7072,7 +7072,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Created",
-            "lastvalue": "1738146390",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8546,7 +8546,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-nextcloud:latest: Created",
-            "lastvalue": "1737114220",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8568,7 +8568,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-apache:latest: Created",
-            "lastvalue": "1737113717",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8590,7 +8590,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-notify-push:latest: Created",
-            "lastvalue": "1737113713",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8678,7 +8678,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image hello-internet:latest: Created",
-            "lastvalue": "1738827960",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
