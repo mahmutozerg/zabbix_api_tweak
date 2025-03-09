@@ -1,4 +1,3 @@
-from copy import deepcopy
 
 import requests
 from utils import GrafanaPanelUtil
@@ -160,28 +159,29 @@ class GrafanaHost:
     def __group_items(self,host):
         """
             So this is very weird function,
-            simply i am grouping the item's by their type,
-            i will use this information to dynamicly set the width of the panels,
+            simply I am grouping the item's by their type,
+            I will use this information to dynamically set the width of the panels,
             this is needed because grafana has negative gravity
+
         :param host:
         :return:
         """
-        group1 = ["text", "character"]
 
-        """        
         sorted_items = sorted(
             [i for i in host["items"] if i["templateid"] != "0"],
-            key=lambda x: (x["templateid"], x["value_type"] not in group1 and (x["units"].lower()!="b") , x["value_type"])
+            key=lambda x: (x["templateid"])
         )
-        """
         group1_list = list()
         group2_list = list()
         group3_list = list()
 
         grouped = list()
 
-        for item in [i for i in host["items"] if i["templateid"] != "0"]:
-            if item["value_type"] in group1:
+        for item in host['items']:
+            if item["templateid"] == "0":
+                continue
+
+            if item["value_type"] in ["text", "character"]:
                 group1_list.append(item)
             elif item["units"].lower()== "b":
                 group2_list.append(item)
@@ -189,14 +189,14 @@ class GrafanaHost:
             else:
                 group3_list.append(item)
 
-        if len(group1_list) > 0:
-            grouped.append(group1_list)
+        if group1_list:
+            grouped.append(sorted([i for i in group1_list if i["templateid"] != "0"],key=lambda x: (x["templateid"])))
 
-        if len(group2_list) > 0:
-            grouped.append(group2_list)
+        if group2_list:
+            grouped.append(sorted([i for i in group2_list if i["templateid"] != "0"],key=lambda x: (x["templateid"])))
 
-        if len(group3_list) > 0:
-            grouped.append(group3_list)
+        if group3_list:
+            grouped.append(sorted([i for i in group3_list if i["templateid"] != "0"],key=lambda x: (x["templateid"])))
         return grouped
 
     def __add_panels_to_dashboard(self, host_folder, host_db, host):
@@ -208,25 +208,26 @@ class GrafanaHost:
         sorted_item_groups = self.__group_items(host)
 
         for item_group in sorted_item_groups:
-            for i in host_db:
-                if i["slug"] != "" and i["slug"].endswith(item_group[0]["templateid"]):
-                    target_db = list(i for i in host_db if i["slug"].endswith(item_group[0]["templateid"]))[0]
-                else:
-                    target_db = list(i for i in host_db if i["title"].endswith(item_group[0]["templateid"]))[0]
+            for item in item_group:
+                for i in host_db:
+                    if i["slug"] != "" and i["slug"].endswith(item["templateid"]):
+                        target_db = list(i for i in host_db if i["slug"].endswith(item["templateid"]))[0]
+                    else:
+                        target_db = list(i for i in host_db if i["title"].endswith(item["templateid"]))[0]
 
-            if target_db:
-                if "panels" not in target_db:
-                    target_db["panels"] = []
-                ## create or update the version number
-                if "version" not in target_db:
-                    target_db["version"] = 0
-                else:
-                    target_db["version"] += 1
+                if target_db:
+                    if "panels" not in target_db:
+                        target_db["panels"] = []
+                    ## create or update the version number
+                    if "version" not in target_db:
+                        target_db["version"] = 0
+                    else:
+                        target_db["version"] += 1
 
-                panels = self.panel_util.create_panel(self.grafana_version, item_group, host,self.__zabbix_data_source_info)
-                if panels:
-                    for panel in panels:
-                        target_db["panels"].append(panel)
+                    panels = self.panel_util.create_panel(self.grafana_version, item, host,self.__zabbix_data_source_info)
+                    if panels:
+                        for panel in panels:
+                            target_db["panels"].append(panel)
 
         for db in  host_db:
             data = {
@@ -247,7 +248,7 @@ class GrafanaHost:
 
     def start(self):
         zabbix_host_data = read_from_zabbix_json_data()
-        for zhost in zabbix_host_data:
+        for zhost in [zabbix_host_data[2]]:
             host_name,host_id =zhost["host"]["name"] , zhost["host"]["hostid"]
             templates = list(i for i in zhost["host"]["parentTemplates"])
 

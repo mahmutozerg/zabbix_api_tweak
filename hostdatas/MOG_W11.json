@@ -76,7 +76,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Cache bytes",
-            "lastvalue": "899108864",
+            "lastvalue": "908685312",
             "tags": [
                 {
                     "tag": "component",
@@ -112,7 +112,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory page faults per second",
-            "lastvalue": "1704.487426",
+            "lastvalue": "12209.08263",
             "tags": [
                 {
                     "tag": "component",
@@ -130,7 +130,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory pages per second",
-            "lastvalue": "0.994869",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -148,7 +148,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Memory pool non-paged",
-            "lastvalue": "1913638912",
+            "lastvalue": "1870274560",
             "tags": [
                 {
                     "tag": "component",
@@ -166,7 +166,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Used swap space in %",
-            "lastvalue": "1.825428",
+            "lastvalue": "1.522255",
             "tags": [
                 {
                     "tag": "component",
@@ -224,7 +224,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU privileged time",
-            "lastvalue": "0.194262",
+            "lastvalue": "0.291296",
             "tags": [
                 {
                     "tag": "component",
@@ -242,7 +242,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU user time",
-            "lastvalue": "1.165977",
+            "lastvalue": "0.485553",
             "tags": [
                 {
                     "tag": "component",
@@ -260,7 +260,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Context switches per second",
-            "lastvalue": "27651.391093",
+            "lastvalue": "50188.132162",
             "tags": [
                 {
                     "tag": "component",
@@ -296,7 +296,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Number of threads",
-            "lastvalue": "6153",
+            "lastvalue": "5887",
             "tags": [
                 {
                     "tag": "component",
@@ -314,7 +314,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Number of processes",
-            "lastvalue": "314",
+            "lastvalue": "300",
             "tags": [
                 {
                     "tag": "component",
@@ -332,7 +332,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "CPU utilization",
-            "lastvalue": "1.710373",
+            "lastvalue": "1.420257",
             "tags": [
                 {
                     "tag": "component",
@@ -368,7 +368,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "System local time",
-            "lastvalue": "1741526700",
+            "lastvalue": "1741529340",
             "tags": [
                 {
                     "tag": "component",
@@ -386,7 +386,7 @@
             "type": "15",
             "templateid": "10081",
             "name_resolved": "Free swap space",
-            "lastvalue": "4216565760",
+            "lastvalue": "4229586941",
             "tags": [
                 {
                     "tag": "component",
@@ -484,7 +484,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Uptime",
-            "lastvalue": "95638",
+            "lastvalue": "98308",
             "tags": [
                 {
                     "tag": "component",
@@ -520,7 +520,7 @@
             "type": "0",
             "templateid": "10081",
             "name_resolved": "Used memory",
-            "lastvalue": "29050720256",
+            "lastvalue": "25715146752",
             "tags": [
                 {
                     "tag": "component",
@@ -538,7 +538,7 @@
             "type": "15",
             "templateid": "10081",
             "name_resolved": "Memory utilization",
-            "lastvalue": "42.81638524611392",
+            "lastvalue": "37.90025239620645",
             "tags": [
                 {
                     "tag": "component",
@@ -592,7 +592,7 @@
             "type": "18",
             "templateid": "10081",
             "name_resolved": "Free swap space in %",
-            "lastvalue": "98.174572",
+            "lastvalue": "98.477745",
             "tags": [
                 {
                     "tag": "component",
@@ -614,7 +614,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Used",
-            "lastvalue": "912324104192",
+            "lastvalue": "913622114304",
             "tags": [
                 {
                     "tag": "component",
@@ -666,7 +666,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Used, in %",
-            "lastvalue": "44.557045",
+            "lastvalue": "44.620438",
             "tags": [
                 {
                     "tag": "component",
@@ -692,7 +692,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "FS [(C:)]: Space: Available",
-            "lastvalue": "1135217664000",
+            "lastvalue": "1133919653888",
             "tags": [
                 {
                     "tag": "component",
@@ -744,7 +744,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits received",
-            "lastvalue": "6376",
+            "lastvalue": "4048",
             "tags": [
                 {
                     "tag": "component",
@@ -900,7 +900,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits sent",
-            "lastvalue": "3488",
+            "lastvalue": "1872",
             "tags": [
                 {
                     "tag": "component",
@@ -3188,7 +3188,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Average disk read queue length",
-            "lastvalue": "0.019659",
+            "lastvalue": "0.018737",
             "tags": [
                 {
                     "tag": "component",
@@ -3210,7 +3210,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk read request avg waiting time",
-            "lastvalue": "0.002703",
+            "lastvalue": "0.003765",
             "tags": [
                 {
                     "tag": "component",
@@ -3232,7 +3232,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk write request avg waiting time",
-            "lastvalue": "0.002278",
+            "lastvalue": "0.018772",
             "tags": [
                 {
                     "tag": "component",
@@ -3254,7 +3254,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Average disk write queue length",
-            "lastvalue": "0.048637",
+            "lastvalue": "0.290262",
             "tags": [
                 {
                     "tag": "component",
@@ -3276,7 +3276,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk average queue size (avgqu-sz)",
-            "lastvalue": "0.05",
+            "lastvalue": "0.25",
             "tags": [
                 {
                     "tag": "component",
@@ -3298,7 +3298,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk read rate",
-            "lastvalue": "9.009967",
+            "lastvalue": "5.303557",
             "tags": [
                 {
                     "tag": "component",
@@ -3320,7 +3320,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk write rate",
-            "lastvalue": "30.939901",
+            "lastvalue": "21.062452",
             "tags": [
                 {
                     "tag": "component",
@@ -3342,7 +3342,7 @@
             "type": "0",
             "templateid": "0",
             "name_resolved": "0 C:: Disk utilization by idle time",
-            "lastvalue": "4.376548999999997",
+            "lastvalue": "12.575546000000003",
             "tags": [
                 {
                     "tag": "component",

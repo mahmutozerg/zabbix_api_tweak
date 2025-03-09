@@ -13,40 +13,39 @@ class PanelGenerator:
         self.curr_x=0
         self.curr_y= 0
 
-    def create_panel(self,grafana_version:str,item_group : list,host:list,source_info:dict):
+    def create_panel(self,grafana_version:str,item :dict,host:list,source_info:dict):
         panel_list = list()
-        for item in item_group:
-            if item["value_type"] == "character" or item["value_type"] == "text":
-                panel = granafa_dashboard_jsons.GrafanaDicts.stat_single_value.copy()
+        if item["value_type"] == "character" or item["value_type"] == "text":
+            panel = granafa_dashboard_jsons.GrafanaDicts.stat_single_value.copy()
 
-            elif item["value_type"]== "numeric" and item["units"].lower()!="b" :
-                panel = granafa_dashboard_jsons.GrafanaDicts.time.copy()
+        elif item["value_type"]== "numeric" and item["units"].lower()!="b" :
+            panel = granafa_dashboard_jsons.GrafanaDicts.time.copy()
 
-            elif item["value_type"]== "binary" or item["units"].lower()=="b":
-                panel = granafa_dashboard_jsons.GrafanaDicts.gauge.copy()
+        elif item["value_type"]== "binary" or item["units"].lower()=="b":
+            panel = granafa_dashboard_jsons.GrafanaDicts.gauge.copy()
 
-            else:
-                continue
-
-
-            if self.curr_x+panel["gridPos"]["w"]>self.max_x:
-                self.curr_x = 0
-                self.curr_y= panel["gridPos"]["h"]+1
+        else:
+            return None
 
 
-            panel["gridPos"]["x"] = self.curr_x
-            panel["gridPos"]["y"] = self.curr_y
+        if self.curr_x+panel["gridPos"]["w"]>self.max_x:
+            self.curr_x = 0
+            self.curr_y= panel["gridPos"]["h"]+1
 
-            self.curr_x += panel["gridPos"]["w"]
+
+        panel["gridPos"]["x"] = self.curr_x
+        panel["gridPos"]["y"] = self.curr_y
+
+        self.curr_x += panel["gridPos"]["w"]
 
 
-            panel["pluginVersion"] = grafana_version
-            panel["targets"][0]["group"]["filter"] = f"/{host['host_groups']}/"
-            panel["targets"][0]["host"]["filter"] = host['host']['name']
-            panel["targets"][0]["item"]["filter"] = item["name_resolved"]
-            panel["datasource"]["type"] = source_info["type"]
-            panel["datasource"]["uid"] = source_info["uid"]
-            panel["title"] = item["name_resolved"]
-            panel_list.append(deepcopy(panel))
+        panel["pluginVersion"] = grafana_version
+        panel["targets"][0]["group"]["filter"] = f"/{host['host_groups']}/"
+        panel["targets"][0]["host"]["filter"] = host['host']['name']
+        panel["targets"][0]["item"]["filter"] = item["name_resolved"]
+        panel["datasource"]["type"] = source_info["type"]
+        panel["datasource"]["uid"] = source_info["uid"]
+        panel["title"] = item["name_resolved"]
+        panel_list.append(deepcopy(panel))
 
         return deepcopy(panel_list)

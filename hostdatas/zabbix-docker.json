@@ -22,7 +22,7 @@
             "type": "0",
             "templateid": "10318",
             "name_resolved": "Ping",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -98,7 +98,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Containers running",
-            "lastvalue": "9",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -116,7 +116,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Containers stopped",
-            "lastvalue": "2",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -134,7 +134,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Containers total",
-            "lastvalue": "11",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -278,7 +278,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Goroutines",
-            "lastvalue": "113",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -296,7 +296,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Images total",
-            "lastvalue": "10",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -440,7 +440,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Memory total",
-            "lastvalue": "2063810560",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -458,7 +458,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Name",
-            "lastvalue": "zabbix-docker",
+            "lastvalue": "",
             "tags": [
                 {
                     "tag": "component",
@@ -476,7 +476,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "NCPU",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -512,7 +512,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Nfd",
-            "lastvalue": "96",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -660,7 +660,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Containers size",
-            "lastvalue": "1248728587",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -682,7 +682,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Images size",
-            "lastvalue": "4416426542",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -704,7 +704,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Layers size",
-            "lastvalue": "4284654464",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -722,7 +722,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Volumes size",
-            "lastvalue": "1346528791",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -740,7 +740,7 @@
             "type": "18",
             "templateid": "10318",
             "name_resolved": "Images available",
-            "lastvalue": "10",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -802,7 +802,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -912,7 +912,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1286,7 +1286,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Current PIDs count",
-            "lastvalue": "147",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1308,7 +1308,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1330,7 +1330,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: Memory usage",
-            "lastvalue": "83501056",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1440,7 +1440,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: CPU usermode usage per second",
-            "lastvalue": "0.0008010237188127351",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1462,7 +1462,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: CPU total usage per second",
-            "lastvalue": "0.004385405275409261",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1550,7 +1550,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: CPU kernelmode usage per second",
-            "lastvalue": "0.0035843815565965256",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1572,7 +1572,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-mastercontainer: CPU percent usage",
-            "lastvalue": "0.47954022988505746",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1616,7 +1616,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/all-in-one:latest: Size",
-            "lastvalue": "240314948",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1770,7 +1770,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -1880,7 +1880,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2100,7 +2100,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2210,7 +2210,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2430,7 +2430,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2540,7 +2540,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2760,7 +2760,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -2870,7 +2870,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3090,7 +3090,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3200,7 +3200,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3574,7 +3574,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Current PIDs count",
-            "lastvalue": "8",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3596,7 +3596,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3618,7 +3618,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: Memory usage",
-            "lastvalue": "10899456",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3728,7 +3728,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: CPU usermode usage per second",
-            "lastvalue": "0.0003373038306031235",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3750,7 +3750,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: CPU total usage per second",
-            "lastvalue": "0.0010099615660136016",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3838,7 +3838,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: CPU kernelmode usage per second",
-            "lastvalue": "0.0006726410693780356",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3860,7 +3860,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-imaginary: CPU percent usage",
-            "lastvalue": "0.008352941176470589",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3882,7 +3882,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Networks packets sent per second",
-            "lastvalue": "0.6332779219373491",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3948,7 +3948,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Networks bytes sent per second",
-            "lastvalue": "53.31200190204157",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -3970,7 +3970,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Networks packets received per second",
-            "lastvalue": "0.8165952151297396",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4036,7 +4036,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Networks bytes received per second",
-            "lastvalue": "100.79118083887072",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4058,7 +4058,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Current PIDs count",
-            "lastvalue": "6",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4080,7 +4080,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4102,7 +4102,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: Memory usage",
-            "lastvalue": "10641408",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4212,7 +4212,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: CPU usermode usage per second",
-            "lastvalue": "0.0008401264894922538",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4234,7 +4234,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: CPU total usage per second",
-            "lastvalue": "0.002232471326913876",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4322,7 +4322,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: CPU kernelmode usage per second",
-            "lastvalue": "0.0013923615026300944",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4344,7 +4344,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-redis: CPU percent usage",
-            "lastvalue": "0.1375862068965517",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4366,7 +4366,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Networks packets sent per second",
-            "lastvalue": "0.35004162767378233",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4432,7 +4432,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Networks bytes sent per second",
-            "lastvalue": "358.0925851102793",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4454,7 +4454,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Networks packets received per second",
-            "lastvalue": "0.5000594681054032",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4520,7 +4520,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Networks bytes received per second",
-            "lastvalue": "68.00808766233484",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4542,7 +4542,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Current PIDs count",
-            "lastvalue": "8",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4564,7 +4564,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4586,7 +4586,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: Memory usage",
-            "lastvalue": "86085632",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4696,7 +4696,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: CPU usermode usage per second",
-            "lastvalue": "0.0004557541992312646",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4718,7 +4718,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: CPU total usage per second",
-            "lastvalue": "0.0019125774476627362",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4806,7 +4806,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: CPU kernelmode usage per second",
-            "lastvalue": "0.0014568065797825346",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -4828,7 +4828,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-database: CPU percent usage",
-            "lastvalue": "0.0013636363636363637",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5026,7 +5026,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Current PIDs count",
-            "lastvalue": "55",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5048,7 +5048,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5070,7 +5070,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: Memory usage",
-            "lastvalue": "60039168",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5180,7 +5180,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: CPU usermode usage per second",
-            "lastvalue": "0.0007519453747464027",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5202,7 +5202,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: CPU total usage per second",
-            "lastvalue": "0.019322681145222145",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5290,7 +5290,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: CPU kernelmode usage per second",
-            "lastvalue": "0.01857073577047574",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5312,7 +5312,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-talk: CPU percent usage",
-            "lastvalue": "2.28375",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5334,7 +5334,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Networks packets sent per second",
-            "lastvalue": "0.16559416512874015",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5400,7 +5400,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Networks bytes sent per second",
-            "lastvalue": "25.26966959864575",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5422,7 +5422,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Networks packets received per second",
-            "lastvalue": "0.13247533210299212",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5488,7 +5488,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Networks bytes received per second",
-            "lastvalue": "79.58455576087252",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5510,7 +5510,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Current PIDs count",
-            "lastvalue": "13",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5532,7 +5532,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5554,7 +5554,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: Memory usage",
-            "lastvalue": "655028224",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5664,7 +5664,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: CPU usermode usage per second",
-            "lastvalue": "0.0007943552101225664",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5686,7 +5686,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: CPU total usage per second",
-            "lastvalue": "0.0024591561492443557",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5774,7 +5774,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: CPU kernelmode usage per second",
-            "lastvalue": "0.0016648009391217891",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5796,7 +5796,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-collabora: CPU percent usage",
-            "lastvalue": "0.04454545454545454",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5928,7 +5928,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-talk:latest: Size",
-            "lastvalue": "168623155",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5950,7 +5950,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-imaginary:latest: Size",
-            "lastvalue": "130165185",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5972,7 +5972,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-collabora:latest: Size",
-            "lastvalue": "1428502313",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -5994,7 +5994,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-postgresql:latest: Size",
-            "lastvalue": "275865487",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6016,7 +6016,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-redis:latest: Size",
-            "lastvalue": "43733259",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6126,7 +6126,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6236,7 +6236,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6456,7 +6456,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6566,7 +6566,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6786,7 +6786,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Running",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -6896,7 +6896,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Health status",
-            "lastvalue": "3",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7094,7 +7094,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Networks packets sent per second",
-            "lastvalue": "0.41668800825972335",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7160,7 +7160,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Networks bytes sent per second",
-            "lastvalue": "71.03697164811763",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7182,7 +7182,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Networks packets received per second",
-            "lastvalue": "0.3166828862773897",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7248,7 +7248,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Networks bytes received per second",
-            "lastvalue": "42.80219220843878",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7270,7 +7270,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Current PIDs count",
-            "lastvalue": "118",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7292,7 +7292,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7314,7 +7314,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: Memory usage",
-            "lastvalue": "107679744",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7424,7 +7424,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: CPU usermode usage per second",
-            "lastvalue": "0.00034798448945786017",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7446,7 +7446,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: CPU total usage per second",
-            "lastvalue": "0.0014941931950583768",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7534,7 +7534,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: CPU kernelmode usage per second",
-            "lastvalue": "0.0011462087056005167",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7556,7 +7556,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-apache: CPU percent usage",
-            "lastvalue": "0.0677906976744186",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7578,7 +7578,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Networks packets sent per second",
-            "lastvalue": "0.18331676960607274",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7644,7 +7644,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Networks bytes sent per second",
-            "lastvalue": "11.565621646055861",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7666,7 +7666,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Networks packets received per second",
-            "lastvalue": "0.11665612611295537",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7732,7 +7732,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Networks bytes received per second",
-            "lastvalue": "7.166019175510115",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7754,7 +7754,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Current PIDs count",
-            "lastvalue": "4",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7776,7 +7776,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7798,7 +7798,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: Memory usage",
-            "lastvalue": "14843904",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7908,7 +7908,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: CPU usermode usage per second",
-            "lastvalue": "0.00026275959148899537",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -7930,7 +7930,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: CPU total usage per second",
-            "lastvalue": "0.0009494808755942171",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8018,7 +8018,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: CPU kernelmode usage per second",
-            "lastvalue": "0.0006867046189443485",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8040,7 +8040,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-notify-push: CPU percent usage",
-            "lastvalue": "0.001954022988505747",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8062,7 +8062,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Networks packets sent per second",
-            "lastvalue": "1.5335077465557447",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8128,7 +8128,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Networks bytes sent per second",
-            "lastvalue": "200.72282917417692",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8150,7 +8150,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Networks packets received per second",
-            "lastvalue": "1.3668221219301202",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8216,7 +8216,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Networks bytes received per second",
-            "lastvalue": "461.8025230252925",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8238,7 +8238,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Current PIDs count",
-            "lastvalue": "9",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8260,7 +8260,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Online CPUs",
-            "lastvalue": "1",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8282,7 +8282,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: Memory usage",
-            "lastvalue": "191774720",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8392,7 +8392,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: CPU usermode usage per second",
-            "lastvalue": "0.000554163027630351",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8414,7 +8414,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: CPU total usage per second",
-            "lastvalue": "0.0028236711497205405",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8502,7 +8502,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: CPU kernelmode usage per second",
-            "lastvalue": "0.002269524790652652",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8524,7 +8524,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Container /nextcloud-aio-nextcloud: CPU percent usage",
-            "lastvalue": "0.03727272727272727",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8612,7 +8612,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-nextcloud:latest: Size",
-            "lastvalue": "1890934196",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8634,7 +8634,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-apache:latest: Size",
-            "lastvalue": "173243056",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8656,7 +8656,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image nextcloud/aio-notify-push:latest: Size",
-            "lastvalue": "11010925",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
@@ -8700,7 +8700,7 @@
             "type": "18",
             "templateid": "0",
             "name_resolved": "Image hello-internet:latest: Size",
-            "lastvalue": "54034018",
+            "lastvalue": "0",
             "tags": [
                 {
                     "tag": "component",
