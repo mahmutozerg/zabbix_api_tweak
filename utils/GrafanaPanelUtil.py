@@ -14,8 +14,8 @@ class PanelGenerator:
         self.curr_y= 0
 
     def create_panel(self,grafana_version:str,item :dict,host:list,source_info:dict):
-        panel_list = list()
-        if item["value_type"] == "character" or item["value_type"] == "text":
+
+        if item["value_type"] in ["character","text"]:
             panel = granafa_dashboard_jsons.GrafanaDicts.stat_single_value.copy()
 
         elif item["value_type"]== "numeric" and item["units"].lower()!="b" :
@@ -46,6 +46,5 @@ class PanelGenerator:
         panel["datasource"]["type"] = source_info["type"]
         panel["datasource"]["uid"] = source_info["uid"]
         panel["title"] = item["name_resolved"]
-        panel_list.append(deepcopy(panel))
 
-        return deepcopy(panel_list)
+        return deepcopy(panel)

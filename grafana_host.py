@@ -167,10 +167,6 @@ class GrafanaHost:
         :return:
         """
 
-        sorted_items = sorted(
-            [i for i in host["items"] if i["templateid"] != "0"],
-            key=lambda x: (x["templateid"])
-        )
         group1_list = list()
         group2_list = list()
         group3_list = list()
@@ -181,7 +177,7 @@ class GrafanaHost:
             if item["templateid"] == "0":
                 continue
 
-            if item["value_type"] in ["text", "character"]:
+            if item["value_type"] in ["text", "character"] and item["units"].lower()!="b":
                 group1_list.append(item)
             elif item["units"].lower()== "b":
                 group2_list.append(item)
@@ -226,9 +222,8 @@ class GrafanaHost:
 
                     panels = self.panel_util.create_panel(self.grafana_version, item, host,self.__zabbix_data_source_info)
                     if panels:
-                        for panel in panels:
-                            target_db["panels"].append(panel)
-
+                        target_db["panels"].append(panels)
+            
         for db in  host_db:
             data = {
                 "dashboard": db,
@@ -248,7 +243,7 @@ class GrafanaHost:
 
     def start(self):
         zabbix_host_data = read_from_zabbix_json_data()
-        for zhost in [zabbix_host_data[2]]:
+        for zhost in zabbix_host_data:
             host_name,host_id =zhost["host"]["name"] , zhost["host"]["hostid"]
             templates = list(i for i in zhost["host"]["parentTemplates"])
 
