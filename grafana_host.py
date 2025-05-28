@@ -1,18 +1,13 @@
-import json
-import urllib.parse
-from copy import deepcopy
-from pprint import pp, pprint
-from tempfile import template
 
 import requests
-import utils
-from granafa_dashboard_jsons import GrafanaDicts
+from utils import GrafanaPanelUtil
+from utils.ResponseFileErrorsUtils import *
 
 
 class GrafanaHost:
 
     def __init__(self,ip,port,auth):
-
+        self.panel_util = GrafanaPanelUtil.PanelGenerator()
         self.__host_addr_list= [ip,port]
         self.__host_addr = str.join(":",self.__host_addr_list)+"/api"
         self.__item_key_regex = r"^([^.\[]+)(?:\.([^[]+))?(\[(.*)\])?"
@@ -126,14 +121,12 @@ class GrafanaHost:
 
     def __create_host_folders(self,host_name,hostid,templates):
 
-        host_name_folder_info = dict()
         host_name_folder_name= host_name+"_"+hostid
         folders = self.__get_folders_by_search(host_name_folder_name)
         for folder in folders:
             if folder["title"] == host_name_folder_name and folder["folderUid"] == self.__api_folder["uid"]:
                 host_name_folder_info = {"id":folder["id"],"title":folder["title"],"uid":folder["uid"]}
                 break
-
 
         else:
             host_name_folder_info = self.__create_folder_if_not_exists(
@@ -163,50 +156,78 @@ class GrafanaHost:
 
         return host_name_folder_info,template_db_info
 
+    def __group_items(self,host):
+        """
+            So this is very weird function,
+            simply I am grouping the item's by their type,
+            I will use this information to dynamically set the width of the panels,
+            this is needed because grafana has negative gravity
 
+        :param host:
+        :return:
+        """
 
-    def __add_panels_to_dashboard(self, host_folder, template_dbs, host):
+        group1_list = list()
+        group2_list = list()
+        group3_list = list()
 
+        grouped = list()
 
+        for item in host['items']:
+            if item["templateid"] == "0":
+                continue
 
-        for item in sorted([i for i in host["items"] if i["templateid"] !="0"],key=lambda x: x['templateid']):
+            if item["value_type"] in ["text", "character"] and item["units"].lower()!="b":
+                group1_list.append(item)
+            elif item["units"].lower()== "b":
+                group2_list.append(item)
 
-            for i in template_dbs:
-                if i["slug"] != "" and i["slug"].endswith(item["templateid"]):
-                    target_db = list(i for i in template_dbs if i["slug"].endswith(item["templateid"]))
-                else:
-                    target_db = list(i for i in template_dbs if i["title"].endswith(item["templateid"]))
+            else:
+                group3_list.append(item)
 
+        if group1_list:
+            grouped.append(sorted([i for i in group1_list if i["templateid"] != "0"],key=lambda x: (x["templateid"])))
 
+        if group2_list:
+            grouped.append(sorted([i for i in group2_list if i["templateid"] != "0"],key=lambda x: (x["templateid"])))
 
-            if len(target_db) != 1:
-                raise  Exception("I don't know why but it matches multiple template dashboards")
+        if group3_list:
+            grouped.append(sorted([i for i in group3_list if i["templateid"] != "0"],key=lambda x: (x["templateid"])))
+        return grouped
 
-            target_db = target_db[0]
-            if target_db:
-                if "panels" not in target_db:
-                    target_db["panels"] = []
-                
-                if "version" not in target_db:
-                    target_db["version"] = 0
-                else:
-                    target_db["version"] += 1
+    def __add_panels_to_dashboard(self, host_folder, host_db, host):
 
-                db = GrafanaDicts.stat_single_value.copy()
-                db["pluginVersion"] =self.grafana_version
-                db["targets"][0]["group"]["filter"]= f"/{host['host_groups']}/"
-                db["targets"][0]["host"]["filter"]=host['host']['host']
-                db["targets"][0]["item"]["filter"]= item["name"]
-                db["datasource"]["type"] = self.__zabbix_data_source_info["type"]
-                db["datasource"]["uid"] = self.__zabbix_data_source_info["uid"]
-                db["title"] = item["name"]
+        target_db =None
+        ## checking if the current host's current item has a template id different from "0"
+        ##if so we are creating our template folder name
 
-                target_db["panels"].append(deepcopy(db))
+        sorted_item_groups = self.__group_items(host)
 
-        for i in  template_dbs:
+        for item_group in sorted_item_groups:
+            for item in item_group:
+                for i in host_db:
+                    if i["slug"] != "" and i["slug"].endswith(item["templateid"]):
+                        target_db = list(i for i in host_db if i["slug"].endswith(item["templateid"]))[0]
+                    else:
+                        target_db = list(i for i in host_db if i["title"].endswith(item["templateid"]))[0]
+
+                if target_db:
+                    if "panels" not in target_db:
+                        target_db["panels"] = []
+                    ## create or update the version number
+                    if "version" not in target_db:
+                        target_db["version"] = 0
+                    else:
+                        target_db["version"] += 1
+
+                    panels = self.panel_util.create_panel(self.grafana_version, item, host,self.__zabbix_data_source_info)
+                    if panels:
+                        target_db["panels"].append(panels)
+            
+        for db in  host_db:
             data = {
-                "dashboard": i,
-                "folderUid": host_folder["uid"],  # Assign to specific folder
+                "dashboard": db,
+                "folderUid": host_folder["uid"],
                 "overwrite": True,
                 "message":"initial"
             }
@@ -221,14 +242,15 @@ class GrafanaHost:
 
 
     def start(self):
-        zabbix_host_data = utils.read_from_zabbix_json_data()
+        zabbix_host_data = read_from_zabbix_json_data()
         for zhost in zabbix_host_data:
-            host_name,host_id =zhost["host"]["host"] , zhost["host"]["hostid"]
+            host_name,host_id =zhost["host"]["name"] , zhost["host"]["hostid"]
             templates = list(i for i in zhost["host"]["parentTemplates"])
 
-            host_folder,template_folder = self.__create_host_folders(host_name,host_id,templates)
+            host_folder, host_template_db = self.__create_host_folders(host_name,host_id,templates)
 
-            self.__add_panels_to_dashboard(host_folder,template_folder,zhost)
+            self.__add_panels_to_dashboard(host_folder,host_template_db,zhost)
+            self.panel_util.reset()
 
 
 

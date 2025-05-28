@@ -1,9 +1,8 @@
 import json
+import os.path
+
 import requests
-import utils
-
-
-from utils import write_to_file
+from utils.ResponseFileErrorsUtils import *
 
 
 class ZabbixHost:
@@ -78,7 +77,7 @@ class ZabbixHost:
             status_codes.append(res.status_code)
 
             if res.ok:
-                utils.raise_if_zabbix_response_error(res,"apiinfo.version")
+                raise_if_zabbix_response_error(res,"apiinfo.version")
 
                 res = json.loads(res.content.decode("utf-8"))
 
@@ -103,7 +102,7 @@ class ZabbixHost:
 
         res = requests.post(self.__host_addr+self.valid_json_rpc_path,headers=self.default_authorized_request_header,data=data)
 
-        content =utils.raise_if_zabbix_response_error(res,method)
+        content =raise_if_zabbix_response_error(res,method)
         return content["result"]
 
     def get_hosts(self):
@@ -240,12 +239,11 @@ class ZabbixHost:
         for host in hosts:
             host_groups = self.get_groups(host["hostid"])
 
-
             items= self.get_items(host["hostid"],list(i["templateid"] for i in host["parentTemplates"]))
 
-
             data = {"host":host,"host_groups":host_groups,"items":items}
-            write_to_file(data,"./hostdatas/"+host["name"]+".json")
+            abs_path =os.path.abspath("./hostdatas")+"\\"
+            write_to_file(data,abs_path+host["name"]+".json")
 
 
 

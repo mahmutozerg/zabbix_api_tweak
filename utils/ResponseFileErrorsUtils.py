@@ -1,6 +1,7 @@
 import copy
 import json
 import os
+from pathlib import Path
 
 
 def raise_if_zabbix_response_error(res,func):
@@ -26,13 +27,13 @@ def write_to_file(data,file_name="data.json"):
     with open(file_name, "w") as file:
         json.dump(data, file,indent=4)
 
-def write_to_file_custom_string(data,file_name="./tempdatas/data.txt"):
+def write_to_file_custom_string(data,file_name="../tempdatas/data.txt"):
     with open(file_name, "w") as file:
         for i in data:
             file.write(i)
             file.write("\n")
 
-def read_from_file_custom_string(file_name="./tempdatas/data.txt"):
+def read_from_file_custom_string(file_name="../tempdatas/data.txt"):
     data = []
     with open(file_name, "r",encoding="utf-8") as file:
         for line in file:
@@ -42,10 +43,11 @@ def read_from_file_custom_string(file_name="./tempdatas/data.txt"):
 
 def read_from_zabbix_json_data():
     data = []
+    project_dir =os.path.abspath(Path(__file__).resolve().parent)
+    host_data_dir = project_dir+"\\..\\hostdatas\\"
+    for path in os.listdir(host_data_dir):
 
-    for path in os.listdir("./hostdatas"):
-
-        with open("./hostdatas/"+path, "r", encoding="utf-8") as file:
+        with open(host_data_dir+path, "r", encoding="utf-8") as file:
             data.append(json.load(file))
 
     return data
