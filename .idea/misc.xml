@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="zabbix_api_tweak" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="zabbix_api_tweak" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (zabbix_api_tweak)" project-jdk-type="Python SDK" />
 </project>
