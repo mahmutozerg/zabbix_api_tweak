@@ -8,7 +8,6 @@ class GrafanaHost:
 
     def __init__(self, ip, port, auth):
         self.panel_util = GrafanaPanelUtil.PanelGenerator()
-        # URL birlestirmeyi daha temiz hale getirdim
         self.__host_addr = f"{ip}:{port}/api"
         self.__item_key_regex = r"^([^.\[]+)(?:\.([^[]+))?(\[(.*)\])?"
 
@@ -35,9 +34,6 @@ class GrafanaHost:
         self.__check_if_zabbix_datasource_exists()
 
         self.__api_folder = self.__create_api_folder_if_not_exists()
-
-        # start() fonksiyonunu buradan kaldirdim. Sinifi orneklendirdikten sonra (instance)
-        # manuel olarak .start() cagirmalisiniz. Bu daha guvenlidir.
 
     def __test_connection(self):
         res = requests.get(self.__host_addr + self.__api_paths["api_health"],
@@ -100,7 +96,7 @@ class GrafanaHost:
                 "timezone": "browser",
                 "schemaVersion": 16,
             },
-            "folderUid": parent_uuid,  # Assign to specific folder
+            "folderUid": parent_uuid,
             "overwrite": False
         }
         res = requests.post(self.__host_addr + self.__api_paths["dashboards_add"],
@@ -129,8 +125,6 @@ class GrafanaHost:
 
         host_name_folder_info = None
         for folder in folders:
-            # folderUid kontrolü hata verebilir cunku search sonuclarinda bazen folderUid donmez
-            # Bu yuzden .get() kullandim
             if folder["title"] == host_name_folder_name and folder.get("folderUid") == self.__api_folder["uid"]:
                 host_name_folder_info = {"id": folder["id"], "title": folder["title"], "uid": folder["uid"]}
                 break
@@ -144,9 +138,10 @@ class GrafanaHost:
 
         template_db_info = list()
         for _template in templates:
-            # Template ID kontrolü: Dict'ten guvenli okuma
             t_id = _template.get('templateid', '')
             t_name = _template.get('name', '')
+
+            # Dashboard başlığı oluşturma standardı
             template_db_name = f"{hostid}_{t_name}_{t_id}"
 
             template_dbs = self.__get_folders_by_search(f"{template_db_name}&type=dash-db")
@@ -162,69 +157,30 @@ class GrafanaHost:
 
         return host_name_folder_info, template_db_info
 
-    def __group_items(self, host):
-        """
-            So this is very weird function,
-            simply I am grouping the item's by their type,
-            I will use this information to dynamically set the width of the panels,
-            this is needed because grafana has negative gravity
-
-        :param host:
-        :return:
-        """
-        group1_list = list()
-        group2_list = list()
-        group3_list = list()
-        grouped = list()
-
-        # Host items kontrolu
-        items = host.get('items', [])
-
-        for item in items:
-            if item.get("templateid") == "0":
-                continue
-
-            # Guvenli erisim ve kucuk harf donusumu
-            unit = (item.get("units") or "").lower()
-            val_type = item.get("value_type")
-
-            if val_type in ["text", "character"] and unit != "b":
-                group1_list.append(item)
-            elif unit == "b":
-                group2_list.append(item)
-            else:
-                group3_list.append(item)
-
-        # Lambda key hatasi vermemesi icin int/str donusumu gerekebilir ama simdilik biraktim
-        if group1_list:
-            grouped.append(sorted([i for i in group1_list if i.get("templateid") != "0"],
-                                  key=lambda x: x.get("templateid", "")))
-        if group2_list:
-            grouped.append(sorted([i for i in group2_list if i.get("templateid") != "0"],
-                                  key=lambda x: x.get("templateid", "")))
-        if group3_list:
-            grouped.append(sorted([i for i in group3_list if i.get("templateid") != "0"],
-                                  key=lambda x: x.get("templateid", "")))
-        return grouped
-
     def __add_panels_to_dashboard(self, host_folder, host_db_list, host):
         """
-        Düzeltilmiş Mantık:
-        1. Item'ları TemplateID'lerine göre grupla.
-        2. Her Template (Dashboard) için Generator'ı SIFIRLA (Reset).
-        3. Item'ları görsel sıra için (Text -> Num -> Gauge) sırala.
-        4. Panelleri oluştur.
+        GÜNCELLENMİŞ MANTIK:
+        1. Dashboard eşleşmesi için 'parentTemplates' içindeki veriyi kullan.
+        2. Itemları grupla ve panelleri oluştur.
         """
 
-        # 1. Dashboard Haritası Oluştur (Hızlı erişim için)
-        # Dashboard title formatın: "{hostid}_{templatename}_{templateid}"
+        # 1. Dashboard Haritası (TemplateID -> DashboardObj)
         db_map = {}
-        for db in host_db_list:
-            try:
-                tid = db["title"].split("_")[-1]  # Son parça template ID
-                db_map[tid] = db
-            except:
-                continue
+        host_id = host["host"]["hostid"]
+        parent_templates = host["host"].get("parentTemplates", [])
+
+        # Grafana'dan gelen mevcut dashboardları title'a göre indexle
+        existing_dbs_by_title = {db["title"]: db for db in host_db_list}
+
+        for tpl in parent_templates:
+            t_id = tpl.get("templateid")
+            t_name = tpl.get("name")
+
+            # create_host_folders'daki isimlendirme formatının aynısı:
+            expected_title = f"{host_id}_{t_name}_{t_id}"
+
+            if expected_title in existing_dbs_by_title:
+                db_map[t_id] = existing_dbs_by_title[expected_title]
 
         # 2. Itemları Template ID'lerine göre ayır
         items_by_template = {}
@@ -232,8 +188,6 @@ class GrafanaHost:
 
         for item in all_items:
             tid = item.get("templateid")
-            # Template ID'si olmayan veya 0 olanları (eğer manuel dashboard yoksa) atla
-            # Not: Eğer manuel itemlar için sanal dashboard yaptıysak onun ID'si gelir, sorun olmaz.
             if not tid or tid == "0":
                 continue
 
@@ -241,51 +195,40 @@ class GrafanaHost:
                 items_by_template[tid] = []
             items_by_template[tid].append(item)
 
-        # 3. Her Dashboard için ayrı işlem yap
+        # 3. Her Dashboard için panelleri oluştur
         for tid, items in items_by_template.items():
 
             target_db = db_map.get(tid)
             if not target_db:
-                print(f"Warning: Dashboard for template {tid} not found.")
+                # Eğer start() metodundaki düzeltmeye rağmen bulunamazsa logla
+                print(f"Warning: Dashboard for template {tid} not found in map.")
                 continue
 
-            # --- KRİTİK NOKTA: HER DASHBOARD İÇİN GENERATOR SIFIRLANMALI ---
-            # Böylece her dashboard en üstten (0,0) başlar ve separator mantığı karışmaz.
+            # Generator reset (Her dashboard sol üstten başlasın)
             self.panel_util.reset()
 
             if "panels" not in target_db:
                 target_db["panels"] = []
 
-            # Versiyon güncelleme
-            if "version" not in target_db:
-                target_db["version"] = 0
-            else:
-                target_db["version"] += 1
+            # Versiyonu artır
+            target_db["version"] = target_db.get("version", 0) + 1
 
-            # --- SIRALAMA (GÖRSEL DÜZEN İÇİN) ---
-            # Itemları Text -> Numeric -> Gauge sırasına sokuyoruz ki
-            # Separator'lar düzgün çıksın.
+            # Görsel sıralama (Text -> Num -> Gauge)
             def sort_key(i):
                 u = (i.get("units") or "").lower()
                 vt = i.get("value_type")
-
-
                 is_unixtime = 1 if u == "unixtime" else 0
 
                 if (vt in ["character", "text"] or u == "unixtime") and u != "b":
                     return 0, is_unixtime
-
                 if vt == "binary" or u == "b":
                     return 1, 0
-
                 if vt == "numeric" and u != "b":
                     return 2, 0
-
                 return 3, 0
 
             sorted_items = sorted(items, key=sort_key)
 
-            # 4. Panelleri oluştur ve ekle
             for item in sorted_items:
                 panels_list = self.panel_util.create_panel(
                     self.grafana_version,
@@ -293,13 +236,11 @@ class GrafanaHost:
                     host,
                     self.__zabbix_data_source_info
                 )
-
                 if panels_list:
                     target_db["panels"].extend(panels_list)
 
-        # 5. Dashboardları Grafana'ya Push et
+        # 4. Dashboardları Grafana'ya Push et
         for db in host_db_list:
-            # Boş dashboardları göndermek istemezsen buraya if db["panels"] ekleyebilirsin
             data = {
                 "dashboard": db,
                 "folderUid": host_folder["uid"],
@@ -311,23 +252,50 @@ class GrafanaHost:
                                     json=data,
                                     headers=self.default_authorized_request_header)
                 res.raise_for_status()
-                # print(f"Dashboard updated: {db['title']}")
             except Exception as e:
                 print(f"Error updating dashboard {db['title']}: {e}")
+
     def start(self):
-        # Bu fonksiyonun import edildigini varsayiyoruz
         zabbix_host_data = read_from_zabbix_json_data()
 
         for zhost in zabbix_host_data:
-            # zhost["host"] erisimi icin guvenlik kontrolu
             h_data = zhost.get("host", {})
             host_name = h_data.get("name")
             host_id = h_data.get("hostid")
+            items = zhost.get("items", [])
 
-            # parentTemplates bir liste olmali
-            templates = list(h_data.get("parentTemplates", []))
+            # --- DÜZELTME: Items içinde olup ParentTemplates'te olmayanları ekle ---
+            # Bu kısım, LLD ile gelen ve ID'si değişen ama host'un template listesinde
+            # adı yazmayan (47116 gibi) itemlar için dashboard oluşturulmasını sağlar.
+
+            item_tids = set()
+            for item in items:
+                tid = item.get("templateid")
+                if tid and tid != "0":
+                    item_tids.add(tid)
+
+            parent_templates = h_data.get("parentTemplates", [])
+            known_tids = set(t.get("templateid") for t in parent_templates)
+
+            # Bilinmeyen (Linked/Indirect) template ID'leri bul
+            missing_tids = item_tids - known_tids
+
+            for mid in missing_tids:
+                # İsim veremediğimiz için ID'ye dayalı bir isim uyduruyoruz
+                if mid == "custom_metrics":
+                    t_name = "Custom Manual Metrics"
+                else:
+                    t_name = f"Linked_Template_{mid}"
+
+                # Listeye ekliyoruz ki create_host_folders bunu görsün
+                parent_templates.append({"templateid": mid, "name": t_name})
+
+            # Bellekteki host verisini güncelle
+            h_data["parentTemplates"] = parent_templates
+            # -----------------------------------------------------------------------
 
             if host_name and host_id:
-                host_folder, host_template_db = self.__create_host_folders(host_name, host_id, templates)
+                # Güncel listeyi gönderiyoruz
+                host_folder, host_template_db = self.__create_host_folders(host_name, host_id, parent_templates)
                 self.__add_panels_to_dashboard(host_folder, host_template_db, zhost)
                 self.panel_util.reset()
