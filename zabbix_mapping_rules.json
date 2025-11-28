@@ -1,56 +1,509 @@
 {
-  "database": ["PostgreSQL", "MySQL", "Oracle", "MongoDB", "MSSQL", "MariaDB", "Elasticsearch", "Redis", "Memcached", "Database", "DB"],
-  "db": ["PostgreSQL", "MySQL", "Oracle", "MongoDB", "MSSQL", "Database", "DB"],
-  "sql": ["PostgreSQL", "MySQL", "MSSQL", "Database", "SQL"],
-  "nosql": ["MongoDB", "Elasticsearch", "Redis", "NoSQL", "Database"],
-  "web": ["Nginx", "Apache", "IIS", "Tomcat", "Web", "HTTP"],
-  "http": ["Nginx", "Apache", "IIS", "Web", "HTTP", "Service"],
-  "https": ["Web", "HTTP", "Service", "Cert"],
-  "nginx": ["Nginx", "Web"],
-  "apache": ["Apache", "Web"],
-  "iis": ["IIS", "Web", "Windows"],
-  "proxy": ["HAProxy", "Nginx", "Traefik", "Proxy"],
-  "fstype": ["Linux", "Windows", "Filesystems", "OS"],
-  "filesystem": ["Linux", "Windows", "Filesystems", "OS"],
-  "disk": ["Linux", "Windows", "Block devices", "Physical Disk", "OS"],
-  "storage": ["Linux", "Windows", "Storage", "OS"],
-  "volume": ["Linux", "Windows", "Storage", "OS"],
-  "block": ["Linux", "Windows", "Block devices", "OS"],
-  "sensor": ["Sensor", "Chassis", "Hardware", "IPMI"],
-  "fan": ["Sensor", "Chassis", "Hardware", "Fan"],
-  "power": ["Sensor", "Chassis", "Hardware", "Power", "PSU"],
-  "temp": ["Sensor", "Chassis", "Hardware", "Temperature"],
-  "temperature": ["Sensor", "Chassis", "Hardware", "Temperature"],
-  "voltage": ["Sensor", "Chassis", "Hardware", "Voltage"],
-  "chassis": ["Chassis", "Hardware", "IPMI", "Server"],
-  "interface": ["Linux", "Windows", "Network", "Interfaces", "OS"],
-  "network": ["Linux", "Windows", "Network", "OS"],
-  "net": ["Linux", "Windows", "Network", "OS"],
-  "icmp": ["ICMP", "Ping", "Network", "Generic"],
-  "ping": ["ICMP", "Ping", "Network"],
-  "traffic": ["Network", "Interface", "Linux", "Windows"],
-  "cpu": ["Linux", "Windows", "CPU", "Processor", "OS"],
-  "memory": ["Linux", "Windows", "Memory", "OS"],
-  "ram": ["Linux", "Windows", "Memory", "OS"],
-  "swap": ["Linux", "Windows", "Memory", "OS"],
-  "process": ["Linux", "Windows", "Processes", "OS"],
-  "processes": ["Linux", "Windows", "Processes", "OS"],
-  "docker": ["Docker", "Container"],
-  "container": ["Docker", "Kubernetes", "Container", "Pod"],
-  "kubernetes": ["Kubernetes", "Cluster", "Nodes"],
-  "k8s": ["Kubernetes", "Cluster"],
-  "vm": ["VMware", "Hyper-V", "Virtual"],
-  "vmware": ["VMware", "Virtual"],
-  "mq": ["RabbitMQ", "Kafka", "ActiveMQ", "Message Queue"],
-  "queue": ["RabbitMQ", "Kafka", "ActiveMQ"],
-  "java": ["Java", "JMX", "Tomcat", "Generic"],
-  "tomcat": ["Tomcat", "JMX", "Java"],
-  "system": ["Linux", "Windows", "System", "OS"],
-  "os": ["Linux", "Windows", "OS"],
-  "service": ["Linux", "Windows", "Service", "OS"],
-  "agent": ["Zabbix agent", "Health", "Status"],
-  "status": ["Health", "Status", "Availability", "Zabbix agent"],
-  "health": ["Health", "Status", "Zabbix agent"],
-  "security": ["Certificate", "SSL", "Security"],
-  "cert": ["Certificate", "SSL"]
+  "database": [
+    "PostgreSQL",
+    "MySQL",
+    "Oracle",
+    "MongoDB",
+    "MSSQL",
+    "MariaDB",
+    "Elasticsearch",
+    "Redis",
+    "Memcached",
+    "Cassandra",
+    "Couchbase",
+    "Clickhouse",
+    "Database",
+    "DB"
+  ],
+  "db": [
+    "PostgreSQL",
+    "MySQL",
+    "Oracle",
+    "MongoDB",
+    "MSSQL",
+    "MariaDB",
+    "Database",
+    "DB"
+  ],
+  "sql": [
+    "PostgreSQL",
+    "MySQL",
+    "MSSQL",
+    "Database",
+    "SQL"
+  ],
+  "nosql": [
+    "MongoDB",
+    "Elasticsearch",
+    "Redis",
+    "Cassandra",
+    "Couchbase",
+    "NoSQL",
+    "Database"
+  ],
+  "web": [
+    "Nginx",
+    "Apache",
+    "IIS",
+    "Tomcat",
+    "Web",
+    "HTTP"
+  ],
+  "http": [
+    "Nginx",
+    "Apache",
+    "IIS",
+    "Web",
+    "HTTP",
+    "Service"
+  ],
+  "https": [
+    "Web",
+    "HTTP",
+    "Service",
+    "Cert"
+  ],
+  "nginx": [
+    "Nginx",
+    "Web"
+  ],
+  "apache": [
+    "Apache",
+    "Web"
+  ],
+  "iis": [
+    "IIS",
+    "Web",
+    "Windows"
+  ],
+  "proxy": [
+    "HAProxy",
+    "Nginx",
+    "Traefik",
+    "Proxy"
+  ],
+  "cloud": [
+    "Cloud",
+    "AWS",
+    "Azure",
+    "GCP",
+    "Cloud Services"
+  ],
+  "aws": [
+    "AWS",
+    "Cloud"
+  ],
+  "azure": [
+    "Azure",
+    "Cloud"
+  ],
+  "gcp": [
+    "GCP",
+    "Google Cloud",
+    "Cloud"
+  ],
+  "openstack": [
+    "OpenStack",
+    "Cloud"
+  ],
+  "openshift": [
+    "Kubernetes",
+    "OpenShift",
+    "Container"
+  ],
+  "fstype": [
+    "Linux",
+    "Windows",
+    "Filesystems",
+    "OS"
+  ],
+  "filesystem": [
+    "Linux",
+    "Windows",
+    "Filesystems",
+    "OS"
+  ],
+  "inode": [
+    "Linux",
+    "Windows",
+    "Filesystems",
+    "OS"
+  ],
+  "disk": [
+    "Linux",
+    "Windows",
+    "Block devices",
+    "Physical Disk",
+    "OS"
+  ],
+  "storage": [
+    "Linux",
+    "Windows",
+    "Storage",
+    "OS"
+  ],
+  "volume": [
+    "Linux",
+    "Windows",
+    "Storage",
+    "OS"
+  ],
+  "block": [
+    "Linux",
+    "Windows",
+    "Block devices",
+    "OS"
+  ],
+  "nas": [
+    "Storage",
+    "NAS",
+    "OS"
+  ],
+  "san": [
+    "Storage",
+    "SAN",
+    "OS"
+  ],
+  "sensor": [
+    "Sensor",
+    "Chassis",
+    "Hardware",
+    "IPMI"
+  ],
+  "fan": [
+    "Sensor",
+    "Chassis",
+    "Hardware",
+    "Fan"
+  ],
+  "power": [
+    "Sensor",
+    "Chassis",
+    "Hardware",
+    "Power",
+    "PSU",
+    "Battery"
+  ],
+  "temp": [
+    "Sensor",
+    "Chassis",
+    "Hardware",
+    "Temperature"
+  ],
+  "temperature": [
+    "Sensor",
+    "Chassis",
+    "Hardware",
+    "Temperature"
+  ],
+  "humidity": [
+    "Sensor",
+    "Chassis",
+    "Hardware",
+    "Humidity"
+  ],
+  "voltage": [
+    "Sensor",
+    "Chassis",
+    "Hardware",
+    "Voltage"
+  ],
+  "chassis": [
+    "Chassis",
+    "Hardware",
+    "IPMI",
+    "Server"
+  ],
+  "interface": [
+    "Linux",
+    "Windows",
+    "Network",
+    "Interfaces",
+    "OS"
+  ],
+  "network": [
+    "Linux",
+    "Windows",
+    "Network",
+    "OS"
+  ],
+  "net": [
+    "Linux",
+    "Windows",
+    "Network",
+    "OS"
+  ],
+  "router": [
+    "Network",
+    "Router",
+    "Device",
+    "SNMP"
+  ],
+  "switch": [
+    "Network",
+    "Switch",
+    "Device",
+    "SNMP"
+  ],
+  "firewall": [
+    "Network",
+    "Firewall",
+    "Security",
+    "Device"
+  ],
+  "icmp": [
+    "ICMP",
+    "Ping",
+    "Network",
+    "Generic"
+  ],
+  "ping": [
+    "ICMP",
+    "Ping",
+    "Network"
+  ],
+  "traffic": [
+    "Network",
+    "Interface",
+    "Linux",
+    "Windows"
+  ],
+  "dns": [
+    "DNS",
+    "Domain",
+    "Network",
+    "Service"
+  ],
+  "dhcp": [
+    "DHCP",
+    "Network",
+    "Service"
+  ],
+  "ntp": [
+    "NTP",
+    "Time",
+    "Clock",
+    "Service"
+  ],
+  "cpu": [
+    "Linux",
+    "Windows",
+    "CPU",
+    "Processor",
+    "OS"
+  ],
+  "memory": [
+    "Linux",
+    "Windows",
+    "Memory",
+    "OS"
+  ],
+  "ram": [
+    "Linux",
+    "Windows",
+    "Memory",
+    "OS"
+  ],
+  "swap": [
+    "Linux",
+    "Windows",
+    "Memory",
+    "OS"
+  ],
+  "process": [
+    "Linux",
+    "Windows",
+    "Processes",
+    "OS"
+  ],
+  "processes": [
+    "Linux",
+    "Windows",
+    "Processes",
+    "OS"
+  ],
+  "service": [
+    "Linux",
+    "Windows",
+    "Service",
+    "OS"
+  ],
+  "services": [
+    "Linux",
+    "Windows",
+    "Service",
+    "OS"
+  ],
+  "docker": [
+    "Docker",
+    "Container"
+  ],
+  "container": [
+    "Docker",
+    "Kubernetes",
+    "Container",
+    "Pod"
+  ],
+  "kubernetes": [
+    "Kubernetes",
+    "Cluster",
+    "Nodes"
+  ],
+  "k8s": [
+    "Kubernetes",
+    "Cluster"
+  ],
+  "vm": [
+    "VMware",
+    "Hyper-V",
+    "Virtual",
+    "Hypervisor"
+  ],
+  "vmware": [
+    "VMware",
+    "Virtual"
+  ],
+  "hyperv": [
+    "VMware",
+    "Hyper-V",
+    "Virtual",
+    "Hypervisor"
+  ],
+  "xen": [
+    "Xen",
+    "Virtual",
+    "Hypervisor"
+  ],
+  "mq": [
+    "RabbitMQ",
+    "Kafka",
+    "ActiveMQ",
+    "Message Queue"
+  ],
+  "queue": [
+    "RabbitMQ",
+    "Kafka",
+    "ActiveMQ",
+    "Message Queue"
+  ],
+  "java": [
+    "Java",
+    "JMX",
+    "Tomcat",
+    "Generic"
+  ],
+  "tomcat": [
+    "Tomcat",
+    "JMX",
+    "Java"
+  ],
+  "jenkins": [
+    "Jenkins",
+    "CI/CD",
+    "DevOps"
+  ],
+  "ldap": [
+    "LDAP",
+    "Active Directory",
+    "Directory"
+  ],
+  "ad": [
+    "Active Directory",
+    "Windows"
+  ],
+  "system": [
+    "Linux",
+    "Windows",
+    "System",
+    "OS",
+    "AIX",
+    "FreeBSD",
+    "Solaris",
+    "HP-UX"
+  ],
+  "os": [
+    "Linux",
+    "Windows",
+    "OS",
+    "Unix"
+  ],
+  "agent": [
+    "Zabbix agent",
+    "Health",
+    "Status"
+  ],
+  "status": [
+    "Health",
+    "Status",
+    "Availability",
+    "Zabbix agent"
+  ],
+  "health": [
+    "Health",
+    "Status",
+    "Zabbix agent"
+  ],
+  "security": [
+    "Certificate",
+    "SSL",
+    "Security"
+  ],
+  "cert": [
+    "Certificate",
+    "SSL"
+  ],
+  "ssl": [
+    "Certificate",
+    "SSL"
+  ],
+  "mail": [
+    "Mail",
+    "Email",
+    "SMTP",
+    "Mail Server"
+  ],
+  "smtp": [
+    "Mail",
+    "SMTP",
+    "Email",
+    "Service"
+  ],
+  "postfix": [
+    "Postfix",
+    "Mail",
+    "SMTP"
+  ],
+  "exchange": [
+    "Exchange",
+    "Mail",
+    "Windows"
+  ],
+  "backup": [
+    "Backup",
+    "Bacula",
+    "Acronis",
+    "Storage"
+  ],
+  "voip": [
+    "VoIP",
+    "Telephony",
+    "Asterisk"
+  ],
+  "antivirus": [
+    "Antivirus",
+    "Security",
+    "Windows"
+  ],
+  "openvpn": [
+    "OpenVPN",
+    "VPN",
+    "Security",
+    "Network"
+  ],
+  "solr": [
+    "Solr",
+    "Search",
+    "NoSQL",
+    "Database"
+  ]
 }

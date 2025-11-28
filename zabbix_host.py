@@ -232,6 +232,7 @@ class ZabbixHost:
 
         return items, list(virtual_templates_map.values())
 
+
     def __assign_virtual_template(self, item, key, name, v_map):
         item["templateid"] = key
         if key not in v_map:
@@ -283,7 +284,6 @@ class ZabbixHost:
             # Host'un mevcut template listesi
             tids = list(i["templateid"] for i in host["parentTemplates"])
 
-            # Itemları çek ve gerçek template'lerle eşleştir
             items = self.get_items(host["hostid"], tids)
 
             # --- SINIFLANDIRMA ve BİRLEŞTİRME ---
@@ -306,7 +306,6 @@ class ZabbixHost:
                 if original_count != filtered_count:
                     print(f"  -> Filtered {original_count - filtered_count} empty items for host {host['name']}")
 
-            # Custom metrics (Opsiyonel)
             has_custom_metrics = any(i["templateid"] == "custom_metrics" for i in items)
             if has_custom_metrics:
                 host["parentTemplates"].append({
